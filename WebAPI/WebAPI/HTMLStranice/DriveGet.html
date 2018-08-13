@@ -1,0 +1,59 @@
+﻿<br />
+<br />
+<br />
+<div class="container-fluid" ng-show="loggedin">
+    <div class="registerWindow">
+        <div class="header">
+            <h2>Voznja</h2>
+        </div>
+        <div class="body">
+            <label>Dodajte Vasu lokaciju: </label>
+            <div>
+
+                <div id="map" class="map"></div>
+                <script type="text/javascript">
+                  var map = new ol.Map({
+                    target: 'map',
+                    layers: [
+                      new ol.layer.Tile({
+                        source: new ol.source.OSM()
+                      })
+                    ],
+                    view: new ol.View({
+                      center: ol.proj.fromLonLat([37.41, 8.82]),
+                      zoom: 4
+                    })
+                  });
+                </script>
+            </div>
+            <div class="form-group">
+                <input type="text" class="t" id="xCoord" ng-model="drive.XCoord" placeholder="X koordinata">
+            </div>
+            <div class="form-group">
+                <input type="text" class="t" id="yCoord" ng-model="drive.YCoord" placeholder="Y koordinata">
+            </div>
+            <div class="form-group">
+                <input type="text" class="t" id="street" ng-model="drive.Street" placeholder="Ulica">
+            </div>
+            <div class="form-group">
+                <input type="text" class="t" id="number" ng-model="drive.Number" placeholder="Broj">
+            </div>
+            <div class="form-group">
+                <input type="text" class="t" id="town" ng-model="drive.Town" placeholder="Grad">
+            </div>
+            <div class="form-group">
+                <input type="text" class="t" id="postalCode" ng-model="drive.PostalCode" placeholder="Postanski broj">
+            </div>
+            <div class="form-group">
+                <select class="t" id="tipVoznje" ng-model="drive.tipAuta" placeholder="Tip automobila">
+                    <option value="" disabled>Izaberite tip automobila</option>
+                    <option value="0"> Putnicki automobil</option>
+                    <option value="1">Kombi</option>
+                </select>
+            </div>
+            <br>
+            <button ng-show="user.role==0" type="submit" class="btn button-success" ng-click="AddDriveCustomer(drive)">Dodajte voznju</button>
+            <button ng-show="user.role==1" type="submit" class="btn button-success" ng-click="AddDriveDispecer(drive)">Add a drive disp</button>
+        </div>
+    </div>
+</div>>
