@@ -9,25 +9,25 @@
     init();
     $scope.AddDriveCustomer = function (drive) {
         if (drive.XCoord == null || drive.XCoord == "") {
-            alert('X coordinate cant be empty!');
+            alert('X koordinata mora biti popunjena!');
             return;
         }
         else if (drive.YCoord == null || drive.YCoord == "") {
-            alert('Y coordinate cant be empty!');
+            alert('Y koordinata mora biti popunjena!');
             return;
         }
         else if (drive.Street == null || drive.Street == "") {
-            alert('Street cant be empty!');
+            alert('Ulica koordinata mora biti popunjena!');
             return;
         }
         else if (drive.Number == null || drive.Number == "") {
-            alert('Number cant be empty!');
+            alert('Broj mora biti popunjena!');
             return;
         } else if (drive.Town == null || drive.Town == "") {
-            alert('Town cant be empty!');
+            alert('Grad mora biti popunjen!');
             return;
         } else if (drive.PostalCode == null || drive.PostalCode == "") {
-            alert('Postal code cant be empty!');
+            alert('Postanski broj mora biti popunjen!');
             return;
         }
         ProfCont.AddDriveCustomer(drive).then(function (response) {
@@ -38,31 +38,31 @@
                 $window.location.href = "#!/MyHome";
             }
             else {
-                alert("Drive does not exist.");
+                alert("Voznja ne postoji.");
             }
         });
     }
     $scope.AddDriveDispecer = function (drive) {
         if (drive.XCoord == null || drive.XCoord == "") {
-            alert('X coordinate cant be empty!');
+            alert('X koordinata mora biti popunjena!');
             return;
         }
         else if (drive.YCoord == null || drive.YCoord == "") {
-            alert('Y coordinate cant be empty!');
+            alert('Y koordinata mora biti popunjena!');
             return;
         }
         else if (drive.Street == null || drive.Street == "") {
-            alert('Street cant be empty!');
+            alert('Ulica mora biti popunjena!');
             return;
         }
         else if (drive.Number == null || drive.Number == "") {
-            alert('Number cant be empty!');
+            alert('Broj mora biti popunjen!');
             return;
         } else if (drive.Town == null || drive.Town == "") {
-            alert('Town cant be empty!');
+            alert('Grad mora biti popunjen!');
             return;
         } else if (drive.PostalCode == null || drive.PostalCode == "") {
-            alert('Postal code cant be empty!');
+            alert('Postanski broj mora biti popunjen!');
             return;
         }
         ProfCont.AddDriveDispecer(drive).then(function (response) {
@@ -73,7 +73,7 @@
                 $window.location.href = "#!/MyHome";
             }
             else {
-                alert("Drive does not exist.");
+                alert("Voznja ne postoji.");
             }
         });
 

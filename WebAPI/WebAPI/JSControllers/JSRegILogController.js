@@ -65,6 +65,7 @@
         });
     };
     $scope.LoginUser = function (user) {
+        $rootScope.RegisterSuccess = "";
         if (user.username == null || user.username == "") {
             alert('Korisnicko ime ne smije biti prazno!');
             return;
@@ -74,10 +75,12 @@
             return;
         }
         RegILogFactory.LoginUser(user).then(function (response) {
+            
             if (response.data == null) {
                 alert("Ne postoji korisnik sa unijetim korisnickim imenom i lozinkom! ");
             }
             else {
+                $rootScope.RegisterSuccess = "";
                 console.log(response);
                 document.cookie = "user=" + JSON.stringify({
                     username: response.data.KorisnickoIme,

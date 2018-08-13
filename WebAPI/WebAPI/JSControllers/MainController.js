@@ -25,5 +25,6 @@
         $rootScope.loggedin = false;
         $rootScope.user = {};
         document.location.href = "#!/Login";
+        
     }
 });
