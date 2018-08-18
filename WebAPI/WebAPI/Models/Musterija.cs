@@ -8,6 +8,9 @@ namespace WebAPI.Models
 {
     public class Musterija : Korisnik
     {
-       
+       public Musterija()
+        {
+            Uloga = UlogaKorisnika.Musterija;
+        }
     }
 }

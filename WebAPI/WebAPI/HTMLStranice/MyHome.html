@@ -4,11 +4,51 @@
 <div class="container">
     <div>
         <!--class="podforumi-header">-->
-        <h1>Welcome <span ng-show="loggedin">{{user.username}}</span> <!--<span ng-show="korisnik.uloga.includes('Administrator')">(Admin)</span>--></h1>
-        <h4 ng-show="loggedin">Your drives</h4>
-        <h4 ng-show="!loggedin">Please login if you want to use our services.</h4>
+        <h1>Dobrodo&#x9a;li <span ng-show="loggedin">{{user.username}}</span> <!--<span ng-show="korisnik.uloga.includes('Administrator')">(Admin)</span>--></h1>
+        <h4 ng-show="!loggedin">Molim Vas, ulogujte se ako &#x9e;elite koristiti usluge servisa.</h4>
     </div>
 </div>
+
+<div class="container">
+    <div class="topright" ng-show="user.role==2">
+        <a href="#!/HomeWaiting/{{user.username}}">Izlistajte voznje na cekanju</a>
+    </div>
+</div>
+<div class="container">
+    <div class="topright" ng-show="user.role==1">
+        <a href="#!/HomeAll/{{user.username}}">Izlistajte sve voznje</a>
+    </div>
+</div>
+<div class="form-group">
+    <select class="t" id="fil" ng-model="fu.status">
+        <option value="" disabled>Odaberite status</option>
+        <option value="0">KreiranaNaCekanju</option>
+        <option value="1">Formirana</option>
+        <option value="2">Obradjena</option>
+        <option value="3">Prihvacena</option>
+        <option value="4">Otkazana</option>
+        <option value="5">Neuspesna</option>
+        <option value="6">Uspesna</option>
+    </select>
+    <br>
+    <!--<button  type="submit" class="btn button-success" ng-click="Filter(fu)">Filter</button>-->
+    <a ng-href="#!/Filter/{{fu.status}}"> Filtrirajte</a>
+</div>
+<div class="container-fluid">
+    <h4 ng-show="FilterRez">Voznje koje zadovoljavaju kriterijume</h4>
+    <div class="rezultati" ng-repeat="drive in FilterRez">
+        <!--ng repeat-->
+        <div class="tema">
+            <p>  {{drive.DatumPorudzbine}} </p>
+            <p> {{drive.LokacijaDolaskaTaksija.Adresa.Ulica}}, {{drive.LokacijaDolaskaTaksija.Adresa.Broj}}</p>
+            <p> {{drive.LokacijaDolaskaTaksija.Adresa.NaseljenoMesto}}</p>
+            <p> {{drive.LokacijaDolaskaTaksija.Adresa.PozivniBroj}}</p>
+        </div>
+    </div>
+</div>
+
+<h4 ng-show="Drives.length == 0">{{RegisterSuccessF}}</h4>
+
 <div class="container">
     <div class="col-md-12">
         <div class="praceneTeme">
@@ -22,20 +62,34 @@
                     <p> {{drive.LokacijaDolaskaTaksija.Adresa.PozivniBroj}}</p>
                 </div>
                 <div class="nemaTema" ng-show="Drives.length == 0">
-                    <h4>No drives.</h4>
+                    <h4>Nema voznji.</h4>
                 </div>
             </div>
         </div>
     </div>
+
 </div>
 <br /><!--VOZNJE-->
 <br />
 <br />
 <br />
 <div class="container">
-    <div class="topright">
+    <div class="topright" ng-show="user.role!=2">
         <a href="#!/DriveGet/{{user.username}}">Add Drive</a>
     </div>
+    <!--<br />VOZNJE
+    <br />
+    <br />
+    <br />
+    <div class="container">
+        <div class="topright">
+            <a href="#!/DriveGet/{{user.username}}">Add Drive</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="topright" ng-show="user.role==1">
+            <a href="#!/DriverGet/{{user.username}}">Add Driver</a>
+        </div>-->
 </div>
 <div class="container">
     <div class="topright" ng-show="user.role==1">

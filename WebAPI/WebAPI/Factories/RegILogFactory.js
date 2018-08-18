@@ -13,12 +13,30 @@
             Email: user.email
         });
     }
-    //smjestnje u objekat LogovaniKorisnik
+    //smjestanje u objekat LogovaniKorisnik
     factory.LoginUser = function (user) {
         return $http.post('/api/RegILog/Login', {
             Username: user.username,
             Password: user.pwd
         });
     }
+
+        //smjestanje u objekat VozacPomocna
+    factory.RegisterDriver = function (user) { 
+        return $http.post('/api/RegILog/RegisterDriver', {
+            Username: user.username,
+            Password: user.pwd,
+            Ime: user.ime,
+            Prezime: user.prezime,
+            Pol: user.pol,
+            Jmbg: user.jmbg,
+            Telefon: user.kontaktTelefon,
+            Email: user.email,
+            Godina: user.godina,
+            RegistarskaOznaka: user.registarskaOznaka,
+            TipVozila: user.tipVozila
+        });
+    }
+
     return factory;
 }); 

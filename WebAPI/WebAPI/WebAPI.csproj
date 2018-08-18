@@ -169,6 +169,8 @@
     <Compile Include="Models\Adresa.cs" />
     <Compile Include="Models\Automobil.cs" />
     <Compile Include="Models\Dispecer.cs" />
+    <Compile Include="Models\DodatniModeli\KorisnikFilter.cs" />
+    <Compile Include="Models\DodatniModeli\KorisnikPomocna.cs" />
     <Compile Include="Models\DodatniModeli\KorisnikZaLogovanje.cs" />
     <Compile Include="Models\DodatniModeli\LogovaniKorisnik.cs" />
     <Compile Include="Models\DodatniModeli\MusterijaPomocni.cs" />
@@ -208,10 +210,14 @@
     <Content Include="Global.asax" />
     <Content Include="HTMLStranice\DriveGet.html" />
     <Content Include="HTMLStranice\DriverGet.html" />
+    <Content Include="HTMLStranice\Edit.html" />
     <Content Include="HTMLStranice\Login.html" />
     <Content Include="HTMLStranice\MyHome.html" />
     <Content Include="HTMLStranice\Profile.html" />
     <Content Include="HTMLStranice\Register.html" />
+    <Content Include="JSControllers\FilterController.js" />
+    <Content Include="JSControllers\HomeDrivesAll.js" />
+    <Content Include="JSControllers\HomeDrivesWaiting.js" />
     <Content Include="JSControllers\JSRegILogController.js" />
     <Content Include="JSControllers\MainController.js" />
     <Content Include="JSControllers\MyHomeController.js" />

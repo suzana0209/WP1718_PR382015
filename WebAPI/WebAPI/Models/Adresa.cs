@@ -7,10 +7,6 @@ namespace WebAPI.Models
 {
     public class Adresa
     {
-        public String Ulica { get; set; }
-        public String Broj { get; set; }
-        public String NaseljenoMesto { get; set; }
-        public Double PozivniBroj { get; set; }
         public Adresa() { }
 
         public Adresa(string ulica, string broj, string naseljenoMesto, double pozivniBroj)
@@ -20,5 +16,11 @@ namespace WebAPI.Models
             NaseljenoMesto = naseljenoMesto;
             PozivniBroj = pozivniBroj;
         }
+
+        public String Ulica { get; set; }
+        public String Broj { get; set; }
+        public String NaseljenoMesto { get; set; }
+        public Double PozivniBroj { get; set; }
+        
     }
 }

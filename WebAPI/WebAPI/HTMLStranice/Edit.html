@@ -1,0 +1,39 @@
+﻿<br />
+<br />
+<br />
+<div class="registerWindow">
+    <h2>Izmjene podataka korisnika: </h2>
+    <div class="body">
+        <div class="form-group">
+            <input type="text" class="t" id="username" ng-model="user.username" value="{{userProfile.KorisnickoIme}}" contenteditable="true">
+        </div>
+        <div class="form-group">
+            <input type="text" class="t" id="ime" ng-model="user.ime" value="{{userProfile.Ime}}" contenteditable="true">
+        </div>
+        <div class="form-group">
+            <input type="text" class="t" id="prezime" ng-model="user.prezime" value="{{userProfile.Prezime}}" contenteditable="true">
+        </div>
+        <div class="form-group">
+            <select class="t" id="pol" ng-model="user.pol" placeholder="{{userProfile.Pol}}">
+                <option value="" disabled>Izaberite pol</option>
+                <option value="Male"> Musko</option>
+                <option value="Female">Zensko</option>
+            </select>
+            <!--<input type="text" class="t" id="pol" ng-model="user.pol" placeholder="Pol">-->
+        </div>
+        <div class="form-group">
+            <input type="text" class="t" id="jmbg" ng-model="user.jmbg" value="{{userProfile.Jmbg}}" contenteditable="true">
+        </div>
+        <div class="form-group">
+            <input type="text" class="t" id="kontaktTelefon" ng-model="user.kontaktTelefon" value="{{userProfile.KontaktTelefon}}" contenteditable="true">
+        </div>
+        <div class="form-group">
+            <input type="text" class="t" id="email" ng-model="user.email" value="{{userProfile.Email}}" contenteditable="true">
+        </div>
+        <div class="form-group">
+            <input type="password" class="t" id="pwd" ng-model="user.pwd" value="{{userProfile.Lozinka}}" contenteditable="true">
+        </div>
+        <br>
+        <button type="submit" class="btn button-success" ng-click="EditUser(user)">Sacuvajte izmjene</button>
+    </div>
+</div> 

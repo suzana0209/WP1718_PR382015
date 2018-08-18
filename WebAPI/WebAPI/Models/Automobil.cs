@@ -22,6 +22,7 @@ namespace WebAPI.Models
         public string BrojRegistarskeOznake { get; set; }
         public int BrojTaksiVozila { get; set; }
         public TipAutomobila TipAutomobila { get; set; }
-        public bool Zauzeto { get; set; }
+        //public bool Zauzeto { get; set; }
+        public string UsernameVozaca { get; set; }
     }
 }

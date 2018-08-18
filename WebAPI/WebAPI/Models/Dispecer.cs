@@ -10,7 +10,7 @@ namespace WebAPI.Models
     {
         public Dispecer()
         {
-            
+            Uloga = UlogaKorisnika.Dispecer;
         }
     }
 }
