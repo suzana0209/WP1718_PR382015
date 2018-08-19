@@ -1,62 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfVozac xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Vozac>
-    <KorisnickoIme>laky</KorisnickoIme>
-    <Lozinka>laky</Lozinka>
-    <Ime>Lazar</Ime>
-    <Prezime>Petrovic</Prezime>
-    <Pol>Musko</Pol>
-    <Jmbg>1234566798123</Jmbg>
-    <KontaktTelefon>111</KontaktTelefon>
-    <Email>@ggg</Email>
+    <KorisnickoIme>maca123</KorisnickoIme>
+    <Lozinka>maca</Lozinka>
+    <Ime>Marija</Ime>
+    <Prezime>Djurkovic</Prezime>
+    <Pol>Zensko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>000999</KontaktTelefon>
+    <Email>@gmail.com</Email>
     <Uloga>Vozac</Uloga>
+    <KorisnikVoznje />
     <Lok />
     <Auto>
-      <GodisteAutomobila>4</GodisteAutomobila>
-      <BrojRegistarskeOznake>e3rrr</BrojRegistarskeOznake>
+      <GodisteAutomobila>21</GodisteAutomobila>
+      <BrojRegistarskeOznake>ST32</BrojRegistarskeOznake>
       <BrojTaksiVozila>1</BrojTaksiVozila>
       <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>laky</UsernameVozaca>
-    </Auto>
-    <Zauzet>true</Zauzet>
-  </Vozac>
-  <Vozac>
-    <KorisnickoIme>mara</KorisnickoIme>
-    <Lozinka>mara</Lozinka>
-    <Ime>Marina</Ime>
-    <Prezime>Maric</Prezime>
-    <Pol>Zensko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>99</KontaktTelefon>
-    <Email>@gmail.com</Email>
-    <Uloga>Vozac</Uloga>
-    <Lok />
-    <Auto>
-      <GodisteAutomobila>41</GodisteAutomobila>
-      <BrojRegistarskeOznake>NS-34-OK</BrojRegistarskeOznake>
-      <BrojTaksiVozila>2</BrojTaksiVozila>
-      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>mara</UsernameVozaca>
-    </Auto>
-    <Zauzet>true</Zauzet>
-  </Vozac>
-  <Vozac>
-    <KorisnickoIme>sanja123</KorisnickoIme>
-    <Lozinka>sanja</Lozinka>
-    <Ime>Sanja</Ime>
-    <Prezime>Sanjic</Prezime>
-    <Pol>Zensko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>0123</KontaktTelefon>
-    <Email>@gmail.com</Email>
-    <Uloga>Vozac</Uloga>
-    <Lok />
-    <Auto>
-      <GodisteAutomobila>20</GodisteAutomobila>
-      <BrojRegistarskeOznake>NS-76-DE</BrojRegistarskeOznake>
-      <BrojTaksiVozila>3</BrojTaksiVozila>
-      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>sanja123</UsernameVozaca>
+      <UsernameVozaca>maca123</UsernameVozaca>
     </Auto>
     <Zauzet>true</Zauzet>
   </Vozac>
@@ -67,36 +28,101 @@
     <Prezime>Segrt</Prezime>
     <Pol>Zensko</Pol>
     <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>232</KontaktTelefon>
-    <Email>@gma</Email>
+    <KontaktTelefon>999</KontaktTelefon>
+    <Email>@gmail</Email>
     <Uloga>Vozac</Uloga>
+    <KorisnikVoznje />
     <Lok />
     <Auto>
-      <GodisteAutomobila>22</GodisteAutomobila>
-      <BrojRegistarskeOznake>NS-565</BrojRegistarskeOznake>
-      <BrojTaksiVozila>4</BrojTaksiVozila>
+      <GodisteAutomobila>1999</GodisteAutomobila>
+      <BrojRegistarskeOznake>SO23</BrojRegistarskeOznake>
+      <BrojTaksiVozila>2</BrojTaksiVozila>
       <TipAutomobila>PutnickiAutomobil</TipAutomobila>
       <UsernameVozaca>barbi123</UsernameVozaca>
+    </Auto>
+    <Zauzet>true</Zauzet>
+  </Vozac>
+  <Vozac>
+    <KorisnickoIme>deki123</KorisnickoIme>
+    <Lozinka>deki</Lozinka>
+    <Ime>Dejan</Ime>
+    <Prezime>Stajic</Prezime>
+    <Pol>Musko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>555</KontaktTelefon>
+    <Email>@gmail</Email>
+    <Uloga>Vozac</Uloga>
+    <KorisnikVoznje />
+    <Lok />
+    <Auto>
+      <GodisteAutomobila>1996</GodisteAutomobila>
+      <BrojRegistarskeOznake>NS233</BrojRegistarskeOznake>
+      <BrojTaksiVozila>3</BrojTaksiVozila>
+      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+      <UsernameVozaca>deki123</UsernameVozaca>
+    </Auto>
+    <Zauzet>true</Zauzet>
+  </Vozac>
+  <Vozac>
+    <KorisnickoIme>mira</KorisnickoIme>
+    <Lozinka>mira</Lozinka>
+    <Ime>Mirjana</Ime>
+    <Prezime>Jekic</Prezime>
+    <Pol>Zensko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>0988</KontaktTelefon>
+    <Email>@gmail</Email>
+    <Uloga>Vozac</Uloga>
+    <KorisnikVoznje />
+    <Lok />
+    <Auto>
+      <GodisteAutomobila>30</GodisteAutomobila>
+      <BrojRegistarskeOznake>NSfff</BrojRegistarskeOznake>
+      <BrojTaksiVozila>4</BrojTaksiVozila>
+      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+      <UsernameVozaca>mira</UsernameVozaca>
+    </Auto>
+    <Zauzet>true</Zauzet>
+  </Vozac>
+  <Vozac>
+    <KorisnickoIme>dejo</KorisnickoIme>
+    <Lozinka>dejo</Lozinka>
+    <Ime>Dejan</Ime>
+    <Prezime>Jovic</Prezime>
+    <Pol>Musko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>43</KontaktTelefon>
+    <Email>@g</Email>
+    <Uloga>Vozac</Uloga>
+    <KorisnikVoznje />
+    <Lok />
+    <Auto>
+      <GodisteAutomobila>13</GodisteAutomobila>
+      <BrojRegistarskeOznake>NS</BrojRegistarskeOznake>
+      <BrojTaksiVozila>5</BrojTaksiVozila>
+      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+      <UsernameVozaca>dejo</UsernameVozaca>
     </Auto>
     <Zauzet>false</Zauzet>
   </Vozac>
   <Vozac>
-    <KorisnickoIme>maca123</KorisnickoIme>
-    <Lozinka>maca</Lozinka>
-    <Ime>Marija</Ime>
-    <Prezime>Djurkovic</Prezime>
+    <KorisnickoIme>ma</KorisnickoIme>
+    <Lozinka>ma</Lozinka>
+    <Ime>maa</Ime>
+    <Prezime>ff</Prezime>
     <Pol>Musko</Pol>
     <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>333</KontaktTelefon>
-    <Email>@ggg</Email>
+    <KontaktTelefon>55</KontaktTelefon>
+    <Email>@gg</Email>
     <Uloga>Vozac</Uloga>
+    <KorisnikVoznje />
     <Lok />
     <Auto>
-      <GodisteAutomobila>25</GodisteAutomobila>
-      <BrojRegistarskeOznake>re-gg</BrojRegistarskeOznake>
-      <BrojTaksiVozila>5</BrojTaksiVozila>
+      <GodisteAutomobila>5</GodisteAutomobila>
+      <BrojRegistarskeOznake>ff</BrojRegistarskeOznake>
+      <BrojTaksiVozila>6</BrojTaksiVozila>
       <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>maca123</UsernameVozaca>
+      <UsernameVozaca>ma</UsernameVozaca>
     </Auto>
     <Zauzet>false</Zauzet>
   </Vozac>

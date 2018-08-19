@@ -65,7 +65,7 @@
         });
     };
     $scope.LoginUser = function (user) {
-        $rootScope.RegisterSuccess = "";
+        //$rootScope.RegisterSuccess = "";
         if (user.username == null || user.username == "") {
             alert('Polje Korisnicko ime ne smije biti prazno!');
             return;
@@ -80,7 +80,7 @@
                 alert("Ne postoji korisnik sa unijetim korisnickim imenom i lozinkom! ");
             }
             else {
-                $rootScope.RegisterSuccess = "";
+                //$rootScope.RegisterSuccess = "";
                 console.log(response);
                 document.cookie = "user=" + JSON.stringify({
                     username: response.data.KorisnickoIme,
@@ -102,6 +102,7 @@
     }
 
     $scope.RegisterDriver = function (user) {
+        //$rootScope.RegisterSuccess = "";
         if (user.username == null || user.username == "") {
             alert('Polje korisnicko ime mora biti ne smije biti prazno!');
             return;

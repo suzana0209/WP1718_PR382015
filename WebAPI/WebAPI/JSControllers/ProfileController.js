@@ -8,6 +8,7 @@
     }
     init();
     $scope.AddDriveCustomer = function (drive) {
+        //$scope.RegisterSuccess = "";
         if (drive.XCoord == null || drive.XCoord == "") {
             alert('Polje X koordinata mora biti popunjena!');
             return;
@@ -31,6 +32,7 @@
             return;
         }
         ProfCont.AddDriveCustomer(drive).then(function (response) {
+           // $scope.RegisterSuccess = "";
             if (response.data == true) {
                 console.log(response.data);
                 $scope.newDrive = response.data;
@@ -43,6 +45,7 @@
         });
     }
     $scope.AddDriveDispecer = function (drive) {
+        //$scope.RegisterSuccess = "";
         if (drive.XCoord == null || drive.XCoord == "") {
             alert('Polje X koordinata mora biti popunjena!');
             return;
@@ -66,6 +69,7 @@
             return;
         }
         ProfCont.AddDriveDispecer(drive).then(function (response) {
+            //$scope.RegisterSuccess = "";
             if (response.data == true) {
                 console.log(response.data);
                 $scope.newDrive = response.data;

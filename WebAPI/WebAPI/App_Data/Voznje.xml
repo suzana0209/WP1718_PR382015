@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfVoznja xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Voznja>
-    <DatumPorudzbine>2018-08-18T17:38:49.1992357+02:00</DatumPorudzbine>
+    <DatumPorudzbine>Sunday, August 19, 2018 12:46:52 PM</DatumPorudzbine>
     <LokacijaDolaskaTaksija>
-      <X>32</X>
-      <Y>21</Y>
+      <X>23</X>
+      <Y>54</Y>
       <Adresa>
-        <Ulica>Branka Bajica</Ulica>
-        <Broj>23</Broj>
+        <Ulica>Veljka Petrovica</Ulica>
+        <Broj>43</Broj>
         <NaseljenoMesto>Novi Sad</NaseljenoMesto>
         <PozivniBroj>21000</PozivniBroj>
       </Adresa>
     </LokacijaDolaskaTaksija>
     <ZeljeniAutomobil>PutnickiAutomobil</ZeljeniAutomobil>
     <Musterija>
+      <Ime />
+      <Prezime />
       <Pol>Musko</Pol>
       <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
     </Musterija>
     <Odrediste />
     <DispecerFormirao>
@@ -28,24 +31,26 @@
       <KontaktTelefon>04823875</KontaktTelefon>
       <Email>suza@gmail.com</Email>
       <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
     </DispecerFormirao>
     <VozacPrihvatio>
-      <KorisnickoIme>sanja123</KorisnickoIme>
-      <Lozinka>sanja</Lozinka>
-      <Ime>Sanja</Ime>
-      <Prezime>Sanjic</Prezime>
+      <KorisnickoIme>maca123</KorisnickoIme>
+      <Lozinka>maca</Lozinka>
+      <Ime>Marija</Ime>
+      <Prezime>Djurkovic</Prezime>
       <Pol>Zensko</Pol>
       <Jmbg>1234567891234</Jmbg>
-      <KontaktTelefon>0123</KontaktTelefon>
+      <KontaktTelefon>000999</KontaktTelefon>
       <Email>@gmail.com</Email>
       <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
       <Lok />
       <Auto>
-        <GodisteAutomobila>20</GodisteAutomobila>
-        <BrojRegistarskeOznake>NS-76-DE</BrojRegistarskeOznake>
-        <BrojTaksiVozila>3</BrojTaksiVozila>
+        <GodisteAutomobila>21</GodisteAutomobila>
+        <BrojRegistarskeOznake>ST32</BrojRegistarskeOznake>
+        <BrojTaksiVozila>1</BrojTaksiVozila>
         <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-        <UsernameVozaca>sanja123</UsernameVozaca>
+        <UsernameVozaca>maca123</UsernameVozaca>
       </Auto>
       <Zauzet>true</Zauzet>
     </VozacPrihvatio>
@@ -57,62 +62,24 @@
     <StatusVoznje>Formirana</StatusVoznje>
   </Voznja>
   <Voznja>
-    <DatumPorudzbine>2018-08-18T17:39:51.6432704+02:00</DatumPorudzbine>
+    <DatumPorudzbine>Sunday, August 19, 2018 1:22:07 PM</DatumPorudzbine>
     <LokacijaDolaskaTaksija>
-      <X>23</X>
-      <Y>55</Y>
+      <X>33</X>
+      <Y>22</Y>
       <Adresa>
-        <Ulica>Veljka Petrovica</Ulica>
+        <Ulica>Dositejeva</Ulica>
         <Broj>23</Broj>
-        <NaseljenoMesto>NOvi Sad</NaseljenoMesto>
-        <PozivniBroj>21000</PozivniBroj>
-      </Adresa>
-    </LokacijaDolaskaTaksija>
-    <ZeljeniAutomobil>Kombi</ZeljeniAutomobil>
-    <Musterija>
-      <Pol>Musko</Pol>
-      <Uloga>Musterija</Uloga>
-    </Musterija>
-    <Odrediste />
-    <DispecerFormirao>
-      <KorisnickoIme>admin</KorisnickoIme>
-      <Lozinka>admin</Lozinka>
-      <Ime>Suzana</Ime>
-      <Prezime>Jovic</Prezime>
-      <Pol>Zensko</Pol>
-      <Jmbg>1308996123456</Jmbg>
-      <KontaktTelefon>04823875</KontaktTelefon>
-      <Email>suza@gmail.com</Email>
-      <Uloga>Dispecer</Uloga>
-    </DispecerFormirao>
-    <VozacPrihvatio>
-      <Pol>Musko</Pol>
-      <Uloga>Vozac</Uloga>
-      <Zauzet>false</Zauzet>
-    </VozacPrihvatio>
-    <Iznos>0</Iznos>
-    <Komentar>
-      <DatumObjave>0001-01-01T00:00:00</DatumObjave>
-      <OcjenaVoznje>0</OcjenaVoznje>
-    </Komentar>
-    <StatusVoznje>KreiranaNaCekanju</StatusVoznje>
-  </Voznja>
-  <Voznja>
-    <DatumPorudzbine>2018-08-18T17:48:02.1147428+02:00</DatumPorudzbine>
-    <LokacijaDolaskaTaksija>
-      <X>25</X>
-      <Y>78</Y>
-      <Adresa>
-        <Ulica>Jovana Ducica</Ulica>
-        <Broj>34</Broj>
         <NaseljenoMesto>Novi Sad</NaseljenoMesto>
         <PozivniBroj>21000</PozivniBroj>
       </Adresa>
     </LokacijaDolaskaTaksija>
     <ZeljeniAutomobil>PutnickiAutomobil</ZeljeniAutomobil>
     <Musterija>
+      <Ime />
+      <Prezime />
       <Pol>Musko</Pol>
       <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
     </Musterija>
     <Odrediste />
     <DispecerFormirao>
@@ -125,10 +92,75 @@
       <KontaktTelefon>04823875</KontaktTelefon>
       <Email>suza@gmail.com</Email>
       <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
     </DispecerFormirao>
     <VozacPrihvatio>
+      <KorisnickoIme>barbi123</KorisnickoIme>
+      <Lozinka>barbi</Lozinka>
+      <Ime>Barbara</Ime>
+      <Prezime>Segrt</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>999</KontaktTelefon>
+      <Email>@gmail</Email>
+      <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
+      <Lok />
+      <Auto>
+        <GodisteAutomobila>1999</GodisteAutomobila>
+        <BrojRegistarskeOznake>SO23</BrojRegistarskeOznake>
+        <BrojTaksiVozila>2</BrojTaksiVozila>
+        <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+        <UsernameVozaca>barbi123</UsernameVozaca>
+      </Auto>
+      <Zauzet>true</Zauzet>
+    </VozacPrihvatio>
+    <Iznos>0</Iznos>
+    <Komentar>
+      <DatumObjave>0001-01-01T00:00:00</DatumObjave>
+      <OcjenaVoznje>0</OcjenaVoznje>
+    </Komentar>
+    <StatusVoznje>Formirana</StatusVoznje>
+  </Voznja>
+  <Voznja>
+    <DatumPorudzbine>Sunday, August 19, 2018 3:00:08 PM</DatumPorudzbine>
+    <LokacijaDolaskaTaksija>
+      <X>34</X>
+      <Y>21</Y>
+      <Adresa>
+        <Ulica>Cara Dusana</Ulica>
+        <Broj>32</Broj>
+        <NaseljenoMesto>Novi Sad</NaseljenoMesto>
+        <PozivniBroj>21000</PozivniBroj>
+      </Adresa>
+    </LokacijaDolaskaTaksija>
+    <ZeljeniAutomobil>PutnickiAutomobil</ZeljeniAutomobil>
+    <Musterija>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
+    </Musterija>
+    <Odrediste />
+    <DispecerFormirao>
+      <KorisnickoIme>admin</KorisnickoIme>
+      <Lozinka>admin</Lozinka>
+      <Ime>Suzana</Ime>
+      <Prezime>Jovic</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1308996123456</Jmbg>
+      <KontaktTelefon>04823875</KontaktTelefon>
+      <Email>suza@gmail.com</Email>
+      <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
+    </DispecerFormirao>
+    <VozacPrihvatio>
+      <Ime />
+      <Prezime />
       <Pol>Musko</Pol>
       <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
       <Zauzet>false</Zauzet>
     </VozacPrihvatio>
     <Iznos>0</Iznos>
@@ -139,37 +171,140 @@
     <StatusVoznje>KreiranaNaCekanju</StatusVoznje>
   </Voznja>
   <Voznja>
-    <DatumPorudzbine>2018-08-18T17:49:00.5728684+02:00</DatumPorudzbine>
+    <DatumPorudzbine>Sunday, August 19, 2018 3:00:58 PM</DatumPorudzbine>
     <LokacijaDolaskaTaksija>
-      <X>34</X>
-      <Y>45</Y>
+      <X>43</X>
+      <Y>23</Y>
       <Adresa>
-        <Ulica>Lasla Gala</Ulica>
-        <Broj>23</Broj>
+        <Ulica>Maksima Gorkog</Ulica>
+        <Broj>32</Broj>
+        <NaseljenoMesto>Novi Saada</NaseljenoMesto>
+        <PozivniBroj>21000</PozivniBroj>
+      </Adresa>
+    </LokacijaDolaskaTaksija>
+    <ZeljeniAutomobil>Kombi</ZeljeniAutomobil>
+    <Musterija>
+      <KorisnickoIme>tami</KorisnickoIme>
+      <Lozinka>tami</Lozinka>
+      <Ime>Tamara</Ime>
+      <Prezime>Gengo</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>222</KontaktTelefon>
+      <Email>@gmail</Email>
+      <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
+    </Musterija>
+    <Odrediste />
+    <DispecerFormirao>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
+    </DispecerFormirao>
+    <VozacPrihvatio>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
+      <Zauzet>false</Zauzet>
+    </VozacPrihvatio>
+    <Iznos>0</Iznos>
+    <Komentar>
+      <DatumObjave>0001-01-01T00:00:00</DatumObjave>
+      <OcjenaVoznje>0</OcjenaVoznje>
+    </Komentar>
+    <StatusVoznje>KreiranaNaCekanju</StatusVoznje>
+  </Voznja>
+  <Voznja>
+    <DatumPorudzbine>Sunday, August 19, 2018 3:02:01 PM</DatumPorudzbine>
+    <LokacijaDolaskaTaksija>
+      <X>98</X>
+      <Y>23</Y>
+      <Adresa>
+        <Ulica>Skerliceva</Ulica>
+        <Broj>32</Broj>
         <NaseljenoMesto>Novi Sad</NaseljenoMesto>
         <PozivniBroj>21000</PozivniBroj>
       </Adresa>
     </LokacijaDolaskaTaksija>
     <ZeljeniAutomobil>Kombi</ZeljeniAutomobil>
     <Musterija>
-      <Pol>Musko</Pol>
+      <KorisnickoIme>tami</KorisnickoIme>
+      <Lozinka>tami</Lozinka>
+      <Ime>Tamara</Ime>
+      <Prezime>Gengo</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>222</KontaktTelefon>
+      <Email>@gmail</Email>
       <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
     </Musterija>
     <Odrediste />
     <DispecerFormirao>
-      <KorisnickoIme>admin</KorisnickoIme>
-      <Lozinka>admin</Lozinka>
-      <Ime>Suzana</Ime>
-      <Prezime>Jovic</Prezime>
-      <Pol>Zensko</Pol>
-      <Jmbg>1308996123456</Jmbg>
-      <KontaktTelefon>04823875</KontaktTelefon>
-      <Email>suza@gmail.com</Email>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
       <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
     </DispecerFormirao>
     <VozacPrihvatio>
+      <Ime />
+      <Prezime />
       <Pol>Musko</Pol>
       <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
+      <Zauzet>false</Zauzet>
+    </VozacPrihvatio>
+    <Iznos>0</Iznos>
+    <Komentar>
+      <DatumObjave>0001-01-01T00:00:00</DatumObjave>
+      <OcjenaVoznje>3</OcjenaVoznje>
+    </Komentar>
+    <StatusVoznje>KreiranaNaCekanju</StatusVoznje>
+  </Voznja>
+  <Voznja>
+    <DatumPorudzbine>Sunday, August 19, 2018 4:23:06 PM</DatumPorudzbine>
+    <LokacijaDolaskaTaksija>
+      <X>33</X>
+      <Y>23</Y>
+      <Adresa>
+        <Ulica>ff</Ulica>
+        <Broj>43</Broj>
+        <NaseljenoMesto>Novi Sad</NaseljenoMesto>
+        <PozivniBroj>2100</PozivniBroj>
+      </Adresa>
+    </LokacijaDolaskaTaksija>
+    <ZeljeniAutomobil>PutnickiAutomobil</ZeljeniAutomobil>
+    <Musterija>
+      <KorisnickoIme>beca</KorisnickoIme>
+      <Lozinka>beca</Lozinka>
+      <Ime>Dejan</Ime>
+      <Prezime>Jovic</Prezime>
+      <Pol>Musko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>33</KontaktTelefon>
+      <Email>@gma</Email>
+      <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
+    </Musterija>
+    <Odrediste />
+    <DispecerFormirao>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
+    </DispecerFormirao>
+    <VozacPrihvatio>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
       <Zauzet>false</Zauzet>
     </VozacPrihvatio>
     <Iznos>0</Iznos>
@@ -180,21 +315,24 @@
     <StatusVoznje>KreiranaNaCekanju</StatusVoznje>
   </Voznja>
   <Voznja>
-    <DatumPorudzbine>2018-08-18T17:57:49.3814982+02:00</DatumPorudzbine>
+    <DatumPorudzbine>Sunday, August 19, 2018 5:37:51 PM</DatumPorudzbine>
     <LokacijaDolaskaTaksija>
-      <X>65</X>
-      <Y>23</Y>
+      <X>34</X>
+      <Y>21</Y>
       <Adresa>
-        <Ulica>Veljka Petrovica</Ulica>
+        <Ulica>Branka Bajica</Ulica>
         <Broj>23</Broj>
-        <NaseljenoMesto>Zrenjanin</NaseljenoMesto>
-        <PozivniBroj>32000</PozivniBroj>
+        <NaseljenoMesto>Novi Sad</NaseljenoMesto>
+        <PozivniBroj>2100</PozivniBroj>
       </Adresa>
     </LokacijaDolaskaTaksija>
-    <ZeljeniAutomobil>Kombi</ZeljeniAutomobil>
+    <ZeljeniAutomobil>PutnickiAutomobil</ZeljeniAutomobil>
     <Musterija>
+      <Ime />
+      <Prezime />
       <Pol>Musko</Pol>
       <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
     </Musterija>
     <Odrediste />
     <DispecerFormirao>
@@ -207,10 +345,75 @@
       <KontaktTelefon>04823875</KontaktTelefon>
       <Email>suza@gmail.com</Email>
       <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
     </DispecerFormirao>
     <VozacPrihvatio>
+      <KorisnickoIme>mira</KorisnickoIme>
+      <Lozinka>mira</Lozinka>
+      <Ime>Mirjana</Ime>
+      <Prezime>Jekic</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>0988</KontaktTelefon>
+      <Email>@gmail</Email>
+      <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
+      <Lok />
+      <Auto>
+        <GodisteAutomobila>30</GodisteAutomobila>
+        <BrojRegistarskeOznake>NSfff</BrojRegistarskeOznake>
+        <BrojTaksiVozila>4</BrojTaksiVozila>
+        <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+        <UsernameVozaca>mira</UsernameVozaca>
+      </Auto>
+      <Zauzet>true</Zauzet>
+    </VozacPrihvatio>
+    <Iznos>0</Iznos>
+    <Komentar>
+      <DatumObjave>0001-01-01T00:00:00</DatumObjave>
+      <OcjenaVoznje>4</OcjenaVoznje>
+    </Komentar>
+    <StatusVoznje>Formirana</StatusVoznje>
+  </Voznja>
+  <Voznja>
+    <DatumPorudzbine>Sunday, August 19, 2018 5:46:50 PM</DatumPorudzbine>
+    <LokacijaDolaskaTaksija>
+      <X>32</X>
+      <Y>23</Y>
+      <Adresa>
+        <Ulica>Save Milosevica</Ulica>
+        <Broj>10</Broj>
+        <NaseljenoMesto>Novi Sad</NaseljenoMesto>
+        <PozivniBroj>21000</PozivniBroj>
+      </Adresa>
+    </LokacijaDolaskaTaksija>
+    <ZeljeniAutomobil>PutnickiAutomobil</ZeljeniAutomobil>
+    <Musterija>
+      <KorisnickoIme>duda</KorisnickoIme>
+      <Lozinka>duda</Lozinka>
+      <Ime>Dubravka</Ime>
+      <Prezime>Karadarevic</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>333</KontaktTelefon>
+      <Email>@g</Email>
+      <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
+    </Musterija>
+    <Odrediste />
+    <DispecerFormirao>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
+    </DispecerFormirao>
+    <VozacPrihvatio>
+      <Ime />
+      <Prezime />
       <Pol>Musko</Pol>
       <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
       <Zauzet>false</Zauzet>
     </VozacPrihvatio>
     <Iznos>0</Iznos>

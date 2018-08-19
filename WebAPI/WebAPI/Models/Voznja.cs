@@ -8,8 +8,12 @@ namespace WebAPI.Models
 {
     public class Voznja
     {
-        
-        public DateTime DatumPorudzbine { get; set; }
+        public Voznja()
+        {
+            Iznos = -1;
+        }
+
+        public string DatumPorudzbine { get; set; }
         public Lokacija LokacijaDolaskaTaksija { get; set; } // Lokacija na koju taksi dolazi
         public TipAutomobila ZeljeniAutomobil { get; set; }
         public Musterija Musterija { get; set; }

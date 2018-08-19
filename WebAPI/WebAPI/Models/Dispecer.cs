@@ -11,6 +11,9 @@ namespace WebAPI.Models
         public Dispecer()
         {
             Uloga = UlogaKorisnika.Dispecer;
+            KorisnikVoznje = new List<Voznja>();
+            Ime = "";
+            Prezime = "";
         }
     }
 }

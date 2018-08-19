@@ -171,9 +171,12 @@
     <Compile Include="Models\Dispecer.cs" />
     <Compile Include="Models\DodatniModeli\KorisnikFilter.cs" />
     <Compile Include="Models\DodatniModeli\KorisnikPomocna.cs" />
+    <Compile Include="Models\DodatniModeli\KorisnikSort.cs" />
     <Compile Include="Models\DodatniModeli\KorisnikZaLogovanje.cs" />
     <Compile Include="Models\DodatniModeli\LogovaniKorisnik.cs" />
     <Compile Include="Models\DodatniModeli\MusterijaPomocni.cs" />
+    <Compile Include="Models\DodatniModeli\PomocniModeli.cs" />
+    <Compile Include="Models\DodatniModeli\PretraziModel.cs" />
     <Compile Include="Models\DodatniModeli\VozacPomocna.cs" />
     <Compile Include="Models\DodatniModeli\VoznjaPomocna.cs" />
     <Compile Include="Models\Enumeracije\Pol.cs" />
@@ -215,9 +218,6 @@
     <Content Include="HTMLStranice\MyHome.html" />
     <Content Include="HTMLStranice\Profile.html" />
     <Content Include="HTMLStranice\Register.html" />
-    <Content Include="JSControllers\FilterController.js" />
-    <Content Include="JSControllers\HomeDrivesAll.js" />
-    <Content Include="JSControllers\HomeDrivesWaiting.js" />
     <Content Include="JSControllers\JSRegILogController.js" />
     <Content Include="JSControllers\MainController.js" />
     <Content Include="JSControllers\MyHomeController.js" />

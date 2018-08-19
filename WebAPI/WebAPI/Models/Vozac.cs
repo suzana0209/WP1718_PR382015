@@ -11,6 +11,9 @@ namespace WebAPI.Models
         public Vozac()
         {
             Uloga = UlogaKorisnika.Vozac;
+            KorisnikVoznje = new List<Voznja>();
+            Ime = "";
+            Prezime = "";
         }
 
         public Lokacija Lok { get; set; }

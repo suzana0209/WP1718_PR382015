@@ -45,20 +45,6 @@ WebAPI.config(function ($routeProvider) {
                 controller: 'ProfileController',
                 templateUrl: 'HTMLStranice/Edit.html',
                 activeTab: 'Edit'
-            }).when('/HomeAll/:username',
-            {
-                controller: 'HomeDrivesAll',
-                templateUrl: 'HTMLStranice/MyHome.html',
-                activetab: 'none'
-            }).when('/HomeWaiting/:username',
-            {
-                controller: 'HomeDrivesWaiting',
-                templateUrl: 'HTMLStranice/MyHome.html',
-                activetab: 'none'
-            }).when('/Filter/:Status',
-            {
-                controller: 'FilterController',
-                templateUrl: 'HTMLStranice/MyHome.html',
-                activetab: 'none'
+            
             })
 });

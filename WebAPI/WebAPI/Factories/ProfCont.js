@@ -39,14 +39,55 @@
     factory.getWaitingDrives = function (username) {
         return $http.get('/api/Prof/GetWaitingDrives?username=' + username);
     }
-    factory.Filter = function (fu) {
+    factory.Filter = function (Drives, fu) {
         return $http.post('/api/Prof/GetFilterUser',
             {
                 Username: sessionStorage.getItem("username"),
                 Uloga: sessionStorage.getItem("role"),
-                Status: fu
+                Status: fu,
+                Drivess: Drives
             });
     }
+
+    factory.Pretrazi = function (Drives, su) {
+        return $http.post('/api/Prof/Pretraga',
+            {
+                Username: sessionStorage.getItem("username"),
+                Uloga: sessionStorage.getItem("role"),
+                Drivess: Drives,
+                DatumOd: su.DatumOd,
+                DatumDo: su.DatumDo,
+                OcenaOd: su.OcenaOd,
+                OcenaDo: su.OcenaDo,
+                CenaOd: su.CenaOd,
+                CenaDo: su.CenaDo,
+                VozIme: su.VozIme,
+                VozPrezime: su.VozPrezime,
+                MustIme: su.MustIme,
+                MustPrezime: su.MustPrezime
+            });
+    }
+
+    //factory.Filter2 = function (Drives,fu) {
+    //    return $http.post('/api/Prof/GetFilterUserAll',
+    //        {
+    //            Username: sessionStorage.getItem("username"),
+    //            Uloga: sessionStorage.getItem("role"),
+    //            Status: fu,
+    //            Drivess: Drives
+    //        });
+    //}
+    factory.Sorting = function (Drives,fu) {
+        return $http.post('/api/Prof/SortingUser',
+            {
+                Username: sessionStorage.getItem("username"),
+                Uloga: sessionStorage.getItem("role"),
+                Status: "none",
+                Drivess: Drives,
+                PoCemu: fu
+            });
+    }
+
     factory.EditUser = function (user) {  //klasa KorisnikPomocna
         return $http.post('/api/Prof/Edit', {
             Username: user.username,

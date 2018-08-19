@@ -5,11 +5,12 @@ using System.Web;
 
 namespace WebAPI.Models.DodatniModeli
 {
-    public class KorisnikFilter
+    public class KorisnikSort
     {
         public string Username { get; set; }
         public string Uloga { get; set; }
         public string Status { get; set; }
         public List<Voznja> Drivess { get; set; }
+        public int PoCemu { get; set; }
     }
 }
