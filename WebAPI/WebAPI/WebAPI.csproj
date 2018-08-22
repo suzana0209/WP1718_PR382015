@@ -174,9 +174,15 @@
     <Compile Include="Models\DodatniModeli\KorisnikSort.cs" />
     <Compile Include="Models\DodatniModeli\KorisnikZaLogovanje.cs" />
     <Compile Include="Models\DodatniModeli\LogovaniKorisnik.cs" />
+    <Compile Include="Models\DodatniModeli\LokacijaOdrediste.cs" />
+    <Compile Include="Models\DodatniModeli\ModelZaObradiVoznju.cs" />
     <Compile Include="Models\DodatniModeli\MusterijaPomocni.cs" />
+    <Compile Include="Models\DodatniModeli\PodaciOVozacu.cs" />
+    <Compile Include="Models\DodatniModeli\PomocnaVoznja.cs" />
+    <Compile Include="Models\DodatniModeli\PomocniKomentar.cs" />
     <Compile Include="Models\DodatniModeli\PomocniModeli.cs" />
     <Compile Include="Models\DodatniModeli\PretraziModel.cs" />
+    <Compile Include="Models\DodatniModeli\VozacevKomentar.cs" />
     <Compile Include="Models\DodatniModeli\VozacPomocna.cs" />
     <Compile Include="Models\DodatniModeli\VoznjaPomocna.cs" />
     <Compile Include="Models\Enumeracije\Pol.cs" />
@@ -211,6 +217,7 @@
     <Content Include="Factories\RegILogFactory.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="HTMLStranice\Comment.html" />
     <Content Include="HTMLStranice\DriveGet.html" />
     <Content Include="HTMLStranice\DriverGet.html" />
     <Content Include="HTMLStranice\Edit.html" />
@@ -218,6 +225,8 @@
     <Content Include="HTMLStranice\MyHome.html" />
     <Content Include="HTMLStranice\Profile.html" />
     <Content Include="HTMLStranice\Register.html" />
+    <Content Include="HTMLStranice\ZavrsiVoznju.html" />
+    <Content Include="JSControllers\CommentController.js" />
     <Content Include="JSControllers\JSRegILogController.js" />
     <Content Include="JSControllers\MainController.js" />
     <Content Include="JSControllers\MyHomeController.js" />

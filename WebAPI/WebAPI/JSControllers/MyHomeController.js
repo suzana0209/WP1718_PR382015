@@ -1,4 +1,4 @@
-﻿WebAPI.controller('MyHomeController', function ($scope, $rootScope, RegILogFactory, ProfCont, $window) {
+﻿WebAPI.controller('MyHomeController', function ($scope, $rootScope, RegILogFactory, ProfCont, $window, $route) {
     if (!$rootScope.loggedin) {
         $window.location.href = '#!/Login';
     }
@@ -21,7 +21,13 @@
             $scope.filtFlag = 0;
             console.log(response.data);
         });
+
+        ProfCont.getDriverData(sessionStorage.getItem("username")).then(function (response) {
+            $scope.DriverData = response.data;
+        });
+
     }
+
     init();
 
     $scope.Sorting = function (Drives, broj) {
@@ -117,7 +123,7 @@
         //else {
         if (su.OcenaOd != null) {
             if (!/^\d+$/.test(su.OcenaOd)) {
-                alert("Uneta ocena mora biti broj");
+                alert("Uneta ocjena mora biti broj");
                 return;
             }
         }
@@ -130,7 +136,7 @@
         //else {
         if (su.OcenaDo != null) {
             if (!/^\d+$/.test(su.OcenaDo)) {
-                alert("Uneta ocena mora biti broj");
+                alert("Unijeta ocjena mora biti broj");
                 return;
             }
         }
@@ -143,7 +149,7 @@
         //else {
         if (su.CenaOd != null) {
             if (!/^\d+$/.test(su.CenaOd)) {
-                alert("Uneta cena mora biti broj");
+                alert("Unijeta cijena mora biti broj");
                 return;
             }
         }
@@ -156,7 +162,7 @@
         //else {
         if (su.CenaDo != null) {
             if (!/^\d+$/.test(su.CenaDo)) {
-                alert("Uneta cena mora biti broj");
+                alert("Unijeta cijena mora biti broj");
                 return;
             }
         }
@@ -190,6 +196,77 @@
             $scope.filtFlag = 2;
             //$scope.Drives = response.data;
         });
+    }
+
+    $scope.OtkaziVoznju = function (drive) {
+        //if (Status == null || Status == "") {
+        //    alert('Morate uneti po cemu zelite da sortirate!')
+        //    return;
+        //}
+        ProfCont.OtkaziVoznju(drive).then(function (response) {
+            console.log(response.data);
+            $rootScope.VoznjaZaKomentar = response.data;
+            $window.location.href = "#!/DodajKomentar";
+        });
+    }
+
+    $scope.ObradiVoznju = function (drive, drives) {
+        ProfCont.ObradiVoznju(drive, drives).then(function (response) {
+            console.log(response.data);
+            if ($scope.listaFlag == 1) {
+                $scope.MyDrives = response.data;
+                $scope.apply();
+            }
+            if ($scope.listaFlag == 2) {
+                $scope.AllDrives = response.data;
+                $scope.apply();
+            }
+            if ($scope.listaFlag == 4) {
+                $scope.SortedDrives = response.data;
+                $scope.apply();
+            }
+            if ($scope.listaFlag == 5) {
+                $scope.FilteredDrives = response.data;
+                $scope.apply();
+            }
+            if ($scope.listaFlag == 6) {
+                $scope.SearchedDrives = response.data;
+                $scope.apply();
+            }
+        });
+    }
+    $scope.PreuzmiVoznju = function (drive, drives) {
+        ProfCont.PreuzmiVoznju(drive, drives).then(function (response) {
+            console.log(response.data);
+            $scope.DriverData.Zauzet = true;
+            if ($scope.listaFlag == 3) {
+                $scope.WaitingDrives = response.data;
+                //$scope.apply();
+            }
+            if ($scope.listaFlag == 4) {
+                $scope.SortedDrives = response.data;
+                //$scope.apply();
+            }
+            if ($scope.listaFlag == 6) {
+                $scope.SearchedDrives = response.data;
+                // $scope.apply();
+            }
+            $scope.apply();
+        });
+    }
+    $scope.ZavrsiVoznju = function (drive) {
+        $rootScope.VoznjaZaKomentarVozac = drive;
+        $window.location.href = "#!/ZavrsiVoznju";
+    }
+    $scope.DodajKomentar = function (drive) {
+        if (drive == null) {
+            return;
+        }
+        $rootScope.VoznjaZaKomentar = drive;
+
+
+        $window.location.href = "#!/DodajKomentar";
+
     }
 
 }); 

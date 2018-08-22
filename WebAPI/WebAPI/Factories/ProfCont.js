@@ -13,7 +13,6 @@
             PostalCode: drive.PostalCode,
             tipAuta: drive.tipAuta,
             korisnicko: sessionStorage.getItem("username")
-
         });
     }
     factory.AddDriveDispecer = function (drive) {
@@ -77,6 +76,9 @@
     //            Drivess: Drives
     //        });
     //}
+
+
+
     factory.Sorting = function (Drives,fu) {
         return $http.post('/api/Prof/SortingUser',
             {
@@ -98,6 +100,59 @@
             Jmbg: user.jmbg,
             Telefon: user.kontaktTelefon,
             Email: user.email
+        });
+    }
+
+    factory.OtkaziVoznju = function (drive) {
+        return $http.post('/api/Prof/OtkaziVoznju', {
+            Voznj: drive
+        });
+    }
+
+    factory.DodajKomentar = function (ko, voz) { //Objekat PomocniKomentar
+        return $http.post('/api/Prof/Komentarisanje',
+            {
+                KomOpis: ko.Opis,
+                KomOcena: ko.Ocena,
+                Voz: voz
+            });
+    }
+
+    factory.ObradiVoznju = function (drive, drives) {
+        return $http.post('/api/Prof/ObradiVoznju', {
+            Username: sessionStorage.getItem("username"),
+            Voznj: drive,
+            ListaVoznji: drives
+        });
+    }
+    factory.PreuzmiVoznju = function (drive, drives) {
+        return $http.post('/api/Prof/PreuzmiVoznju', {
+            Username: sessionStorage.getItem("username"),
+            Voznj: drive,
+            ListaVoznji: drives
+        });
+    }
+    factory.getDriverData = function (username) {
+        return $http.get('/api/Prof/getDriverData?username=' + username);
+    }
+    factory.DodajKomentarVozac = function (ko, voz) {
+        return $http.post('/api/Prof/KomentarisanjeVozac',
+            {
+                Opis: ko.Opis,
+                Voz: voz
+            });
+    }
+    factory.DodajKraj = function (drive, dri) {
+        return $http.post('/api/Prof/DodajKraj', {
+            Cena: drive.Cena,
+            XCoord: drive.XCoord,
+            YCoord: drive.YCoord,
+            Street: drive.Street,
+            Number: drive.Number,
+            Town: drive.Town,
+            PostalCode: drive.PostalCode,
+            Voz: dri
+
         });
     }
 

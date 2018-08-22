@@ -166,7 +166,7 @@ namespace WebAPI.Controllers
             bool imaSlobodan = false;
             foreach (Vozac v in vozaci)
             {
-                if ((!v.Zauzet) && (v.Auto.TipAutomobila == (TipAutomobila)int.Parse(k.tipAuta)))
+                if((!v.Zauzet) && (v.Auto.TipAutomobila == (TipAutomobila)int.Parse(k.tipAuta)))
                 {
                     v.Zauzet = true;
                     drive.VozacPrihvatio = v;
@@ -478,6 +478,269 @@ namespace WebAPI.Controllers
 
             // List<Voznja> sortiranaVoznja = listaDrives.OrderByDescending(o => o.Komentar.OcjenaVoznje).ToList();
             return sortiranaVoznja;
+        }
+
+        [HttpPost]
+        [ActionName("OtkaziVoznju")]
+        public Voznja OtkaziVoznju([FromBody]PomocnaVoznja k)
+        {
+            string ss = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Voznje.xml");
+            List<Voznja> lista = xml.ReadDrives(ss);
+            Voznja ret = new Voznja();
+            foreach (Voznja v in lista)
+            {
+                if (v.Musterija.KorisnickoIme == k.Voznj.Musterija.KorisnickoIme && DateTime.Parse(v.DatumPorudzbine) == DateTime.Parse(k.Voznj.DatumPorudzbine))
+                {
+                    v.StatusVoznje = StatusVoznje.Otkazana;
+                    ret = v;
+                    break;
+                }
+            }
+            xml.WriteDrives(lista, ss);
+            return ret;
+        }
+
+        [HttpPost]
+        [ActionName("Komentarisanje")]
+        public bool Komentarisanje([FromBody]PomocniKomentar k)
+        {
+            string ss = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Voznje.xml");
+            List<Voznja> lista = xml.ReadDrives(ss);
+            bool ret = false;
+            foreach (Voznja v in lista)
+            {
+                if (v.Musterija.KorisnickoIme == k.Voz.Musterija.KorisnickoIme && DateTime.Parse(v.DatumPorudzbine) == DateTime.Parse(k.Voz.DatumPorudzbine))
+                {
+                    v.Komentar.DatumObjave = DateTime.Parse(String.Format("{0:F}", DateTime.Now));
+                    v.Komentar.Opis = k.KomOpis;
+                    v.Komentar.OcjenaVoznje = int.Parse(k.KomOcena);
+                    v.Komentar.KorisnikOstavioKom = k.Voz.Komentar.KorisnikOstavioKom;
+                    ret = true;
+                    break;
+                }
+            }
+            xml.WriteDrives(lista, ss);
+            return ret;
+        }
+
+        [HttpPost]
+        [ActionName("ObradiVoznju")]
+        public List<Voznja> ObradiVoznju([FromBody]ModelZaObradiVoznju k)
+        {
+            string ss = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Voznje.xml");
+            string ss1 = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Vozaci.xml");
+            string ss2 = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Dispeceri.xml");
+            List<Voznja> lista = xml.ReadDrives(ss);
+            List<Vozac> lv = xml.ReadDrivers(ss1);
+            List<Dispecer> dispi = xml.ReadDispecer(ss2);
+            Vozac vozacsl = new Vozac();
+            Voznja voznja = new Voznja();
+            bool nasao = false;
+            foreach (Vozac vv in lv)
+            {
+                if (!vv.Zauzet && vv.Auto.TipAutomobila == k.Voznj.ZeljeniAutomobil)
+                {
+                    nasao = true;
+                    vv.Zauzet = true;
+                    vozacsl = vv;
+                    break;
+                }
+            }
+            List<Voznja> retL = k.ListaVoznji;
+            Dispecer dispe = new Dispecer();
+            foreach (Dispecer d in dispi)
+            {
+                if (d.KorisnickoIme == k.Username)
+                {
+                    dispe = d;
+                }
+            }
+            if (nasao)
+            {
+                foreach (Voznja v in lista)
+                {
+                    if ((v.Musterija.KorisnickoIme == k.Voznj.Musterija.KorisnickoIme || v.DispecerFormirao.KorisnickoIme == k.Voznj.DispecerFormirao.KorisnickoIme) && 
+                        DateTime.Parse(v.DatumPorudzbine) == DateTime.Parse(k.Voznj.DatumPorudzbine))
+                    {
+                        v.StatusVoznje = StatusVoznje.Obradjena;
+                        v.VozacPrihvatio = vozacsl;
+                        v.DispecerFormirao = dispe;
+                        break;
+                    }
+                }
+                foreach (Voznja vvv in retL)
+                {
+                    if ((vvv.Musterija.KorisnickoIme == k.Voznj.Musterija.KorisnickoIme || vvv.DispecerFormirao.KorisnickoIme == k.Voznj.DispecerFormirao.KorisnickoIme) && 
+                        DateTime.Parse(vvv.DatumPorudzbine) == DateTime.Parse(k.Voznj.DatumPorudzbine))
+                    {
+                        vvv.StatusVoznje = StatusVoznje.Obradjena;
+                        vvv.DispecerFormirao = dispe;
+                        vvv.VozacPrihvatio = vozacsl;
+                    }
+                }
+                xml.WriteDrives(lista, ss);
+                xml.WriteDrivers(lv, ss1);
+            }
+            return retL;
+        }
+        [HttpPost]
+        [ActionName("PreuzmiVoznju")]
+        public List<Voznja> PreuzmiVoznju([FromBody]ModelZaObradiVoznju k)
+        {
+            string ss = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Voznje.xml");
+            string ss1 = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Vozaci.xml");
+
+            List<Voznja> lista = xml.ReadDrives(ss);
+            List<Vozac> lv = xml.ReadDrivers(ss1);
+
+            Vozac vozacsl = new Vozac();
+            Voznja voznja = new Voznja();
+            bool nasao = false;
+            foreach (Vozac vv in lv)
+            {
+                if (vv.KorisnickoIme == k.Username)
+                {
+                    nasao = true;
+                    vv.Zauzet = true;
+                    vozacsl = vv;
+                    break;
+                }
+            }
+            List<Voznja> retL = k.ListaVoznji;
+            if (nasao)
+            {
+                foreach (Voznja v in lista)
+                {
+                    if ((v.Musterija.KorisnickoIme == k.Voznj.Musterija.KorisnickoIme || v.DispecerFormirao.KorisnickoIme == k.Voznj.DispecerFormirao.KorisnickoIme) && 
+                        DateTime.Parse(v.DatumPorudzbine) == DateTime.Parse(k.Voznj.DatumPorudzbine))
+                    {
+                        v.StatusVoznje = StatusVoznje.Prihvacena;
+                        v.VozacPrihvatio = vozacsl;
+                        break;
+                    }
+                }
+                foreach (Voznja vvv in retL)
+                {
+                    if ((vvv.Musterija.KorisnickoIme == k.Voznj.Musterija.KorisnickoIme || vvv.DispecerFormirao.KorisnickoIme == k.Voznj.DispecerFormirao.KorisnickoIme) && 
+                        DateTime.Parse(vvv.DatumPorudzbine) == DateTime.Parse(k.Voznj.DatumPorudzbine))
+                    {
+                        retL.Remove(vvv);
+                        break;
+                    }
+                }
+                xml.WriteDrives(lista, ss);
+                xml.WriteDrivers(lv, ss1);
+            }
+            return retL;
+        }
+        [HttpGet]
+        [ActionName("getDriverData")]
+        public PodaciOVozacu getDriverData(string username)
+        {
+            string ss = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Vozaci.xml");
+            PodaciOVozacu po = new PodaciOVozacu();
+            List<Vozac> listaDrives = xml.ReadDrivers(ss);
+            bool nasao = false;
+            foreach (Vozac d in listaDrives)
+            {
+                if (d.KorisnickoIme == username)
+                {
+                    po.Zauzet = d.Zauzet;
+                    po.TipA = d.Auto.TipAutomobila;
+                    nasao = true;
+                    break;
+                }
+            }
+            if (!nasao)
+            {
+                po.Zauzet = true;
+                po.TipA = TipAutomobila.NemaTip;
+            }
+            return po;
+        }
+
+        [HttpPost]
+        [ActionName("KomentarisanjeVozac")]
+        public bool KomentarisanjeVozac([FromBody]VozacevKomentar k)
+        {
+            string ss = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Voznje.xml");
+            string ss1 = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Vozaci.xml");
+            List<Voznja> lista = xml.ReadDrives(ss);
+            List<Vozac> lv = xml.ReadDrivers(ss1);
+            bool ret = false;
+            foreach (Voznja v in lista)
+            {
+                if (v.VozacPrihvatio.KorisnickoIme == k.Voz.VozacPrihvatio.KorisnickoIme && 
+                    DateTime.Parse(v.DatumPorudzbine) == DateTime.Parse(k.Voz.DatumPorudzbine))
+                {
+                    v.Komentar.DatumObjave = DateTime.Parse(String.Format("{0:F}", DateTime.Now));
+                    v.Komentar.Opis = k.Kometar;
+                    v.Komentar.OcjenaVoznje = 0;
+                    v.Komentar.KorisnikOstavioKom = k.Voz.VozacPrihvatio.KorisnickoIme;
+                    v.VozacPrihvatio.Zauzet = false;
+                    v.StatusVoznje = StatusVoznje.Neuspjesna;
+                    ret = true;
+                    break;
+                }
+            }
+            if (ret)
+            {
+                foreach (Vozac vo in lv)
+                {
+                    if (vo.KorisnickoIme == k.Voz.VozacPrihvatio.KorisnickoIme)
+                    {
+                        vo.Zauzet = false;
+                        break;
+                    }
+                }
+            }
+            xml.WriteDrives(lista, ss);
+            xml.WriteDrivers(lv, ss1);
+            return ret;
+        }
+
+
+        [HttpPost]
+        [ActionName("DodajKraj")]
+        public bool DodajKraj([FromBody]LokacijaOdrediste k)
+        {
+            string ss = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Voznje.xml");
+            string ss1 = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Vozaci.xml");
+            List<Voznja> lista = xml.ReadDrives(ss);
+            List<Vozac> lv = xml.ReadDrivers(ss1);
+            bool ret = false;
+            foreach (Voznja v in lista)
+            {
+                if (v.VozacPrihvatio.KorisnickoIme == k.Voz.VozacPrihvatio.KorisnickoIme && 
+                    DateTime.Parse(v.DatumPorudzbine) == DateTime.Parse(k.Voz.DatumPorudzbine))
+                {
+                    v.Iznos = k.Cena;
+                    v.Odrediste.X = k.XCoord;
+                    v.Odrediste.Y = k.YCoord;
+                    v.Odrediste.Adresa.Ulica = k.Street;
+                    v.Odrediste.Adresa.Broj = k.Number;
+                    v.Odrediste.Adresa.NaseljenoMesto = k.Town;
+                    v.Odrediste.Adresa.PozivniBroj = Int32.Parse(k.PostalCode);
+                    v.VozacPrihvatio.Zauzet = false;
+                    v.StatusVoznje = StatusVoznje.Uspjesna;
+                    ret = true;
+                    break;
+                }
+            }
+            if (ret)
+            {
+                foreach (Vozac vo in lv)
+                {
+                    if (vo.KorisnickoIme == k.Voz.VozacPrihvatio.KorisnickoIme)
+                    {
+                        vo.Zauzet = false;
+                        break;
+                    }
+                }
+            }
+            xml.WriteDrives(lista, ss);
+            xml.WriteDrivers(lv, ss1);
+            return ret;
         }
     }
 }

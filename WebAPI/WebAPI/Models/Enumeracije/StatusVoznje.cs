@@ -12,7 +12,7 @@ namespace WebAPI.Models.Enumeracije
         Obradjena,
         Prihvacena,
         Otkazana,
-        Uspjesna,
-        Neuspjesna
+        Neuspjesna,
+        Uspjesna
     }
 }

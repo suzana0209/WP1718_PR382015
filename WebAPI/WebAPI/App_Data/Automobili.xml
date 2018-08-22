@@ -42,4 +42,18 @@
     <TipAutomobila>PutnickiAutomobil</TipAutomobila>
     <UsernameVozaca>ma</UsernameVozaca>
   </Automobil>
+  <Automobil>
+    <GodisteAutomobila>36</GodisteAutomobila>
+    <BrojRegistarskeOznake>NS545</BrojRegistarskeOznake>
+    <BrojTaksiVozila>7</BrojTaksiVozila>
+    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+    <UsernameVozaca>nina</UsernameVozaca>
+  </Automobil>
+  <Automobil>
+    <GodisteAutomobila>2005</GodisteAutomobila>
+    <BrojRegistarskeOznake>SA32</BrojRegistarskeOznake>
+    <BrojTaksiVozila>8</BrojTaksiVozila>
+    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+    <UsernameVozaca>magi</UsernameVozaca>
+  </Automobil>
 </ArrayOfAutomobil>

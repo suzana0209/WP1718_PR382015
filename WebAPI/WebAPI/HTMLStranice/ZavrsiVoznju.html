@@ -1,0 +1,68 @@
+﻿<br />
+<br />
+<br />
+<button type="submit" ng-click="UspesnaVoznja()">Uspjesna</button>
+<button type="submit" ng-click="NeuspesnaVoznja()">Neuspjesna</button>
+<div ng-show="Usp">
+    <div class="form-group">
+        <div class="form-group">
+            <label>Unesite cijenu voznje: </label>
+            <input type="number" id="cena" ng-model="drive.Cena" />
+        </div>
+        <label>Unesite krajnju lokaciju: </label>
+        <div>
+            <div id="map" class="map"></div>
+            <script type="text/javascript">
+                    var map = new ol.Map({
+                        target: 'map',
+                        layers: [
+                            new ol.layer.Tile({
+                                source: new ol.source.OSM()
+                            })
+                        ],
+                        view: new ol.View({
+                            center: ol.proj.fromLonLat([37.41, 8.82]),
+                            zoom: 4
+                        })
+                    });
+            </script>
+        </div>
+        <div class="form-group">
+            <input type="text" class="t" id="xCoord" ng-model="drive.XCoord" required placeholder="X koordinata">
+        </div>
+        <div class="form-group">
+            <input type="text" class="t" id="yCoord" ng-model="drive.YCoord" required placeholder="Y koordinata">
+        </div>
+        <div class="form-group">
+            <input type="text" class="t" id="street" ng-model="drive.Street" required placeholder="Ulica">
+        </div>
+        <div class="form-group">
+            <input type="text" class="t" id="number" ng-model="drive.Number" required placeholder="Broj">
+        </div>
+        <div class="form-group">
+            <input type="text" class="t" id="town" ng-model="drive.Town" required placeholder="Grad">
+        </div>
+        <div class="form-group">
+            <input type="text" class="t" id="postalCode" ng-model="drive.PostalCode" required placeholder="Postanski broj">
+        </div>
+        <button type="submit" ng-click="DodajKraj(drive)">Zavrsite voznju</button>
+    </div>
+</div>
+<div ng-show="Neusp">
+    <h1>Ostavite komentar</h1>
+    <div class="form-group">
+        <table>
+            <tr>
+                <td>Opis:</td>
+                <td>
+                    <textarea required class="form-control" placeholder="Ostavite komentar..." ng-model="ko.Opis"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit" ng-click="DodajKomentarVozac(ko)">Dodajte komentar</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -36,4 +36,76 @@
     <Uloga>Musterija</Uloga>
     <KorisnikVoznje />
   </Musterija>
+  <Musterija>
+    <KorisnickoIme>rina</KorisnickoIme>
+    <Lozinka>rina</Lozinka>
+    <Ime>Irina</Ime>
+    <Prezime>Jovanovic</Prezime>
+    <Pol>Zensko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>333</KontaktTelefon>
+    <Email>@gg</Email>
+    <Uloga>Musterija</Uloga>
+    <KorisnikVoznje />
+  </Musterija>
+  <Musterija>
+    <KorisnickoIme>sofi</KorisnickoIme>
+    <Lozinka>sofi</Lozinka>
+    <Ime>Sofija</Ime>
+    <Prezime>Bijelic</Prezime>
+    <Pol>Zensko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>222</KontaktTelefon>
+    <Email>@gmail</Email>
+    <Uloga>Musterija</Uloga>
+    <KorisnikVoznje />
+  </Musterija>
+  <Musterija>
+    <KorisnickoIme>micko</KorisnickoIme>
+    <Lozinka>micko</Lozinka>
+    <Ime>Mihailo</Ime>
+    <Prezime>Bijelic</Prezime>
+    <Pol>Musko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>5345</KontaktTelefon>
+    <Email>@gm</Email>
+    <Uloga>Musterija</Uloga>
+    <KorisnikVoznje />
+  </Musterija>
+  <Musterija>
+    <KorisnickoIme>laky</KorisnickoIme>
+    <Lozinka>laky</Lozinka>
+    <Ime>Lazar</Ime>
+    <Prezime>Petrovic</Prezime>
+    <Pol>Musko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>555</KontaktTelefon>
+    <Email>@gmai</Email>
+    <Uloga>Musterija</Uloga>
+    <KorisnikVoznje />
+  </Musterija>
+  <Musterija>
+    <KorisnickoIme>miki</KorisnickoIme>
+    <Lozinka>miki</Lozinka>
+    <Ime>Milan</Ime>
+    <Prezime>Milanovic</Prezime>
+    <Pol>Musko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>33</KontaktTelefon>
+    <Email>@gma</Email>
+    <Uloga>Musterija</Uloga>
+    <KorisnikVoznje />
+  </Musterija>
+  <Musterija>
+    <KorisnickoIme>milan</KorisnickoIme>
+    <Lozinka>milan</Lozinka>
+    <Ime>Milan</Ime>
+    <Prezime>Mladenovic</Prezime>
+    <Pol>Musko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>444</KontaktTelefon>
+    <Email>@gmail.com</Email>
+    <Uloga>Musterija</Uloga>
+    <KorisnikVoznje />
+  </Musterija>
 </ArrayOfMusterija>

@@ -45,6 +45,15 @@ WebAPI.config(function ($routeProvider) {
                 controller: 'ProfileController',
                 templateUrl: 'HTMLStranice/Edit.html',
                 activeTab: 'Edit'
-            
+            }).when('/DodajKomentar',
+            {
+                controller: 'CommentController',
+                templateUrl: 'HTMLStranice/Comment.html',
+                activeTab: 'none'
+            }).when('/ZavrsiVoznju',
+            {
+                controller: 'CommentController',
+                templateUrl: 'HTMLStranice/ZavrsiVoznju.html',
+                activeTab: 'none'
             })
 });

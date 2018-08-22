@@ -11,7 +11,16 @@
     <Email>@gmail.com</Email>
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
-    <Lok />
+    <Lok>
+      <X />
+      <Y />
+      <Adresa>
+        <Ulica />
+        <Broj />
+        <NaseljenoMesto />
+        <PozivniBroj>0</PozivniBroj>
+      </Adresa>
+    </Lok>
     <Auto>
       <GodisteAutomobila>21</GodisteAutomobila>
       <BrojRegistarskeOznake>ST32</BrojRegistarskeOznake>
@@ -32,7 +41,16 @@
     <Email>@gmail</Email>
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
-    <Lok />
+    <Lok>
+      <X />
+      <Y />
+      <Adresa>
+        <Ulica />
+        <Broj />
+        <NaseljenoMesto />
+        <PozivniBroj>0</PozivniBroj>
+      </Adresa>
+    </Lok>
     <Auto>
       <GodisteAutomobila>1999</GodisteAutomobila>
       <BrojRegistarskeOznake>SO23</BrojRegistarskeOznake>
@@ -53,7 +71,16 @@
     <Email>@gmail</Email>
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
-    <Lok />
+    <Lok>
+      <X />
+      <Y />
+      <Adresa>
+        <Ulica />
+        <Broj />
+        <NaseljenoMesto />
+        <PozivniBroj>0</PozivniBroj>
+      </Adresa>
+    </Lok>
     <Auto>
       <GodisteAutomobila>1996</GodisteAutomobila>
       <BrojRegistarskeOznake>NS233</BrojRegistarskeOznake>
@@ -74,7 +101,16 @@
     <Email>@gmail</Email>
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
-    <Lok />
+    <Lok>
+      <X />
+      <Y />
+      <Adresa>
+        <Ulica />
+        <Broj />
+        <NaseljenoMesto />
+        <PozivniBroj>0</PozivniBroj>
+      </Adresa>
+    </Lok>
     <Auto>
       <GodisteAutomobila>30</GodisteAutomobila>
       <BrojRegistarskeOznake>NSfff</BrojRegistarskeOznake>
@@ -82,7 +118,7 @@
       <TipAutomobila>PutnickiAutomobil</TipAutomobila>
       <UsernameVozaca>mira</UsernameVozaca>
     </Auto>
-    <Zauzet>true</Zauzet>
+    <Zauzet>false</Zauzet>
   </Vozac>
   <Vozac>
     <KorisnickoIme>dejo</KorisnickoIme>
@@ -95,7 +131,16 @@
     <Email>@g</Email>
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
-    <Lok />
+    <Lok>
+      <X />
+      <Y />
+      <Adresa>
+        <Ulica />
+        <Broj />
+        <NaseljenoMesto />
+        <PozivniBroj>0</PozivniBroj>
+      </Adresa>
+    </Lok>
     <Auto>
       <GodisteAutomobila>13</GodisteAutomobila>
       <BrojRegistarskeOznake>NS</BrojRegistarskeOznake>
@@ -116,13 +161,82 @@
     <Email>@gg</Email>
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
-    <Lok />
+    <Lok>
+      <X />
+      <Y />
+      <Adresa>
+        <Ulica />
+        <Broj />
+        <NaseljenoMesto />
+        <PozivniBroj>0</PozivniBroj>
+      </Adresa>
+    </Lok>
     <Auto>
       <GodisteAutomobila>5</GodisteAutomobila>
       <BrojRegistarskeOznake>ff</BrojRegistarskeOznake>
       <BrojTaksiVozila>6</BrojTaksiVozila>
       <TipAutomobila>PutnickiAutomobil</TipAutomobila>
       <UsernameVozaca>ma</UsernameVozaca>
+    </Auto>
+    <Zauzet>true</Zauzet>
+  </Vozac>
+  <Vozac>
+    <KorisnickoIme>nina</KorisnickoIme>
+    <Lozinka>nina</Lozinka>
+    <Ime>Nikolina</Ime>
+    <Prezime>Gengo</Prezime>
+    <Pol>Zensko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>4444</KontaktTelefon>
+    <Email>@ghgh</Email>
+    <Uloga>Vozac</Uloga>
+    <KorisnikVoznje />
+    <Lok>
+      <X />
+      <Y />
+      <Adresa>
+        <Ulica />
+        <Broj />
+        <NaseljenoMesto />
+        <PozivniBroj>0</PozivniBroj>
+      </Adresa>
+    </Lok>
+    <Auto>
+      <GodisteAutomobila>36</GodisteAutomobila>
+      <BrojRegistarskeOznake>NS545</BrojRegistarskeOznake>
+      <BrojTaksiVozila>7</BrojTaksiVozila>
+      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+      <UsernameVozaca>nina</UsernameVozaca>
+    </Auto>
+    <Zauzet>false</Zauzet>
+  </Vozac>
+  <Vozac>
+    <KorisnickoIme>magi</KorisnickoIme>
+    <Lozinka>magi</Lozinka>
+    <Ime>Margarita</Ime>
+    <Prezime>Stefanovic</Prezime>
+    <Pol>Zensko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>4444</KontaktTelefon>
+    <Email>@gmail</Email>
+    <Uloga>Vozac</Uloga>
+    <KorisnikVoznje />
+    <Lok>
+      <X />
+      <Y />
+      <Adresa>
+        <Ulica />
+        <Broj />
+        <NaseljenoMesto />
+        <PozivniBroj>0</PozivniBroj>
+      </Adresa>
+    </Lok>
+    <Auto>
+      <GodisteAutomobila>2005</GodisteAutomobila>
+      <BrojRegistarskeOznake>SA32</BrojRegistarskeOznake>
+      <BrojTaksiVozila>8</BrojTaksiVozila>
+      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+      <UsernameVozaca>magi</UsernameVozaca>
     </Auto>
     <Zauzet>false</Zauzet>
   </Vozac>

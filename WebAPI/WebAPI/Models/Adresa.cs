@@ -7,7 +7,13 @@ namespace WebAPI.Models
 {
     public class Adresa
     {
-        public Adresa() { }
+        public Adresa()
+        {
+            Ulica = "";
+            Broj = "";
+            NaseljenoMesto = "";
+            PozivniBroj = 0;
+        }
 
         public Adresa(string ulica, string broj, string naseljenoMesto, double pozivniBroj)
         {

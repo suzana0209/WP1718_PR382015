@@ -7,7 +7,10 @@ namespace WebAPI.Models
 {
     public class Komentar
     {
-        public Komentar() { }
+        public Komentar()
+        {
+            OcjenaVoznje = 0;
+        }
         public Komentar(string opis, DateTime datumObjave, string korisnikOstavioKom, string voznjaKom, int ocjenaVoznje)
         {
             Opis = opis;
