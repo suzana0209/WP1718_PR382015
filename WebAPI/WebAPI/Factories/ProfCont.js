@@ -90,7 +90,7 @@
             });
     }
 
-    factory.EditUser = function (user) {  //klasa KorisnikPomocna
+    factory.EditUser = function (user) {  
         return $http.post('/api/Prof/Edit', {
             Username: user.username,
             Password: user.pwd,
@@ -99,7 +99,8 @@
             Pol: user.pol,
             Jmbg: user.jmbg,
             Telefon: user.kontaktTelefon,
-            Email: user.email
+            Email: user.email,
+            OldUsername: sessionStorage.getItem("username")
         });
     }
 

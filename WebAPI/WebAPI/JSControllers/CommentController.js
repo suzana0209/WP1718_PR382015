@@ -10,6 +10,7 @@
 
     $scope.DodajKomentarKo = function (ko) {
         if (ko == null) {
+            alert('Morate unijeti komentar');
             return;
         }
 
@@ -22,11 +23,13 @@
 
     $scope.UspesnaVoznja = function () {
         $scope.Usp = true;
-        $scope.apply();
+        $scope.Neusp = false;
+        $scope.apply;
     }
     $scope.NeuspesnaVoznja = function () {
         $scope.Neusp = true;
-        $scope.apply();
+        $scope.Usp = false;
+        $scope.apply;
     }
     $scope.DodajKomentarVozac = function (ko) {
         if (ko == null || ko.Opis == "" || ko.Opis == null) {

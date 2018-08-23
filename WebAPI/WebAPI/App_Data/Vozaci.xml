@@ -95,10 +95,10 @@
     <Lozinka>mira</Lozinka>
     <Ime>Mirjana</Ime>
     <Prezime>Jekic</Prezime>
-    <Pol>Zensko</Pol>
+    <Pol>Musko</Pol>
     <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>0988</KontaktTelefon>
-    <Email>@gmail</Email>
+    <KontaktTelefon>1234567891234</KontaktTelefon>
+    <Email>@mira</Email>
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
     <Lok>
@@ -118,7 +118,7 @@
       <TipAutomobila>PutnickiAutomobil</TipAutomobila>
       <UsernameVozaca>mira</UsernameVozaca>
     </Auto>
-    <Zauzet>false</Zauzet>
+    <Zauzet>true</Zauzet>
   </Vozac>
   <Vozac>
     <KorisnickoIme>dejo</KorisnickoIme>
@@ -184,11 +184,8 @@
     <KorisnickoIme>nina</KorisnickoIme>
     <Lozinka>nina</Lozinka>
     <Ime>Nikolina</Ime>
-    <Prezime>Gengo</Prezime>
-    <Pol>Zensko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>4444</KontaktTelefon>
-    <Email>@ghgh</Email>
+    <Prezime>Jovic</Prezime>
+    <Pol>Musko</Pol>
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
     <Lok>

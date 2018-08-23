@@ -149,6 +149,7 @@
             <button ng-show="drive.StatusVoznje==0 && user.role==1" type="submit" ng-click="ObradiVoznju(drive,MyDrives)">Obradite voznju</button>
             <button ng-show="(drive.StatusVoznje==1 || drive.StatusVoznje==2 || drive.StatusVoznje==3) && user.role==0" type="submit" ng-click="ZavrsiVoznju(drive)">Zavrsite voznju</button>
             <button ng-show="drive.StatusVoznje==6 && user.role==2 && !drive.Komentar.Opis" type="submit" ng-click="DodajKomentar(drive)">Dodajte komentar</button>
+            <button ng-show="drive.StatusVoznje==0 && user.role==0" type="submit" ng-click="IzmeniVoznju(drive)">Izmijenite voznju</button>
         </div>
     </div>
 </div>
@@ -216,6 +217,7 @@
             <button ng-show="user.role==0 && posebanFlag==3 &&  !DriverData.Zauzet && DriverData.TipA == drive.ZeljeniAutomobil" type="submit" ng-click="PreuzmiVoznju(drive,SortedDrives)">Preuzmite voznju</button>
             <button ng-show="(drive.StatusVoznje==1 || drive.StatusVoznje==2 || drive.StatusVoznje==3) && user.role==0" type="submit" ng-click="ZavrsiVoznju(drive)">Zavrsite voznju</button>
             <button ng-show="drive.StatusVoznje==6 && user.role==2 && !drive.Komentar.Opis" type="submit" ng-click="DodajKomentar(drive)">Dodajte komentar</button>
+            <button ng-show="drive.StatusVoznje==0 && user.role==2" type="submit" ng-click="IzmeniVoznju(drive)">Izmenite voznju</button>
 
         </div>
     </div>
@@ -242,6 +244,7 @@
             <button ng-show="drive.StatusVoznje==0 && user.role==1" type="submit" ng-click="ObradiVoznju(drive,FilteredDrives)">Obradite voznju</button>
             <button ng-show="(drive.StatusVoznje==1 || drive.StatusVoznje==2 || drive.StatusVoznje==3) && user.role==0" type="submit" ng-click="ZavrsiVoznju(drive)">Zavrsite voznju</button>
             <button ng-show="drive.StatusVoznje==6 && user.role==2 && !drive.Komentar.Opis" type="submit" ng-click="DodajKomentar(drive)">Dodajte komentar</button>
+            <button ng-show="drive.StatusVoznje==0 && user.role==2" type="submit" ng-click="IzmeniVoznju(drive)">Izmijenite voznju</button>
 
         </div>
     </div>
@@ -269,6 +272,7 @@
             <button ng-show="user.role==0 && posebanFlag==3 &&  !DriverData.Zauzet && DriverData.TipA == drive.ZeljeniAutomobil" type="submit" ng-click="PreuzmiVoznju(drive,SortedDrives)">Preuzmite voznju</button>
             <button ng-show="(drive.StatusVoznje==1 || drive.StatusVoznje==2 || drive.StatusVoznje==3) && user.role==0" type="submit" ng-click="ZavrsiVoznju(drive)">Zavrsite voznju</button>
             <button ng-show="drive.StatusVoznje==6 && user.role==2 && !drive.Komentar.Opis" type="submit" ng-click="DodajKomentar(drive)">Dodajte komentar</button>
+            <button ng-show="drive.StatusVoznje==0 && user.role==2" type="submit" ng-click="IzmeniVoznju(drive)">Izmijenite voznju</button>
 
         </div>
     </div>

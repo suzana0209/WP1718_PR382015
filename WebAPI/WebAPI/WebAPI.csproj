@@ -169,6 +169,7 @@
     <Compile Include="Models\Adresa.cs" />
     <Compile Include="Models\Automobil.cs" />
     <Compile Include="Models\Dispecer.cs" />
+    <Compile Include="Models\DodatniModeli\EditModel.cs" />
     <Compile Include="Models\DodatniModeli\KorisnikFilter.cs" />
     <Compile Include="Models\DodatniModeli\KorisnikPomocna.cs" />
     <Compile Include="Models\DodatniModeli\KorisnikSort.cs" />
@@ -221,6 +222,7 @@
     <Content Include="HTMLStranice\DriveGet.html" />
     <Content Include="HTMLStranice\DriverGet.html" />
     <Content Include="HTMLStranice\Edit.html" />
+    <Content Include="HTMLStranice\IzmeniVoznju.html" />
     <Content Include="HTMLStranice\Login.html" />
     <Content Include="HTMLStranice\MyHome.html" />
     <Content Include="HTMLStranice\Profile.html" />

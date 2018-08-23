@@ -292,63 +292,187 @@ namespace WebAPI.Controllers
 
         [HttpPost]
         [ActionName("Edit")]
-        public bool Edit([FromBody]KorisnikPomocna k)
+        public int Edit([FromBody]EditModel k)
         {
             string ss = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Musterije.xml");
-            string ss1 = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Vozaci.xml");
-            string ss2 = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Dispeceri.xml");
+            //string ss1 = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Vozaci.xml");
+            //string ss2 = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Dispeceri.xml");
+            string adm = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Dispeceri.xml");
+            string drv = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Vozaci.xml");
+            string voznje = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Voznje.xml");
+            string auta = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Automobili.xml");
+
             List<Musterija> users = xml.ReadUsers(ss);
-            List<Vozac> vozaci = xml.ReadDrivers(ss1);
-            List<Dispecer> disp = xml.ReadDispecer(ss2);
+            //List<Vozac> vozaci = xml.ReadDrivers(ss1);
+            //List<Dispecer> disp = xml.ReadDispecer(ss2);
+            List<Dispecer> admins = xml.ReadDispecer(adm);
+            List<Vozac> drivers = xml.ReadDrivers(drv);
+            List<Voznja> lv = xml.ReadDrives(voznje);
+            List<Automobil> la = xml.ReadAuto(auta);
+
+            Vozac vv = new Vozac();
+            Musterija mm = new Musterija();
+            Dispecer dd = new Dispecer();
+
             bool g = true;
-            bool imaGaUMus = false;
-            foreach (Musterija u in users)
+            int q = 3;
+            if (k.OldUsername != k.Username)
             {
-                if (u.KorisnickoIme == k.Username)
+                foreach (Musterija u in users)
                 {
-                    imaGaUMus = true;
+                    if (u.KorisnickoIme == k.Username)
+                    {
+                        g = false;
+                    }
                 }
-            }
-            foreach (Vozac u in vozaci)
-            {
-                if (u.KorisnickoIme == k.Username)
+
+                foreach (Dispecer ad in admins)
                 {
-                    g = false;
+                    if (ad.KorisnickoIme == k.Username)
+                    {
+                        g = false;
+                    }
                 }
-            }
-            foreach (Dispecer u in disp)
-            {
-                if (u.KorisnickoIme == k.Username)
+                foreach (Vozac dr in drivers)
                 {
-                    g = false;
+                    if (dr.KorisnickoIme == k.Username)
+                    {
+                        g = false;
+                    }
                 }
             }
             if (g)
             {
-                Musterija user = new Musterija();
-                user.KorisnickoIme = k.Username;
-                user.Lozinka = k.Prezime;
-                user.Ime = k.Ime;
-                user.Prezime = k.Prezime;
-                if (k.Pol.ToString() == "Zensko")
+                foreach (Musterija u in users)
                 {
-                    user.Pol = Pol.Zensko;
+                    if (u.KorisnickoIme == k.OldUsername)
+                    {
+                        u.KorisnickoIme = k.Username;
+                        u.Lozinka = k.Password;
+                        u.Ime = k.Ime;
+                        u.Prezime = k.Prezime;
+                        if (k.Pol == "1")
+                        {
+                            u.Pol = Pol.Zensko;
+                        }
+                        else
+                        {
+                            u.Pol = Pol.Musko;
+                        }
+                        u.Jmbg = k.Jmbg;
+                        u.KontaktTelefon = k.Telefon;
+                        u.Email = k.Email;
+                        // users.ad(user);
+                        q = 0;
+                        mm = u;
+                        break;
+                    }
                 }
-                else
+                foreach (Vozac u in drivers)
                 {
-                    user.Pol = Pol.Musko;
+                    if (u.KorisnickoIme == k.OldUsername)
+                    {
+                        u.KorisnickoIme = k.Username;
+                        if (k.Password != null)
+                        {
+                            u.Lozinka = k.Password;
+                        }
+                        u.Ime = k.Ime;
+                        u.Prezime = k.Prezime;
+                        if (k.Pol == "1")
+                        {
+                            u.Pol = Pol.Zensko;
+                        }
+                        else
+                        {
+                            u.Pol = Pol.Musko;
+                        }
+                        u.Jmbg = k.Jmbg;
+                        u.KontaktTelefon = k.Telefon;
+                        u.Email = k.Email;
+                        u.Auto.UsernameVozaca = k.Username;
+                        q = 2;
+                        vv = u;
+                        break;
+                    }
                 }
-                user.Jmbg = k.Jmbg;
-                user.KontaktTelefon = k.Telefon;
-                user.Email = k.Email;
-                user.Uloga = UlogaKorisnika.Musterija;
-                users.Add(user);
-                xml.WriteUsers(users, ss);
-                return true;
+
+                if (q == 0)
+                {
+                    xml.WriteUsers(users, ss);
+                    foreach (Voznja v in lv)
+                    {
+                        if (v.Musterija.KorisnickoIme == k.OldUsername)
+                        {
+                            v.Musterija.KorisnickoIme = mm.KorisnickoIme;
+                            v.Musterija.Lozinka = mm.Lozinka;
+                            v.Musterija.Ime = mm.Ime;
+                            v.Musterija.Prezime = mm.Prezime;
+                            v.Musterija.Pol = mm.Pol;
+                            v.Musterija.Uloga = mm.Uloga;
+                            v.Musterija.Jmbg = mm.Jmbg;
+                            v.Musterija.KontaktTelefon = mm.KontaktTelefon;
+                            v.Musterija.Email = mm.Email;
+                        }
+                    }
+                }
+                if (q == 1)
+                {
+                    xml.WriteDispecer(admins, adm);
+                    // return 2;
+                    foreach (Voznja v in lv)
+                    {
+                        if (v.DispecerFormirao.KorisnickoIme == k.OldUsername)
+                        {
+                            v.DispecerFormirao.KorisnickoIme = dd.KorisnickoIme;
+                            v.DispecerFormirao.Lozinka = dd.Lozinka;
+                            v.DispecerFormirao.Ime = dd.Ime;
+                            v.DispecerFormirao.Prezime = dd.Prezime;
+                            v.DispecerFormirao.Pol = dd.Pol;
+                            v.DispecerFormirao.Uloga = dd.Uloga;
+                            v.DispecerFormirao.Jmbg = dd.Jmbg;
+                            v.DispecerFormirao.KontaktTelefon = dd.KontaktTelefon;
+                            v.DispecerFormirao.Email = dd.Email;
+
+                        }
+                    }
+                }
+                if (q == 2)
+                {
+                    xml.WriteDrivers(drivers, drv);
+                    //return 3;
+                    foreach (Voznja v in lv)
+                    {
+                        if (v.VozacPrihvatio.KorisnickoIme == k.OldUsername)
+                        {
+                            v.VozacPrihvatio.KorisnickoIme = vv.KorisnickoIme;
+                            v.VozacPrihvatio.Lozinka = vv.Lozinka;
+                            v.VozacPrihvatio.Ime = vv.Ime;
+                            v.VozacPrihvatio.Prezime = vv.Prezime;
+                            v.VozacPrihvatio.Pol = vv.Pol;
+                            v.VozacPrihvatio.Uloga = vv.Uloga;
+                            v.VozacPrihvatio.Jmbg = vv.Jmbg;
+                            v.VozacPrihvatio.KontaktTelefon = vv.KontaktTelefon;
+                            v.VozacPrihvatio.Email = vv.Email;
+                            v.VozacPrihvatio.Auto.UsernameVozaca = vv.KorisnickoIme;
+                        }
+                    }
+                    foreach (Automobil a in la)
+                    {
+                        if (a.UsernameVozaca == k.OldUsername)
+                        {
+                            a.UsernameVozaca = vv.KorisnickoIme;
+                        }
+                    }
+
+                }
+                xml.WriteAuta(la, auta);
+                xml.WriteDrives(lv, voznje);
+                return q;
             }
             else
             {
-                return false;
+                return q;
             }
         }
 
@@ -513,7 +637,7 @@ namespace WebAPI.Controllers
                 {
                     v.Komentar.DatumObjave = DateTime.Parse(String.Format("{0:F}", DateTime.Now));
                     v.Komentar.Opis = k.KomOpis;
-                    v.Komentar.OcjenaVoznje = int.Parse(k.KomOcena);
+                    v.Komentar.OcjenaVoznje = Int32.Parse(k.KomOcena);
                     v.Komentar.KorisnikOstavioKom = k.Voz.Komentar.KorisnikOstavioKom;
                     ret = true;
                     break;

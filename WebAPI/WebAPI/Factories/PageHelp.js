@@ -8,8 +8,8 @@ WebAPI.config(function ($routeProvider) {
                 controller: 'MyHomeController',
                 templateUrl: 'HTMLStranice/MyHome.html',
                 activeTab: 'Home'
-                //}).
-            }).when('/Register',
+            })
+            .when('/Register',
                 {
                     controller: 'JSRegILogController',
                     templateUrl: 'HTMLStranice/Register.html',
@@ -54,6 +54,11 @@ WebAPI.config(function ($routeProvider) {
             {
                 controller: 'CommentController',
                 templateUrl: 'HTMLStranice/ZavrsiVoznju.html',
+                activeTab: 'none'
+            }).when('/IzmeniVoznju',
+            {
+                controller: 'ProfileController',
+                templateUrl: 'HTMLovi/IzmeniVoznju.html',
                 activeTab: 'none'
             })
 });

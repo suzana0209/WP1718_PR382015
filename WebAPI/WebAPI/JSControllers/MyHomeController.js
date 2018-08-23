@@ -1,4 +1,4 @@
-﻿WebAPI.controller('MyHomeController', function ($scope, $rootScope, RegILogFactory, ProfCont, $window, $route) {
+﻿WebAPI.controller('MyHomeController', function ($scope, $rootScope, RegILogFactory, ProfCont, $window, $route, $routeParams) {
     if (!$rootScope.loggedin) {
         $window.location.href = '#!/Login';
     }
@@ -215,23 +215,23 @@
             console.log(response.data);
             if ($scope.listaFlag == 1) {
                 $scope.MyDrives = response.data;
-                $scope.apply();
+                $scope.apply;
             }
             if ($scope.listaFlag == 2) {
                 $scope.AllDrives = response.data;
-                $scope.apply();
+                $scope.apply;
             }
             if ($scope.listaFlag == 4) {
                 $scope.SortedDrives = response.data;
-                $scope.apply();
+                $scope.apply;
             }
             if ($scope.listaFlag == 5) {
                 $scope.FilteredDrives = response.data;
-                $scope.apply();
+                $scope.apply;
             }
             if ($scope.listaFlag == 6) {
                 $scope.SearchedDrives = response.data;
-                $scope.apply();
+                $scope.apply;
             }
         });
     }
@@ -251,7 +251,7 @@
                 $scope.SearchedDrives = response.data;
                 // $scope.apply();
             }
-            $scope.apply();
+            $scope.apply;
         });
     }
     $scope.ZavrsiVoznju = function (drive) {
@@ -267,6 +267,14 @@
 
         $window.location.href = "#!/DodajKomentar";
 
+    }
+
+    $scope.IzmeniVoznju = function (drive) {
+        if (drive == null) {
+            return;
+        }
+        $rootScope.VoznjaZaIzmenu = drive;
+        $window.location.href = "#!/IzmeniVoznju";
     }
 
 }); 

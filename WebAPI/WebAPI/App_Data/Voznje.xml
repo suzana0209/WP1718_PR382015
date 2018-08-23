@@ -205,10 +205,10 @@
       <Lozinka>mira</Lozinka>
       <Ime>Mirjana</Ime>
       <Prezime>Jekic</Prezime>
-      <Pol>Zensko</Pol>
+      <Pol>Musko</Pol>
       <Jmbg>1234567891234</Jmbg>
-      <KontaktTelefon>0988</KontaktTelefon>
-      <Email>@gmail</Email>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@mira</Email>
       <Uloga>Vozac</Uloga>
       <KorisnikVoznje />
       <Lok>
@@ -254,11 +254,7 @@
       <KorisnickoIme>tami</KorisnickoIme>
       <Lozinka>tami</Lozinka>
       <Ime>Tamara</Ime>
-      <Prezime>Gengo</Prezime>
-      <Pol>Zensko</Pol>
-      <Jmbg>1234567891234</Jmbg>
-      <KontaktTelefon>222</KontaktTelefon>
-      <Email>@gmail</Email>
+      <Pol>Musko</Pol>
       <Uloga>Musterija</Uloga>
       <KorisnikVoznje />
     </Musterija>
@@ -312,11 +308,7 @@
       <KorisnickoIme>tami</KorisnickoIme>
       <Lozinka>tami</Lozinka>
       <Ime>Tamara</Ime>
-      <Prezime>Gengo</Prezime>
-      <Pol>Zensko</Pol>
-      <Jmbg>1234567891234</Jmbg>
-      <KontaktTelefon>222</KontaktTelefon>
-      <Email>@gmail</Email>
+      <Pol>Musko</Pol>
       <Uloga>Musterija</Uloga>
       <KorisnikVoznje />
     </Musterija>
@@ -456,10 +448,10 @@
       <Lozinka>mira</Lozinka>
       <Ime>Mirjana</Ime>
       <Prezime>Jekic</Prezime>
-      <Pol>Zensko</Pol>
+      <Pol>Musko</Pol>
       <Jmbg>1234567891234</Jmbg>
-      <KontaktTelefon>0988</KontaktTelefon>
-      <Email>@gmail</Email>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@mira</Email>
       <Uloga>Vozac</Uloga>
       <KorisnikVoznje />
       <Lok>
@@ -1271,6 +1263,139 @@
       <Jmbg>1234567891234</Jmbg>
       <KontaktTelefon>444</KontaktTelefon>
       <Email>@gmail.com</Email>
+      <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
+    </Musterija>
+    <Odrediste>
+      <X />
+      <Y />
+      <Adresa>
+        <Ulica />
+        <Broj />
+        <NaseljenoMesto />
+        <PozivniBroj>0</PozivniBroj>
+      </Adresa>
+    </Odrediste>
+    <DispecerFormirao>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
+    </DispecerFormirao>
+    <VozacPrihvatio>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
+      <Zauzet>false</Zauzet>
+    </VozacPrihvatio>
+    <Iznos>0</Iznos>
+    <Komentar>
+      <DatumObjave>0001-01-01T00:00:00</DatumObjave>
+      <OcjenaVoznje>0</OcjenaVoznje>
+    </Komentar>
+    <StatusVoznje>KreiranaNaCekanju</StatusVoznje>
+  </Voznja>
+  <Voznja>
+    <DatumPorudzbine>Thursday, August 23, 2018 7:46:12 PM</DatumPorudzbine>
+    <LokacijaDolaskaTaksija>
+      <X>46.7148N</X>
+      <Y>21.4773E</Y>
+      <Adresa>
+        <Ulica>BB</Ulica>
+        <Broj>55</Broj>
+        <NaseljenoMesto>NS</NaseljenoMesto>
+        <PozivniBroj>21</PozivniBroj>
+      </Adresa>
+    </LokacijaDolaskaTaksija>
+    <ZeljeniAutomobil>PutnickiAutomobil</ZeljeniAutomobil>
+    <Musterija>
+      <KorisnickoIme>ninaZ</KorisnickoIme>
+      <Ime>Nikolina</Ime>
+      <Prezime>Markovic</Prezime>
+      <Pol>Zensko</Pol>
+      <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
+    </Musterija>
+    <Odrediste>
+      <X />
+      <Y />
+      <Adresa>
+        <Ulica />
+        <Broj />
+        <NaseljenoMesto />
+        <PozivniBroj>0</PozivniBroj>
+      </Adresa>
+    </Odrediste>
+    <DispecerFormirao>
+      <KorisnickoIme>admin</KorisnickoIme>
+      <Lozinka>admin</Lozinka>
+      <Ime>Suzana</Ime>
+      <Prezime>Jovic</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1308996123456</Jmbg>
+      <KontaktTelefon>04823875</KontaktTelefon>
+      <Email>suza@gmail.com</Email>
+      <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
+    </DispecerFormirao>
+    <VozacPrihvatio>
+      <KorisnickoIme>mira</KorisnickoIme>
+      <Lozinka>mira</Lozinka>
+      <Ime>Mirjana</Ime>
+      <Prezime>Jekic</Prezime>
+      <Pol>Musko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@mira</Email>
+      <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
+      <Lok>
+        <X />
+        <Y />
+        <Adresa>
+          <Ulica />
+          <Broj />
+          <NaseljenoMesto />
+          <PozivniBroj>0</PozivniBroj>
+        </Adresa>
+      </Lok>
+      <Auto>
+        <GodisteAutomobila>30</GodisteAutomobila>
+        <BrojRegistarskeOznake>NSfff</BrojRegistarskeOznake>
+        <BrojTaksiVozila>4</BrojTaksiVozila>
+        <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+        <UsernameVozaca>mira</UsernameVozaca>
+      </Auto>
+      <Zauzet>true</Zauzet>
+    </VozacPrihvatio>
+    <Iznos>0</Iznos>
+    <Komentar>
+      <DatumObjave>0001-01-01T00:00:00</DatumObjave>
+      <OcjenaVoznje>0</OcjenaVoznje>
+    </Komentar>
+    <StatusVoznje>Obradjena</StatusVoznje>
+  </Voznja>
+  <Voznja>
+    <DatumPorudzbine>Thursday, August 23, 2018 7:49:17 PM</DatumPorudzbine>
+    <LokacijaDolaskaTaksija>
+      <X>46.2306N</X>
+      <Y>119.8508W</Y>
+      <Adresa>
+        <Ulica>ff</Ulica>
+        <Broj>ff</Broj>
+        <NaseljenoMesto>ff</NaseljenoMesto>
+        <PozivniBroj>444</PozivniBroj>
+      </Adresa>
+    </LokacijaDolaskaTaksija>
+    <ZeljeniAutomobil>PutnickiAutomobil</ZeljeniAutomobil>
+    <Musterija>
+      <KorisnickoIme>ninaZ</KorisnickoIme>
+      <Ime>Nikolina</Ime>
+      <Prezime>Markovic</Prezime>
+      <Pol>Zensko</Pol>
       <Uloga>Musterija</Uloga>
       <KorisnikVoznje />
     </Musterija>

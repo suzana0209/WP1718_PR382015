@@ -4,11 +4,7 @@
     <KorisnickoIme>tami</KorisnickoIme>
     <Lozinka>tami</Lozinka>
     <Ime>Tamara</Ime>
-    <Prezime>Gengo</Prezime>
-    <Pol>Zensko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>222</KontaktTelefon>
-    <Email>@gmail</Email>
+    <Pol>Musko</Pol>
     <Uloga>Musterija</Uloga>
     <KorisnikVoznje />
   </Musterija>
@@ -105,6 +101,26 @@
     <Jmbg>1234567891234</Jmbg>
     <KontaktTelefon>444</KontaktTelefon>
     <Email>@gmail.com</Email>
+    <Uloga>Musterija</Uloga>
+    <KorisnikVoznje />
+  </Musterija>
+  <Musterija>
+    <KorisnickoIme>ninaZ</KorisnickoIme>
+    <Ime>Nikolina</Ime>
+    <Prezime>Markovic</Prezime>
+    <Pol>Zensko</Pol>
+    <Uloga>Musterija</Uloga>
+    <KorisnikVoznje />
+  </Musterija>
+  <Musterija>
+    <KorisnickoIme>nidzo</KorisnickoIme>
+    <Lozinka>nidzo</Lozinka>
+    <Ime>Nikola</Ime>
+    <Prezime>Jovic</Prezime>
+    <Pol>Musko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>1234567891234</KontaktTelefon>
+    <Email>@nidzo</Email>
     <Uloga>Musterija</Uloga>
     <KorisnikVoznje />
   </Musterija>
