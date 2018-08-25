@@ -116,28 +116,28 @@
             user.username = $scope.userProfile.KorisnickoIme;
             
         }
-        else if (user.ime == null || user.ime == "") {
+         if (user.ime == null || user.ime == "") {
             user.ime = $scope.userProfile.Ime;
         }
-        else if (user.prezime == null || user.prezime == "") {
+         if (user.prezime == null || user.prezime == "") {
             user.prezime = $scope.userProfile.Prezime;
         }
-        else if (user.pol == null || user.pol == "") {
+         if (user.pol == null || user.pol == "") {
             user.pol = $scope.userProfile.Pol;
         }
-        else if (user.jmbg == null || user.jmbg == "") {
-            user.jmbg = $scope.userProfile.JMBG;
+         if (user.jmbg == null || user.jmbg == "") {
+            user.jmbg = $scope.userProfile.Jmbg;
         }
 
-        else if (user.kontaktTelefon == null || user.kontaktTelefon == "") {
+         if (user.kontaktTelefon == null || user.kontaktTelefon == "") {
             user.kontaktTelefon = $scope.userProfile.KontaktTelefon;
         }
         
-        else if (user.email == null || user.email == "") {
+         if (user.email == null || user.email == "") {
             user.email = $scope.userProfile.Email;
         }
 
-        else if (user.pwd == null || user.pwd == "") {
+         if (user.pwd == null || user.pwd == "") {
             user.pwd = $scope.userProfile.Lozinka;
         }
 
@@ -155,11 +155,7 @@
                 //$rootScope.loggedin = true;
                 $rootScope.user.username = sessionStorage.getItem("username");
                 $rootScope.user.nameSurname = sessionStorage.getItem("nameSurname");
-                // = {
-                //    username: sessionStorage.getItem("username"),
-                //    role: sessionStorage.getItem("role"),
-                //    nameSurname: sessionStorage.getItem("nameSurname")
-                //};
+                
                 $window.location.href = "#!/MyHome";
             }
             else {

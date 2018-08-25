@@ -4,6 +4,7 @@
     <KorisnickoIme>tami</KorisnickoIme>
     <Lozinka>tami</Lozinka>
     <Ime>Tamara</Ime>
+    <Prezime />
     <Pol>Musko</Pol>
     <Uloga>Musterija</Uloga>
     <KorisnikVoznje />
@@ -121,6 +122,53 @@
     <Jmbg>1234567891234</Jmbg>
     <KontaktTelefon>1234567891234</KontaktTelefon>
     <Email>@nidzo</Email>
+    <Uloga>Musterija</Uloga>
+    <KorisnikVoznje />
+  </Musterija>
+  <Musterija>
+    <KorisnickoIme>marko</KorisnickoIme>
+    <Lozinka>maki</Lozinka>
+    <Ime>Marko</Ime>
+    <Prezime>Markovic</Prezime>
+    <Pol>Musko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>1234567891234</KontaktTelefon>
+    <Email>@gmail</Email>
+    <Uloga>Musterija</Uloga>
+    <KorisnikVoznje />
+  </Musterija>
+  <Musterija>
+    <KorisnickoIme>aa</KorisnickoIme>
+    <Lozinka>aa</Lozinka>
+    <Ime>A</Ime>
+    <Prezime>A</Prezime>
+    <Pol>Zensko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>1234567891234</KontaktTelefon>
+    <Email>@</Email>
+    <Uloga>Musterija</Uloga>
+    <KorisnikVoznje />
+  </Musterija>
+  <Musterija>
+    <KorisnickoIme>beca123</KorisnickoIme>
+    <Lozinka>beca</Lozinka>
+    <Ime>Dejan</Ime>
+    <Prezime>Jovic</Prezime>
+    <Pol>Musko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>1234567891234</KontaktTelefon>
+    <Email>@gmail</Email>
+    <Uloga>Musterija</Uloga>
+    <KorisnikVoznje />
+  </Musterija>
+  <Musterija>
+    <KorisnickoIme>mila123</KorisnickoIme>
+    <Ime>Milana</Ime>
+    <Prezime>Djukic</Prezime>
+    <Pol>Musko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>1234567891234</KontaktTelefon>
+    <Email>@gmail</Email>
     <Uloga>Musterija</Uloga>
     <KorisnikVoznje />
   </Musterija>

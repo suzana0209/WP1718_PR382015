@@ -151,7 +151,7 @@ namespace WebAPI.Controllers
                 user.Lozinka = k.Password;
                 user.Ime = k.Ime;
                 user.Prezime = k.Prezime;
-                if (k.Pol == "Female")
+                if (k.Pol == "Zensko")
                 {
                     user.Pol = Pol.Zensko;
                 }

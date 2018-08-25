@@ -56,4 +56,25 @@
     <TipAutomobila>PutnickiAutomobil</TipAutomobila>
     <UsernameVozaca>magi</UsernameVozaca>
   </Automobil>
+  <Automobil>
+    <GodisteAutomobila>1</GodisteAutomobila>
+    <BrojRegistarskeOznake>aa</BrojRegistarskeOznake>
+    <BrojTaksiVozila>9</BrojTaksiVozila>
+    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+    <UsernameVozaca>a</UsernameVozaca>
+  </Automobil>
+  <Automobil>
+    <GodisteAutomobila>3</GodisteAutomobila>
+    <BrojRegistarskeOznake>mm</BrojRegistarskeOznake>
+    <BrojTaksiVozila>10</BrojTaksiVozila>
+    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+    <UsernameVozaca>marko12</UsernameVozaca>
+  </Automobil>
+  <Automobil>
+    <GodisteAutomobila>10</GodisteAutomobila>
+    <BrojRegistarskeOznake>bb</BrojRegistarskeOznake>
+    <BrojTaksiVozila>11</BrojTaksiVozila>
+    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+    <UsernameVozaca>bb</UsernameVozaca>
+  </Automobil>
 </ArrayOfAutomobil>

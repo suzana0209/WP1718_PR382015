@@ -3,12 +3,12 @@
   <Vozac>
     <KorisnickoIme>maca123</KorisnickoIme>
     <Lozinka>maca</Lozinka>
-    <Ime>Marija</Ime>
+    <Ime>Marijaa</Ime>
     <Prezime>Djurkovic</Prezime>
     <Pol>Zensko</Pol>
     <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>000999</KontaktTelefon>
-    <Email>@gmail.com</Email>
+    <KontaktTelefon>1234567891245</KontaktTelefon>
+    <Email>@ff</Email>
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
     <Lok>
@@ -36,9 +36,6 @@
     <Ime>Barbara</Ime>
     <Prezime>Segrt</Prezime>
     <Pol>Zensko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>999</KontaktTelefon>
-    <Email>@gmail</Email>
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
     <Lok>
@@ -148,7 +145,7 @@
       <TipAutomobila>PutnickiAutomobil</TipAutomobila>
       <UsernameVozaca>dejo</UsernameVozaca>
     </Auto>
-    <Zauzet>false</Zauzet>
+    <Zauzet>true</Zauzet>
   </Vozac>
   <Vozac>
     <KorisnickoIme>ma</KorisnickoIme>
@@ -205,7 +202,7 @@
       <TipAutomobila>PutnickiAutomobil</TipAutomobila>
       <UsernameVozaca>nina</UsernameVozaca>
     </Auto>
-    <Zauzet>false</Zauzet>
+    <Zauzet>true</Zauzet>
   </Vozac>
   <Vozac>
     <KorisnickoIme>magi</KorisnickoIme>
@@ -234,6 +231,96 @@
       <BrojTaksiVozila>8</BrojTaksiVozila>
       <TipAutomobila>PutnickiAutomobil</TipAutomobila>
       <UsernameVozaca>magi</UsernameVozaca>
+    </Auto>
+    <Zauzet>false</Zauzet>
+  </Vozac>
+  <Vozac>
+    <KorisnickoIme>a</KorisnickoIme>
+    <Lozinka>a</Lozinka>
+    <Ime>a</Ime>
+    <Prezime>a</Prezime>
+    <Pol>Musko</Pol>
+    <Jmbg>1234512345123</Jmbg>
+    <KontaktTelefon>1234512345123</KontaktTelefon>
+    <Email>a@</Email>
+    <Uloga>Vozac</Uloga>
+    <KorisnikVoznje />
+    <Lok>
+      <X />
+      <Y />
+      <Adresa>
+        <Ulica />
+        <Broj />
+        <NaseljenoMesto />
+        <PozivniBroj>0</PozivniBroj>
+      </Adresa>
+    </Lok>
+    <Auto>
+      <GodisteAutomobila>1</GodisteAutomobila>
+      <BrojRegistarskeOznake>aa</BrojRegistarskeOznake>
+      <BrojTaksiVozila>9</BrojTaksiVozila>
+      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+      <UsernameVozaca>a</UsernameVozaca>
+    </Auto>
+    <Zauzet>false</Zauzet>
+  </Vozac>
+  <Vozac>
+    <KorisnickoIme>marko12</KorisnickoIme>
+    <Lozinka>marko</Lozinka>
+    <Ime>Marko</Ime>
+    <Prezime>Markovic</Prezime>
+    <Pol>Musko</Pol>
+    <Jmbg>1234512345123</Jmbg>
+    <KontaktTelefon>1234512345123</KontaktTelefon>
+    <Email>@maki</Email>
+    <Uloga>Vozac</Uloga>
+    <KorisnikVoznje />
+    <Lok>
+      <X />
+      <Y />
+      <Adresa>
+        <Ulica />
+        <Broj />
+        <NaseljenoMesto />
+        <PozivniBroj>0</PozivniBroj>
+      </Adresa>
+    </Lok>
+    <Auto>
+      <GodisteAutomobila>3</GodisteAutomobila>
+      <BrojRegistarskeOznake>mm</BrojRegistarskeOznake>
+      <BrojTaksiVozila>10</BrojTaksiVozila>
+      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+      <UsernameVozaca>marko12</UsernameVozaca>
+    </Auto>
+    <Zauzet>false</Zauzet>
+  </Vozac>
+  <Vozac>
+    <KorisnickoIme>bb</KorisnickoIme>
+    <Lozinka>bb</Lozinka>
+    <Ime>bb</Ime>
+    <Prezime>bb</Prezime>
+    <Pol>Musko</Pol>
+    <Jmbg>1234512345123</Jmbg>
+    <KontaktTelefon>1234512345123</KontaktTelefon>
+    <Email>@gg</Email>
+    <Uloga>Vozac</Uloga>
+    <KorisnikVoznje />
+    <Lok>
+      <X />
+      <Y />
+      <Adresa>
+        <Ulica />
+        <Broj />
+        <NaseljenoMesto />
+        <PozivniBroj>0</PozivniBroj>
+      </Adresa>
+    </Lok>
+    <Auto>
+      <GodisteAutomobila>10</GodisteAutomobila>
+      <BrojRegistarskeOznake>bb</BrojRegistarskeOznake>
+      <BrojTaksiVozila>11</BrojTaksiVozila>
+      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+      <UsernameVozaca>bb</UsernameVozaca>
     </Auto>
     <Zauzet>false</Zauzet>
   </Vozac>

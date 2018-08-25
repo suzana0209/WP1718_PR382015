@@ -351,7 +351,7 @@ namespace WebAPI.Controllers
                         u.Lozinka = k.Password;
                         u.Ime = k.Ime;
                         u.Prezime = k.Prezime;
-                        if (k.Pol == "1")
+                        if (k.Pol == "Zensko" || (k.Pol == "1"))
                         {
                             u.Pol = Pol.Zensko;
                         }
@@ -363,11 +363,37 @@ namespace WebAPI.Controllers
                         u.KontaktTelefon = k.Telefon;
                         u.Email = k.Email;
                         // users.ad(user);
-                        q = 0;
+                        q = 2;
                         mm = u;
                         break;
                     }
                 }
+
+                foreach (Dispecer u in admins)
+                {
+                    if (u.KorisnickoIme == k.OldUsername)
+                    {
+                        u.KorisnickoIme = k.Username;
+                        u.Lozinka = k.Password;
+                        u.Ime = k.Ime;
+                        u.Prezime = k.Prezime;
+                        if (k.Pol == "Zensko" || k.Pol == "1")
+                        {
+                            u.Pol = Pol.Zensko;
+                        }
+                        else
+                        {
+                            u.Pol = Pol.Musko;
+                        }
+                        u.Jmbg = k.Jmbg;
+                        u.KontaktTelefon = k.Telefon;
+                        u.Email = k.Email;
+                        q = 1;
+                        dd = u;
+                        break;
+                    }
+                }
+
                 foreach (Vozac u in drivers)
                 {
                     if (u.KorisnickoIme == k.OldUsername)
@@ -391,13 +417,13 @@ namespace WebAPI.Controllers
                         u.KontaktTelefon = k.Telefon;
                         u.Email = k.Email;
                         u.Auto.UsernameVozaca = k.Username;
-                        q = 2;
+                        q = 0;
                         vv = u;
                         break;
                     }
                 }
 
-                if (q == 0)
+                if (q == 2)
                 {
                     xml.WriteUsers(users, ss);
                     foreach (Voznja v in lv)
@@ -437,7 +463,7 @@ namespace WebAPI.Controllers
                         }
                     }
                 }
-                if (q == 2)
+                if (q == 0)
                 {
                     xml.WriteDrivers(drivers, drv);
                     //return 3;
