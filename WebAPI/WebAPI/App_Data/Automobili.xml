@@ -1,80 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfAutomobil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Automobil>
-    <GodisteAutomobila>21</GodisteAutomobila>
-    <BrojRegistarskeOznake>ST32</BrojRegistarskeOznake>
+    <GodisteAutomobila>1999</GodisteAutomobila>
+    <BrojRegistarskeOznake>ST123</BrojRegistarskeOznake>
     <BrojTaksiVozila>1</BrojTaksiVozila>
     <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>maca123</UsernameVozaca>
+    <UsernameVozaca>luka123</UsernameVozaca>
   </Automobil>
   <Automobil>
-    <GodisteAutomobila>1999</GodisteAutomobila>
-    <BrojRegistarskeOznake>SO23</BrojRegistarskeOznake>
+    <GodisteAutomobila>2000</GodisteAutomobila>
+    <BrojRegistarskeOznake>PR123</BrojRegistarskeOznake>
     <BrojTaksiVozila>2</BrojTaksiVozila>
     <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>barbi123</UsernameVozaca>
+    <UsernameVozaca>dejo123</UsernameVozaca>
   </Automobil>
   <Automobil>
-    <GodisteAutomobila>1996</GodisteAutomobila>
-    <BrojRegistarskeOznake>NS233</BrojRegistarskeOznake>
+    <GodisteAutomobila>2001</GodisteAutomobila>
+    <BrojRegistarskeOznake>SA123</BrojRegistarskeOznake>
     <BrojTaksiVozila>3</BrojTaksiVozila>
     <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>deki123</UsernameVozaca>
+    <UsernameVozaca>rina</UsernameVozaca>
   </Automobil>
   <Automobil>
-    <GodisteAutomobila>30</GodisteAutomobila>
-    <BrojRegistarskeOznake>NSfff</BrojRegistarskeOznake>
+    <GodisteAutomobila>2010</GodisteAutomobila>
+    <BrojRegistarskeOznake>NM1223</BrojRegistarskeOznake>
     <BrojTaksiVozila>4</BrojTaksiVozila>
     <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>mira</UsernameVozaca>
+    <UsernameVozaca>tina</UsernameVozaca>
   </Automobil>
   <Automobil>
-    <GodisteAutomobila>13</GodisteAutomobila>
-    <BrojRegistarskeOznake>NS</BrojRegistarskeOznake>
+    <GodisteAutomobila>2014</GodisteAutomobila>
+    <BrojRegistarskeOznake>PR345</BrojRegistarskeOznake>
     <BrojTaksiVozila>5</BrojTaksiVozila>
     <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>dejo</UsernameVozaca>
+    <UsernameVozaca>mica</UsernameVozaca>
   </Automobil>
   <Automobil>
-    <GodisteAutomobila>5</GodisteAutomobila>
-    <BrojRegistarskeOznake>ff</BrojRegistarskeOznake>
+    <GodisteAutomobila>2017</GodisteAutomobila>
+    <BrojRegistarskeOznake>BL123</BrojRegistarskeOznake>
     <BrojTaksiVozila>6</BrojTaksiVozila>
     <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>ma</UsernameVozaca>
+    <UsernameVozaca>miki</UsernameVozaca>
   </Automobil>
   <Automobil>
-    <GodisteAutomobila>36</GodisteAutomobila>
-    <BrojRegistarskeOznake>NS545</BrojRegistarskeOznake>
+    <GodisteAutomobila>2011</GodisteAutomobila>
+    <BrojRegistarskeOznake>BI123</BrojRegistarskeOznake>
     <BrojTaksiVozila>7</BrojTaksiVozila>
     <TipAutomobila>PutnickiAutomobil</TipAutomobila>
     <UsernameVozaca>nina</UsernameVozaca>
   </Automobil>
   <Automobil>
-    <GodisteAutomobila>2005</GodisteAutomobila>
-    <BrojRegistarskeOznake>SA32</BrojRegistarskeOznake>
+    <GodisteAutomobila>2000</GodisteAutomobila>
+    <BrojRegistarskeOznake>MA456</BrojRegistarskeOznake>
     <BrojTaksiVozila>8</BrojTaksiVozila>
-    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>magi</UsernameVozaca>
+    <TipAutomobila>Kombi</TipAutomobila>
+    <UsernameVozaca>laki</UsernameVozaca>
   </Automobil>
   <Automobil>
-    <GodisteAutomobila>1</GodisteAutomobila>
-    <BrojRegistarskeOznake>aa</BrojRegistarskeOznake>
+    <GodisteAutomobila>2010</GodisteAutomobila>
+    <BrojRegistarskeOznake>MA123</BrojRegistarskeOznake>
     <BrojTaksiVozila>9</BrojTaksiVozila>
-    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>a</UsernameVozaca>
+    <TipAutomobila>Kombi</TipAutomobila>
+    <UsernameVozaca>sladja</UsernameVozaca>
   </Automobil>
   <Automobil>
-    <GodisteAutomobila>3</GodisteAutomobila>
-    <BrojRegistarskeOznake>mm</BrojRegistarskeOznake>
+    <GodisteAutomobila>2015</GodisteAutomobila>
+    <BrojRegistarskeOznake>PR456</BrojRegistarskeOznake>
     <BrojTaksiVozila>10</BrojTaksiVozila>
-    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>marko12</UsernameVozaca>
-  </Automobil>
-  <Automobil>
-    <GodisteAutomobila>10</GodisteAutomobila>
-    <BrojRegistarskeOznake>bb</BrojRegistarskeOznake>
-    <BrojTaksiVozila>11</BrojTaksiVozila>
-    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>bb</UsernameVozaca>
+    <TipAutomobila>Kombi</TipAutomobila>
+    <UsernameVozaca>nikola123</UsernameVozaca>
   </Automobil>
 </ArrayOfAutomobil>

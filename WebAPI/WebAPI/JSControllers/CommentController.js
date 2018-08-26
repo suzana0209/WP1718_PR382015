@@ -46,13 +46,25 @@
             return;
         }
         if (drive.Cena <= 0) {
-            alert('Morate unijeti cenu');
+            alert('Morate unijeti cijenu');
             return;
         }
-        if (drive.XCoord == "" || drive.YCoord == "" || drive.Street == "" || drive.Number == "" || drive.Town == "" || drive.PostalCode == "") {
-            alert('Sva polja moraju biti popunjena');
+        if (document.getElementById("lon").value == null || document.getElementById("lon").value == "") {
+            alert('Polje X kooridnata mora biti popunjeno!');
             return;
         }
+
+        else if (document.getElementById("lat").value == null || document.getElementById("lat").value == "") {
+            alert('Polje Y koordinata mora biti popunjeno!');
+            return;
+        }
+        else if (document.getElementById("address").innerHTML == null || document.getElementById("address").innerHTML == "") {
+            alert('Polje Ulica mora biti popunjeno!');
+            return;
+        }
+        drive.XCoord = document.getElementById("lon").value;
+        drive.YCoord = document.getElementById("lat").value;
+        drive.Street = document.getElementById("address").innerHTML;
 
         ProfCont.DodajKraj(drive, $rootScope.VoznjaZaKomentarVozac).then(function (response) {
             console.log(response.data);

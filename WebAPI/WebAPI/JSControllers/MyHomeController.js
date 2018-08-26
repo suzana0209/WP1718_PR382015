@@ -123,7 +123,7 @@
         //else {
         if (su.OcenaOd != null) {
             if (!/^\d+$/.test(su.OcenaOd)) {
-                alert("Uneta ocjena mora biti broj");
+                alert("Unijeta ocjena mora biti broj");
                 return;
             }
         }
@@ -275,6 +275,11 @@
         }
         $rootScope.VoznjaZaIzmenu = drive;
         $window.location.href = "#!/IzmeniVoznju";
+    }
+
+    $scope.IzmeniLokaciju = function () {
+        $rootScope.drverUsername = $scope.DriverData;
+        $window.location.href = "#!/IzmeniLokaciju";
     }
 
 }); 

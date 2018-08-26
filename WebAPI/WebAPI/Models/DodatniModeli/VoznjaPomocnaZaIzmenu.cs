@@ -5,19 +5,13 @@ using System.Web;
 
 namespace WebAPI.Models.DodatniModeli
 {
-    public class VoznjaPomocna
+    public class VoznjaPomocnaZaIzmenu
     {
         public string XCoord { get; set; }
         public string YCoord { get; set; }
         public string Street { get; set; }
         public string tipAuta { get; set; }
+        public string Datum { get; set; }
         public string korisnicko { get; set; }
-    }
-
-    public class KonacnaVoznja
-    {
-        public VoznjaPomocna voznja { get; set; }
-        public String korisnickoImeAdmin { get; set; }
-        public String korisnickoImeVozac { get; set; }
     }
 }

@@ -178,6 +178,7 @@
     <Compile Include="Models\DodatniModeli\LokacijaOdrediste.cs" />
     <Compile Include="Models\DodatniModeli\ModelZaObradiVoznju.cs" />
     <Compile Include="Models\DodatniModeli\MusterijaPomocni.cs" />
+    <Compile Include="Models\DodatniModeli\NajkracaUdaljenost.cs" />
     <Compile Include="Models\DodatniModeli\PodaciOVozacu.cs" />
     <Compile Include="Models\DodatniModeli\PomocnaVoznja.cs" />
     <Compile Include="Models\DodatniModeli\PomocniKomentar.cs" />
@@ -186,6 +187,7 @@
     <Compile Include="Models\DodatniModeli\VozacevKomentar.cs" />
     <Compile Include="Models\DodatniModeli\VozacPomocna.cs" />
     <Compile Include="Models\DodatniModeli\VoznjaPomocna.cs" />
+    <Compile Include="Models\DodatniModeli\VoznjaPomocnaZaIzmenu.cs" />
     <Compile Include="Models\Enumeracije\Pol.cs" />
     <Compile Include="Models\Enumeracije\StatusVoznje.cs" />
     <Compile Include="Models\Enumeracije\TipAutomobila.cs" />
@@ -222,6 +224,7 @@
     <Content Include="HTMLStranice\DriveGet.html" />
     <Content Include="HTMLStranice\DriverGet.html" />
     <Content Include="HTMLStranice\Edit.html" />
+    <Content Include="HTMLStranice\IzmeniLokaciju.html" />
     <Content Include="HTMLStranice\IzmeniVoznju.html" />
     <Content Include="HTMLStranice\Login.html" />
     <Content Include="HTMLStranice\MyHome.html" />

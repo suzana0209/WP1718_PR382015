@@ -9,24 +9,14 @@ namespace WebAPI.Models
     {
         public Adresa()
         {
-            Ulica = "";
-            Broj = "";
-            NaseljenoMesto = "";
-            PozivniBroj = 0;
         }
 
-        public Adresa(string ulica, string broj, string naseljenoMesto, double pozivniBroj)
+        public Adresa(string formatAdrese)
         {
-            Ulica = ulica;
-            Broj = broj;
-            NaseljenoMesto = naseljenoMesto;
-            PozivniBroj = pozivniBroj;
+            FormatAdrese = formatAdrese;
         }
 
-        public String Ulica { get; set; }
-        public String Broj { get; set; }
-        public String NaseljenoMesto { get; set; }
-        public Double PozivniBroj { get; set; }
+        public string FormatAdrese { get; set; }
         
     }
 }

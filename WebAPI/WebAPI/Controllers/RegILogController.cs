@@ -151,7 +151,7 @@ namespace WebAPI.Controllers
                 user.Lozinka = k.Password;
                 user.Ime = k.Ime;
                 user.Prezime = k.Prezime;
-                if (k.Pol == "Zensko")
+                if (k.Pol == "Female")
                 {
                     user.Pol = Pol.Zensko;
                 }
@@ -164,7 +164,9 @@ namespace WebAPI.Controllers
                 user.Email = k.Email;
                 user.Uloga = UlogaKorisnika.Vozac;
                 user.Zauzet = false;
-                user.Lok = new Lokacija();
+
+                user.Lok = new Lokacija("19.848948", "45.245165", new Adresa("Studentski dom 'Slobodan Bajic', Sime Milosevica 10, 21000 Novi Sad"));
+
                 string ss4 = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Automobili.xml");
 
                 List<Automobil> auta = xml.ReadAuto(ss4);
@@ -180,11 +182,11 @@ namespace WebAPI.Controllers
                 }
                 user.Auto.BrojRegistarskeOznake = k.RegistarskaOznaka;
                 user.Auto.GodisteAutomobila = k.Godina;
-                if (k.TipVozila == "PutnickiAutomobil")
+                if (k.TipVozila == "putnicki")
                 {
                     user.Auto.TipAutomobila = TipAutomobila.PutnickiAutomobil;
                 }
-                else if (k.TipVozila == "Kombi")
+                else if (k.TipVozila == "kombi")
                 {
                     user.Auto.TipAutomobila = TipAutomobila.Kombi;
                 }

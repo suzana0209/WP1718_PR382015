@@ -1,174 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfMusterija xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Musterija>
+    <KorisnickoIme>dejo</KorisnickoIme>
+    <Lozinka>dejo</Lozinka>
+    <Ime>Dejan</Ime>
+    <Prezime>Jovic</Prezime>
+    <Pol>Musko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>1234567891234</KontaktTelefon>
+    <Email>dejo@gmail.com</Email>
+    <Uloga>Musterija</Uloga>
+    <KorisnikVoznje />
+  </Musterija>
+  <Musterija>
+    <KorisnickoIme>maca</KorisnickoIme>
+    <Lozinka>maca</Lozinka>
+    <Ime>Marija</Ime>
+    <Prezime>Djurkovic</Prezime>
+    <Pol>Zensko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>1234567891234</KontaktTelefon>
+    <Email>@maca</Email>
+    <Uloga>Musterija</Uloga>
+    <KorisnikVoznje />
+  </Musterija>
+  <Musterija>
+    <KorisnickoIme>barbi</KorisnickoIme>
+    <Lozinka>barbi</Lozinka>
+    <Ime>Barbara</Ime>
+    <Prezime>Segrt</Prezime>
+    <Pol>Zensko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>1234567891234</KontaktTelefon>
+    <Email>@barbi</Email>
+    <Uloga>Musterija</Uloga>
+    <KorisnikVoznje />
+  </Musterija>
+  <Musterija>
     <KorisnickoIme>tami</KorisnickoIme>
     <Lozinka>tami</Lozinka>
     <Ime>Tamara</Ime>
-    <Prezime />
-    <Pol>Musko</Pol>
+    <Prezime>Gengo</Prezime>
+    <Pol>Zensko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>1234567891234</KontaktTelefon>
+    <Email>@tami</Email>
     <Uloga>Musterija</Uloga>
     <KorisnikVoznje />
   </Musterija>
   <Musterija>
-    <KorisnickoIme>beca</KorisnickoIme>
-    <Lozinka>beca</Lozinka>
+    <KorisnickoIme>deki</KorisnickoIme>
+    <Lozinka>deki</Lozinka>
     <Ime>Dejan</Ime>
-    <Prezime>Jovic</Prezime>
-    <Pol>Musko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>33</KontaktTelefon>
-    <Email>@gma</Email>
-    <Uloga>Musterija</Uloga>
-    <KorisnikVoznje />
-  </Musterija>
-  <Musterija>
-    <KorisnickoIme>duda</KorisnickoIme>
-    <Lozinka>duda</Lozinka>
-    <Ime>Dubravka</Ime>
-    <Prezime>Karadarevic</Prezime>
-    <Pol>Zensko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>333</KontaktTelefon>
-    <Email>@g</Email>
-    <Uloga>Musterija</Uloga>
-    <KorisnikVoznje />
-  </Musterija>
-  <Musterija>
-    <KorisnickoIme>rina</KorisnickoIme>
-    <Lozinka>rina</Lozinka>
-    <Ime>Irina</Ime>
-    <Prezime>Jovanovic</Prezime>
-    <Pol>Zensko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>333</KontaktTelefon>
-    <Email>@gg</Email>
-    <Uloga>Musterija</Uloga>
-    <KorisnikVoznje />
-  </Musterija>
-  <Musterija>
-    <KorisnickoIme>sofi</KorisnickoIme>
-    <Lozinka>sofi</Lozinka>
-    <Ime>Sofija</Ime>
-    <Prezime>Bijelic</Prezime>
-    <Pol>Zensko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>222</KontaktTelefon>
-    <Email>@gmail</Email>
-    <Uloga>Musterija</Uloga>
-    <KorisnikVoznje />
-  </Musterija>
-  <Musterija>
-    <KorisnickoIme>micko</KorisnickoIme>
-    <Lozinka>micko</Lozinka>
-    <Ime>Mihailo</Ime>
-    <Prezime>Bijelic</Prezime>
-    <Pol>Musko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>5345</KontaktTelefon>
-    <Email>@gm</Email>
-    <Uloga>Musterija</Uloga>
-    <KorisnikVoznje />
-  </Musterija>
-  <Musterija>
-    <KorisnickoIme>laky</KorisnickoIme>
-    <Lozinka>laky</Lozinka>
-    <Ime>Lazar</Ime>
-    <Prezime>Petrovic</Prezime>
-    <Pol>Musko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>555</KontaktTelefon>
-    <Email>@gmai</Email>
-    <Uloga>Musterija</Uloga>
-    <KorisnikVoznje />
-  </Musterija>
-  <Musterija>
-    <KorisnickoIme>miki</KorisnickoIme>
-    <Lozinka>miki</Lozinka>
-    <Ime>Milan</Ime>
-    <Prezime>Milanovic</Prezime>
-    <Pol>Musko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>33</KontaktTelefon>
-    <Email>@gma</Email>
-    <Uloga>Musterija</Uloga>
-    <KorisnikVoznje />
-  </Musterija>
-  <Musterija>
-    <KorisnickoIme>milan</KorisnickoIme>
-    <Lozinka>milan</Lozinka>
-    <Ime>Milan</Ime>
-    <Prezime>Mladenovic</Prezime>
-    <Pol>Musko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>444</KontaktTelefon>
-    <Email>@gmail.com</Email>
-    <Uloga>Musterija</Uloga>
-    <KorisnikVoznje />
-  </Musterija>
-  <Musterija>
-    <KorisnickoIme>ninaZ</KorisnickoIme>
-    <Ime>Nikolina</Ime>
-    <Prezime>Markovic</Prezime>
-    <Pol>Zensko</Pol>
-    <Uloga>Musterija</Uloga>
-    <KorisnikVoznje />
-  </Musterija>
-  <Musterija>
-    <KorisnickoIme>nidzo</KorisnickoIme>
-    <Lozinka>nidzo</Lozinka>
-    <Ime>Nikola</Ime>
-    <Prezime>Jovic</Prezime>
+    <Prezime>Stajic</Prezime>
     <Pol>Musko</Pol>
     <Jmbg>1234567891234</Jmbg>
     <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@nidzo</Email>
+    <Email>@deki</Email>
     <Uloga>Musterija</Uloga>
     <KorisnikVoznje />
   </Musterija>
   <Musterija>
-    <KorisnickoIme>marko</KorisnickoIme>
-    <Lozinka>maki</Lozinka>
-    <Ime>Marko</Ime>
-    <Prezime>Markovic</Prezime>
+    <KorisnickoIme>joca</KorisnickoIme>
+    <Lozinka>joca</Lozinka>
+    <Ime>Jovan</Ime>
+    <Prezime>Gajin</Prezime>
     <Pol>Musko</Pol>
     <Jmbg>1234567891234</Jmbg>
     <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@gmail</Email>
+    <Email>@joca</Email>
     <Uloga>Musterija</Uloga>
     <KorisnikVoznje />
   </Musterija>
   <Musterija>
-    <KorisnickoIme>aa</KorisnickoIme>
-    <Lozinka>aa</Lozinka>
-    <Ime>A</Ime>
-    <Prezime>A</Prezime>
+    <KorisnickoIme>joka</KorisnickoIme>
+    <Ime>Jovanka</Ime>
+    <Prezime>Kanlic</Prezime>
     <Pol>Zensko</Pol>
     <Jmbg>1234567891234</Jmbg>
     <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@</Email>
+    <Email>@joka.gmail.com</Email>
     <Uloga>Musterija</Uloga>
     <KorisnikVoznje />
   </Musterija>
   <Musterija>
-    <KorisnickoIme>beca123</KorisnickoIme>
-    <Lozinka>beca</Lozinka>
-    <Ime>Dejan</Ime>
-    <Prezime>Jovic</Prezime>
-    <Pol>Musko</Pol>
+    <KorisnickoIme>joka123</KorisnickoIme>
+    <Lozinka>joka</Lozinka>
+    <Ime>Joka</Ime>
+    <Prezime>Kanlic</Prezime>
+    <Pol>Zensko</Pol>
     <Jmbg>1234567891234</Jmbg>
     <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@gmail</Email>
-    <Uloga>Musterija</Uloga>
-    <KorisnikVoznje />
-  </Musterija>
-  <Musterija>
-    <KorisnickoIme>mila123</KorisnickoIme>
-    <Ime>Milana</Ime>
-    <Prezime>Djukic</Prezime>
-    <Pol>Musko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@gmail</Email>
+    <Email>@joka</Email>
     <Uloga>Musterija</Uloga>
     <KorisnikVoznje />
   </Musterija>

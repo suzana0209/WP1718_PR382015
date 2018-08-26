@@ -9,6 +9,15 @@
     </div>
 </div>
 
+<div ng-show="user.role==0">
+    <p>Trenutna lokacija:</p>
+    <p>{{DriverData.TrenutnaLokacija.Adresa.FormatAdrese}}</p>
+    <p>{{DriverData.TrenutnaLokacija.X}}</p>
+    <p>{{DriverData.TrenutnaLokacija.Y}}</p>
+    <br />
+    <button type="submit" ng-click="IzmeniLokaciju()">Izmijenite trenutnu lokaciju</button>
+</div>
+
 <div>
     <div class="topright" ng-show="user.role==1">
         <!--<a href="#!/HomeWaiting/{{user.username}}">Izlistajte voznje na cekanju</a>-->
@@ -24,6 +33,8 @@
 
 <input type="radio" name="group" value="0" ng-checked="true" ng-model="fu.PoCemu"> Po ocjeni<br>
 <input type="radio" name="group" value="1" ng-model="fu.PoCemu"> Po datumu<br>
+<input ng-show="user.role==0" type="radio" name="group" value="2" ng-model="fu.PoCemu"> Po blizini<br>
+
 
 <button ng-show="listaFlag!=3 && posebanFlag==2 && filtFlag==0" type="submit" ng-click="Sorting(MyDrives,fu.PoCemu)">Sortirajte</button>
 <button ng-show="filtFlag==1" type="submit" ng-click="Sorting(FilteredDrives,fu.PoCemu)">Sortirajte</button>
@@ -134,9 +145,7 @@
     <div ng-show="listaFlag==1" class="rezultati" ng-repeat="drive in MyDrives">
         <div class="tema">
             <p>  {{drive.DatumPorudzbine}} </p>
-            <p> {{drive.LokacijaDolaskaTaksija.Adresa.Ulica}}, {{drive.LokacijaDolaskaTaksija.Adresa.Broj}}</p>
-            <p> {{drive.LokacijaDolaskaTaksija.Adresa.NaseljenoMesto}}</p>
-            <p> {{drive.LokacijaDolaskaTaksija.Adresa.PozivniBroj}}</p>
+            <p> {{drive.LokacijaDolaskaTaksija.Adresa.FormatAdrese}} </p>
             <p> {{drive.StatusVoznje}}</p>
 
             <p ng-show="drive.Komentar.OcjenaVoznje!=0 || drive.Komentar.Opis">Komentar:</p>
@@ -158,9 +167,7 @@
     <div ng-show="listaFlag==3" class="rezultati" ng-repeat="drive in WaitingDrives">
         <div class="tema">
             <p>  {{drive.DatumPorudzbine}} </p>
-            <p> {{drive.LokacijaDolaskaTaksija.Adresa.Ulica}}, {{drive.LokacijaDolaskaTaksija.Adresa.Broj}}</p>
-            <p> {{drive.LokacijaDolaskaTaksija.Adresa.NaseljenoMesto}}</p>
-            <p> {{drive.LokacijaDolaskaTaksija.Adresa.PozivniBroj}}</p>
+            <p> {{drive.LokacijaDolaskaTaksija.Adresa.FormatAdrese}} </p>
             <p> {{drive.StatusVoznje}}</p>
 
             <p ng-show="drive.Komentar.OcjenaVoznje!=0 || drive.Komentar.Opis">Komentar:</p>
@@ -178,10 +185,8 @@
     <button type="submit" ng-click="Filter(AllDrives,fu.Status)">Filtrirajte</button>
     <div ng-show="listaFlag==2" class="rezultati" ng-repeat="drive in AllDrives">
         <div class="tema">
-            <p>  {{drive.DatumPorudzbine}} </p>
-            <p> {{drive.LokacijaDolaskaTaksija.Adresa.Ulica}}, {{drive.LokacijaDolaskaTaksija.Adresa.Broj}}</p>
-            <p> {{drive.LokacijaDolaskaTaksija.Adresa.NaseljenoMesto}}</p>
-            <p> {{drive.LokacijaDolaskaTaksija.Adresa.PozivniBroj}}</p>
+            <p> {{drive.DatumPorudzbine}} </p>
+            <p> {{drive.LokacijaDolaskaTaksija.Adresa.FormatAdrese}} </p> 
             <p> {{drive.StatusVoznje}}</p>
 
             <p ng-show="drive.Komentar.OcjenaVoznje!=0 || drive.Komentar.Opis">Komentar:</p>
@@ -201,9 +206,7 @@
     <div ng-show="listaFlag==4" class="rezultati" ng-repeat="drive in SortedDrives">
         <div class="tema">
             <p>  {{drive.DatumPorudzbine}} </p>
-            <p> {{drive.LokacijaDolaskaTaksija.Adresa.Ulica}}, {{drive.LokacijaDolaskaTaksija.Adresa.Broj}}</p>
-            <p> {{drive.LokacijaDolaskaTaksija.Adresa.NaseljenoMesto}}</p>
-            <p> {{drive.LokacijaDolaskaTaksija.Adresa.PozivniBroj}}</p>
+            <p> {{drive.LokacijaDolaskaTaksija.Adresa.FormatAdrese}} </p>
             <p> {{drive.StatusVoznje}}</p>
 
             <p ng-show="drive.Komentar.OcjenaVoznje!=0 || drive.Komentar.Opis">Komentar:</p>
@@ -217,7 +220,7 @@
             <button ng-show="user.role==0 && posebanFlag==3 &&  !DriverData.Zauzet && DriverData.TipA == drive.ZeljeniAutomobil" type="submit" ng-click="PreuzmiVoznju(drive,SortedDrives)">Preuzmite voznju</button>
             <button ng-show="(drive.StatusVoznje==1 || drive.StatusVoznje==2 || drive.StatusVoznje==3) && user.role==0" type="submit" ng-click="ZavrsiVoznju(drive)">Zavrsite voznju</button>
             <button ng-show="drive.StatusVoznje==6 && user.role==2 && !drive.Komentar.Opis" type="submit" ng-click="DodajKomentar(drive)">Dodajte komentar</button>
-            <button ng-show="drive.StatusVoznje==0 && user.role==2" type="submit" ng-click="IzmeniVoznju(drive)">Izmenite voznju</button>
+            <button ng-show="drive.StatusVoznje==0 && user.role==2" type="submit" ng-click="IzmeniVoznju(drive)">Izmijenite voznju</button>
 
         </div>
     </div>
@@ -228,10 +231,8 @@
     <button ng-show="posebanFlag==2" type="submit" ng-click="Filter(MyDrives,fu.Status)">Filtrirajte</button>
     <div ng-show="listaFlag==5" class="rezultati" ng-repeat="drive in FilteredDrives">
         <div class="tema">
-            <p>  {{drive.DatumPorudzbine}} </p>
-            <p> {{drive.LokacijaDolaskaTaksija.Adresa.Ulica}}, {{drive.LokacijaDolaskaTaksija.Adresa.Broj}}</p>
-            <p> {{drive.LokacijaDolaskaTaksija.Adresa.NaseljenoMesto}}</p>
-            <p> {{drive.LokacijaDolaskaTaksija.Adresa.PozivniBroj}}</p>
+            <p> {{drive.DatumPorudzbine}} </p>
+            <p> {{drive.LokacijaDolaskaTaksija.Adresa.FormatAdrese}} </p>
             <p> {{drive.StatusVoznje}}</p>
 
             <p ng-show="drive.Komentar.OcjenaVoznje!=0 || drive.Komentar.Opis">Komentar:</p>
@@ -253,12 +254,10 @@
     <button ng-show="listaFlag==6" type="submit" ng-click="Filter(SearchedDrives,fu.Status)">Filtrirajte</button>
     <!--<button ng-show="posebanFlag==2" type="submit" ng-click="Filter(MyDrives,fu.Status)">Filtriraj</button>-->
     <div ng-show="listaFlag==6" class="rezultati" ng-repeat="drive in SearchedDrives">
-        
+
         <div class="tema">
             <p>  {{drive.DatumPorudzbine}} </p>
-            <p> {{drive.LokacijaDolaskaTaksija.Adresa.Ulica}}, {{drive.LokacijaDolaskaTaksija.Adresa.Broj}}</p>
-            <p> {{drive.LokacijaDolaskaTaksija.Adresa.NaseljenoMesto}}</p>
-            <p> {{drive.LokacijaDolaskaTaksija.Adresa.PozivniBroj}}</p>
+            <p> {{drive.LokacijaDolaskaTaksija.Adresa.FormatAdrese}} </p>
             <p> {{drive.StatusVoznje}}</p>
 
             <p ng-show="drive.Komentar.OcjenaVoznje!=0 || drive.Komentar.Opis">Komentar:</p>
@@ -301,6 +300,7 @@
         </div>-->
 </div>
 <div class="container">
+    <pr
     <div class="topright" ng-show="user.role==1">
         <a href="#!/DriverGet/{{user.username}}">Dodajte vozaca</a>
     </div>

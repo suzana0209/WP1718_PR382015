@@ -8,23 +8,25 @@
             XCoord: drive.XCoord,
             YCoord: drive.YCoord,
             Street: drive.Street,
-            Number: drive.Number,
-            Town: drive.Town,
-            PostalCode: drive.PostalCode,
             tipAuta: drive.tipAuta,
             korisnicko: sessionStorage.getItem("username")
         });
     }
-    factory.AddDriveDispecer = function (drive) {
+    factory.AddDriveDispecer = function (drive) { 
         return $http.post('/api/Prof/AddDriveDispecer', {
             XCoord: drive.XCoord,
             YCoord: drive.YCoord,
             Street: drive.Street,
-            Number: drive.Number,
-            Town: drive.Town,
-            PostalCode: drive.PostalCode,
             tipAuta: drive.tipAuta,
             korisnicko: sessionStorage.getItem("username")
+        });
+    }
+
+    factory.DodajVoznjuDisp = function (v, drive) {
+        return $http.post('/api/Prof/DodajVoznjuDisp', {
+            voznja: drive,
+            korisnickoImeAdmin: sessionStorage.getItem("username"),
+            korisnickoImeVozac: v.SelektovaniVozac
         });
     }
 
@@ -149,13 +151,31 @@
             XCoord: drive.XCoord,
             YCoord: drive.YCoord,
             Street: drive.Street,
-            Number: drive.Number,
-            Town: drive.Town,
-            PostalCode: drive.PostalCode,
             Voz: dri
 
         });
     }
+    factory.Izmeni = function (drive) {
+        return $http.post('/api/Prof/Izmeni', {
+            XCoord: drive.XCoord,
+            YCoord: drive.YCoord,
+            Street: drive.Street,
+            tipAuta: drive.tipAuta,
+            Datum: drive.Datum,
+            korisnicko: sessionStorage.getItem("username")
+        });
+    }
+    factory.IzmeniV = function (drive) {
+        return $http.post('/api/Prof/IzmeniV', {
+            XCoord: drive.XCoord,
+            YCoord: drive.YCoord,
+            Street: drive.Street,
+            tipAuta: drive.tipAuta,
+            Datum: drive.Datum,
+            korisnicko: sessionStorage.getItem("username")
+        });
+    }
+
 
     return factory;
 }); 
