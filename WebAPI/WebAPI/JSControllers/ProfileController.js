@@ -1,4 +1,9 @@
-﻿WebAPI.controller('ProfileController', function ($scope, ProfCont, $routeParams, $window, $rootScope) {
+﻿WebAPI.controller('ProfileController', function ($scope, ProfCont, $window, $rootScope) {
+
+    if (!$rootScope.loggedin) {
+        $window.location.href = '#!/Login';
+    }
+
     function init() {
         console.log('Profile controller initialized');
         $scope.PrikaziKorisnickoIme = false;
@@ -7,7 +12,7 @@
         $scope.najbliziVozaci = false;
         $scope.Prazna = false;
 
-        ProfCont.getUserByUsername($routeParams.username).then(function (response) {
+        ProfCont.getUserByUsername(sessionStorage.getItem("username")).then(function (response) {
             console.log(response.data);
 
             //if (response.data.Pol == 0) {
@@ -244,4 +249,15 @@
             window.location.href = "#!/MyHome";
         });
     }
+
+    $scope.ObradiVoznjuDisp = function (noviModel) {
+        if (noviModel == null) {
+            alert('Morate odabrati vozaca');
+            return;
+        }
+        ProfCont.ObradiVoznjuDisp(noviModel, $rootScope.VoznjaZaObradu).then(function (response) {
+            window.location.href = "#!/MyHome";
+        });
+    }
+
 });

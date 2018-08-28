@@ -14,10 +14,12 @@ namespace WebAPI.Models
             KorisnikVoznje = new List<Voznja>();
             Ime = "";
             Prezime = "";
+            Blokiran = false;
         }
 
         public Lokacija Lok { get; set; }
         public Automobil Auto { get; set; }
         public bool Zauzet { get; set; }
+        public bool Blokiran { get; set; }
     }
 }

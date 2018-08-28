@@ -14,6 +14,42 @@ namespace WebAPI.Controllers
     public class ProfController : ApiController
     {
         public static XMLData xml = new XMLData();
+
+        [HttpGet]
+        [ActionName("GetUserStatusByUsername")]
+        public bool GetUserStatusByUsername(string username)
+        {
+            string ss = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Musterije.xml");
+            string ss1 = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Vozaci.xml");
+            List<Musterija> users = xml.ReadUsers(ss);
+            List<Vozac> vozaci = xml.ReadDrivers(ss1);
+
+            bool blokiran = false;
+            foreach (Musterija m in users)
+            {
+                if (m.KorisnickoIme == username && m.Blokiran)
+                {
+                    blokiran = true;
+                    break;
+                }
+            }
+            if (!blokiran)
+            {
+                foreach (Vozac m in vozaci)
+                {
+                    if (m.KorisnickoIme == username && m.Blokiran)
+                    {
+                        blokiran = true;
+                        break;
+                    }
+                }
+            }
+
+            return blokiran;
+
+        }
+
+
         [HttpGet]
         [ActionName("GetUserByUsername")]
         public Korisnik GetUserByUsername(string username)

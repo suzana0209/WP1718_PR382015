@@ -25,22 +25,17 @@ WebAPI.config(function ($routeProvider) {
                 controller: 'ProfileController',
                 templateUrl: 'HTMLStranice/Profile.html',
                 activeTab: 'Profile'
-            }).when('/Profile/:username',
-            {
-                controller: 'ProfileController',
-                templateUrl: 'HTMLStranice/Profile.html',
-                activetab: 'Profile'
-            }).when('/DriveGet/:username',
+            }).when('/DriveGet',
             {
                 controller: 'ProfileController',
                 templateUrl: 'HTMLStranice/DriveGet.html',
                 activetab: 'none'
-            }).when('/DriverGet/:username',
+            }).when('/DriverGet',
             {
                 controller: 'JSRegILogController',
                 templateUrl: 'HTMLStranice/DriverGet.html',
                 activetab: 'none'
-            }).when('/Edit/:username',
+            }).when('/Edit',
             {
                 controller: 'ProfileController',
                 templateUrl: 'HTMLStranice/Edit.html',
@@ -64,6 +59,16 @@ WebAPI.config(function ($routeProvider) {
             {
                 controller: 'ProfileController',
                 templateUrl: 'HTMLStranice/IzmeniLokaciju.html',
+                activeTab: 'none'
+            }).when('/ObradiVoznju',
+            {
+                controller: 'ProfileController',
+                templateUrl: 'HTMLStranice/ObradiVoznju.html',
+                activeTab: 'none'
+            }).when('/BlockUsers',
+            {
+                controller: 'BlockController',
+                templateUrl: 'HTMLStranice/BlockUsers.html',
                 activeTab: 'none'
             })
 

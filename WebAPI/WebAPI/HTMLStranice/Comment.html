@@ -1,27 +1,31 @@
 ﻿<br />
 <br />
 <br />
-<h1>Ostavite komentar</h1>
-<div class="form-group">
-    <table>
-        <tr>
-            <td>Opis:</td>
-            <td>
-                <textarea class="form-control" placeholder="Ostavite komentar..." ng-model="ko.Opis"></textarea>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Ocjena voznje:
-            </td>
-            <td>
-                <input type="text" ng-model="ko.Ocena" />
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <button type="submit" ng-click="DodajKomentarKo(ko)">Dodajte komentar</button>
-            </td>
-        </tr>
-    </table>
+
+<div ng-show="!loggedin || !DozvolaZaKomentarKorisnika || user.role!=2 "> <h3>Nije moguce ostavljanje komentara</h3></div>
+<div ng-show="loggedin && DozvolaZaKomentarKorisnika && user.role==2">
+    <h1>Ostavite komentar</h1>
+    <div class="form-group">
+        <table>
+            <tr>
+                <td>Opis:</td>
+                <td>
+                    <textarea class="form-control" placeholder="Ostavi komentar.." ng-model="ko.Opis"></textarea>
+                </td>
+            </tr>
+            <tr ng-show="!moraKomentarKorisnik">
+                <td>
+                    Ocena voznje:
+                </td>
+                <td>
+                    <input type="text" ng-model="ko.Ocena" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit" ng-click="DodajKomentarKo(ko)">Dodaj komentar</button>
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>

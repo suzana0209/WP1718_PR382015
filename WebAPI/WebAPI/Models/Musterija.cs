@@ -14,6 +14,9 @@ namespace WebAPI.Models
             KorisnikVoznje = new List<Voznja>();
             Ime = "";
             Prezime = "";
+            Blokiran = false;
         }
+
+        public bool Blokiran { get; set; }
     }
 }

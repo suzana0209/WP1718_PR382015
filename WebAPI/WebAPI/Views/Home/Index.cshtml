@@ -36,6 +36,8 @@
     <link rel="stylesheet" href="../../css/style.css" type="text/css" />
     <link rel="stylesheet" href="../../css/app.css" type="text/css" />
     <link rel="stylesheet" href="../../css/app.css" type="text/css" />
+
+
     <link rel="shortcut icon" href="../favicon.ico">
 
     @*<meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -76,7 +78,7 @@
     @*ng-controller="MainController"*@
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <nav class="navbar navbar-default navbar-fixed-top" ng-controller="MainController">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -87,16 +89,18 @@
                         <span class="icon-bar"></span>
                     </button>
                 </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <div class="headercolor collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li ng-show="loggedin" ng-class="checkActive('/MyHome')"><a href="#!/"><i class="ion ion-android-home"></i> Home</a></li>
-                        <li ng-show="loggedin" ng-class="checkActive('/Edit')"><a href="#!/Edit/{{user.username}}"><i class="ion ion-person"></i>Izmijenite profil</a></li>
+                        <li ng-show="loggedin && !moraKomentar && !moraKomentarKorisnik" ng-class="checkActive('/MyHome')"><a href="#!/"><i class="ion ion-android-home"></i> Home</a></li>
+                        <li ng-show="loggedin && !moraKomentar && !moraKomentarKorisnik" ng-class="checkActive('/Edit')"><a href="#!/Edit"><i class="ion ion-person"></i>Edit Profile</a></li>
+                        <li ng-show="loggedin && user.role==1" ng-class="checkActive('/BlockUsers')"><a href="#!/BlockUsers"><i class="ion ion-person"></i>Block Users</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li ng-show="!loggedin" ng-class="checkActive('/Login')"><a href="#!/Login">Prijavite se</a></li>
                         <li ng-show="!loggedin" ng-class="checkActive('/Register')"><a href="#!/Register">Registrujte se</a></li>
-                        <li ng-show="loggedin" ng-class="checkActive('/Profile')"><a href="#!/Profile/{{user.username}}"><i class="ion ion-person"></i> {{user.nameSurname}}</a></li>
-                        <li ng-show="loggedin"><a href ng-click="Logout()"><i class="ion ion-log-out"></i> Odjavite se</a></li>
+                        <li ng-show="loggedin && !moraKomentar && !moraKomentarKorisnik" ng-class="checkActive('/Profile')"><a href="#!/Profile"><i class="ion ion-person"></i> {{user.nameSurname}}</a></li>
+                        <li ng-show="loggedin && !moraKomentar && !moraKomentarKorisnik"><a href ng-click="Logout()"><i class="ion ion-log-out"></i> Odjavite se</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse    class="glyphicon glyphicon-user"   class="glyphicon glyphicon-log-in" -->
             </div><!-- /.container-fluid -->
@@ -118,7 +122,7 @@
     <script src="../../JSControllers/MainController.js"></script>
     <script src="../../JSControllers/MyHomeController.js"></script>
     <script src="../../JSControllers/CommentController.js"></script>
-
+    <script src="../../JSControllers/BlockController.js"></script>
 
 
     @*<script src="https://openlayers.org/en/v4.6.5/build/ol.js" type="text/javascript"></script>*@

@@ -220,6 +220,7 @@
     <Content Include="Factories\RegILogFactory.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="HTMLStranice\BlockUsers.html" />
     <Content Include="HTMLStranice\Comment.html" />
     <Content Include="HTMLStranice\DriveGet.html" />
     <Content Include="HTMLStranice\DriverGet.html" />
@@ -228,9 +229,11 @@
     <Content Include="HTMLStranice\IzmeniVoznju.html" />
     <Content Include="HTMLStranice\Login.html" />
     <Content Include="HTMLStranice\MyHome.html" />
+    <Content Include="HTMLStranice\ObradiVoznju.html" />
     <Content Include="HTMLStranice\Profile.html" />
     <Content Include="HTMLStranice\Register.html" />
     <Content Include="HTMLStranice\ZavrsiVoznju.html" />
+    <Content Include="JSControllers\BlockController.js" />
     <Content Include="JSControllers\CommentController.js" />
     <Content Include="JSControllers\JSRegILogController.js" />
     <Content Include="JSControllers\MainController.js" />

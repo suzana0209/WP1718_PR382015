@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfVozac xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Vozac>
-    <KorisnickoIme>luka123</KorisnickoIme>
-    <Lozinka>luka</Lozinka>
-    <Ime>Luka</Ime>
-    <Prezime>Crnomarkovic</Prezime>
-    <Pol>Musko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@luka</Email>
-    <Uloga>Vozac</Uloga>
-    <KorisnikVoznje />
-    <Lok>
-      <X>8.833008</X>
-      <Y>19.808054</Y>
-      <Adresa>
-        <FormatAdrese>Arlit, Agadez, Niger</FormatAdrese>
-      </Adresa>
-    </Lok>
-    <Auto>
-      <GodisteAutomobila>1999</GodisteAutomobila>
-      <BrojRegistarskeOznake>ST123</BrojRegistarskeOznake>
-      <BrojTaksiVozila>1</BrojTaksiVozila>
-      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>luka123</UsernameVozaca>
-    </Auto>
-    <Zauzet>false</Zauzet>
-  </Vozac>
-  <Vozac>
-    <KorisnickoIme>dejo123</KorisnickoIme>
+    <KorisnickoIme>dejo</KorisnickoIme>
     <Lozinka>dejo</Lozinka>
     <Ime>Dejan</Ime>
     <Prezime>Jovic</Prezime>
@@ -46,50 +19,24 @@
       </Adresa>
     </Lok>
     <Auto>
-      <GodisteAutomobila>2000</GodisteAutomobila>
+      <GodisteAutomobila>2010</GodisteAutomobila>
       <BrojRegistarskeOznake>PR123</BrojRegistarskeOznake>
-      <BrojTaksiVozila>2</BrojTaksiVozila>
+      <BrojTaksiVozila>1</BrojTaksiVozila>
       <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>dejo123</UsernameVozaca>
-    </Auto>
-    <Zauzet>true</Zauzet>
-  </Vozac>
-  <Vozac>
-    <KorisnickoIme>rina</KorisnickoIme>
-    <Lozinka>rina</Lozinka>
-    <Ime>Irina</Ime>
-    <Prezime>Jovanovic</Prezime>
-    <Pol>Musko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@rina</Email>
-    <Uloga>Vozac</Uloga>
-    <KorisnikVoznje />
-    <Lok>
-      <X>78.222656</X>
-      <Y>54.977614</Y>
-      <Adresa>
-        <FormatAdrese>Новочановский сельсовет, Барабинский район, Новосибирская область, СФО, 632311, РФ</FormatAdrese>
-      </Adresa>
-    </Lok>
-    <Auto>
-      <GodisteAutomobila>2001</GodisteAutomobila>
-      <BrojRegistarskeOznake>SA123</BrojRegistarskeOznake>
-      <BrojTaksiVozila>3</BrojTaksiVozila>
-      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>rina</UsernameVozaca>
+      <UsernameVozaca>dejo</UsernameVozaca>
     </Auto>
     <Zauzet>false</Zauzet>
+    <Blokiran>false</Blokiran>
   </Vozac>
   <Vozac>
-    <KorisnickoIme>tina</KorisnickoIme>
-    <Lozinka>tina</Lozinka>
-    <Ime>Tijana</Ime>
-    <Prezime>Moze</Prezime>
-    <Pol>Musko</Pol>
+    <KorisnickoIme>maca</KorisnickoIme>
+    <Lozinka>maca</Lozinka>
+    <Ime>Marija</Ime>
+    <Prezime>Djurkovic</Prezime>
+    <Pol>Zensko</Pol>
     <Jmbg>1234567891234</Jmbg>
     <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@tina</Email>
+    <Email>@maca</Email>
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
     <Lok>
@@ -100,23 +47,52 @@
       </Adresa>
     </Lok>
     <Auto>
-      <GodisteAutomobila>2010</GodisteAutomobila>
-      <BrojRegistarskeOznake>NM1223</BrojRegistarskeOznake>
-      <BrojTaksiVozila>4</BrojTaksiVozila>
-      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>tina</UsernameVozaca>
+      <GodisteAutomobila>2000</GodisteAutomobila>
+      <BrojRegistarskeOznake>ST123</BrojRegistarskeOznake>
+      <BrojTaksiVozila>2</BrojTaksiVozila>
+      <TipAutomobila>Kombi</TipAutomobila>
+      <UsernameVozaca>maca</UsernameVozaca>
     </Auto>
-    <Zauzet>true</Zauzet>
+    <Zauzet>false</Zauzet>
+    <Blokiran>false</Blokiran>
   </Vozac>
   <Vozac>
-    <KorisnickoIme>mica</KorisnickoIme>
-    <Lozinka>mica</Lozinka>
-    <Ime>Milica</Ime>
-    <Prezime>Vrhovac</Prezime>
-    <Pol>Musko</Pol>
+    <KorisnickoIme>barbi</KorisnickoIme>
+    <Lozinka>barbi</Lozinka>
+    <Ime>Barbara</Ime>
+    <Prezime>Segrt</Prezime>
+    <Pol>Zensko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>123456789123434</KontaktTelefon>
+    <Email>@barbi</Email>
+    <Uloga>Vozac</Uloga>
+    <KorisnikVoznje />
+    <Lok>
+      <X>15.292969</X>
+      <Y>24.206890</Y>
+      <Adresa>
+        <FormatAdrese>7, Vordere Gams I, Frohnleiten, Graz-Umgebung, Steiermark, 8130, Österreich</FormatAdrese>
+      </Adresa>
+    </Lok>
+    <Auto>
+      <GodisteAutomobila>300</GodisteAutomobila>
+      <BrojRegistarskeOznake>SO123</BrojRegistarskeOznake>
+      <BrojTaksiVozila>3</BrojTaksiVozila>
+      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+      <UsernameVozaca>barbi</UsernameVozaca>
+    </Auto>
+    <Zauzet>true</Zauzet>
+    <Blokiran>false</Blokiran>
+  </Vozac>
+  <Vozac>
+    <KorisnickoIme>tami</KorisnickoIme>
+    <Lozinka>tami</Lozinka>
+    <Ime>Tamara</Ime>
+    <Prezime>Gengo</Prezime>
+    <Pol>Zensko</Pol>
     <Jmbg>1234567891234</Jmbg>
     <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@mica</Email>
+    <Email>@tami</Email>
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
     <Lok>
@@ -128,146 +104,12 @@
     </Lok>
     <Auto>
       <GodisteAutomobila>2014</GodisteAutomobila>
-      <BrojRegistarskeOznake>PR345</BrojRegistarskeOznake>
-      <BrojTaksiVozila>5</BrojTaksiVozila>
-      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>mica</UsernameVozaca>
-    </Auto>
-    <Zauzet>false</Zauzet>
-  </Vozac>
-  <Vozac>
-    <KorisnickoIme>miki</KorisnickoIme>
-    <Lozinka>miki</Lozinka>
-    <Ime>Milan</Ime>
-    <Prezime>Milic</Prezime>
-    <Pol>Musko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@miki</Email>
-    <Uloga>Vozac</Uloga>
-    <KorisnikVoznje />
-    <Lok>
-      <X>19.848948</X>
-      <Y>45.245165</Y>
-      <Adresa>
-        <FormatAdrese>Studentski dom 'Slobodan Bajic', Sime Milosevica 10, 21000 Novi Sad</FormatAdrese>
-      </Adresa>
-    </Lok>
-    <Auto>
-      <GodisteAutomobila>2017</GodisteAutomobila>
-      <BrojRegistarskeOznake>BL123</BrojRegistarskeOznake>
-      <BrojTaksiVozila>6</BrojTaksiVozila>
-      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>miki</UsernameVozaca>
-    </Auto>
-    <Zauzet>false</Zauzet>
-  </Vozac>
-  <Vozac>
-    <KorisnickoIme>nina</KorisnickoIme>
-    <Lozinka>nina</Lozinka>
-    <Ime>Nikolina</Ime>
-    <Prezime>Gengo</Prezime>
-    <Pol>Musko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@nina</Email>
-    <Uloga>Vozac</Uloga>
-    <KorisnikVoznje />
-    <Lok>
-      <X>19.848948</X>
-      <Y>45.245165</Y>
-      <Adresa>
-        <FormatAdrese>Studentski dom 'Slobodan Bajic', Sime Milosevica 10, 21000 Novi Sad</FormatAdrese>
-      </Adresa>
-    </Lok>
-    <Auto>
-      <GodisteAutomobila>2011</GodisteAutomobila>
       <BrojRegistarskeOznake>BI123</BrojRegistarskeOznake>
-      <BrojTaksiVozila>7</BrojTaksiVozila>
-      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>nina</UsernameVozaca>
+      <BrojTaksiVozila>4</BrojTaksiVozila>
+      <TipAutomobila>Kombi</TipAutomobila>
+      <UsernameVozaca>tami</UsernameVozaca>
     </Auto>
     <Zauzet>false</Zauzet>
-  </Vozac>
-  <Vozac>
-    <KorisnickoIme>laki</KorisnickoIme>
-    <Lozinka>laki</Lozinka>
-    <Ime>Lazar</Ime>
-    <Prezime>Petrovic</Prezime>
-    <Pol>Musko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@laky</Email>
-    <Uloga>Vozac</Uloga>
-    <KorisnikVoznje />
-    <Lok>
-      <X>-56.425781</X>
-      <Y>-15.961329</Y>
-      <Adresa>
-        <FormatAdrese>Ventura, Microrregião de Cuiabá, Mesorregião Centro-Sul Mato-Grossense, MT, Região Centro-Oeste, Brasil</FormatAdrese>
-      </Adresa>
-    </Lok>
-    <Auto>
-      <GodisteAutomobila>2000</GodisteAutomobila>
-      <BrojRegistarskeOznake>MA456</BrojRegistarskeOznake>
-      <BrojTaksiVozila>8</BrojTaksiVozila>
-      <TipAutomobila>Kombi</TipAutomobila>
-      <UsernameVozaca>laki</UsernameVozaca>
-    </Auto>
-    <Zauzet>true</Zauzet>
-  </Vozac>
-  <Vozac>
-    <KorisnickoIme>sladja</KorisnickoIme>
-    <Lozinka>sladja</Lozinka>
-    <Ime>Sladjana</Ime>
-    <Prezime>Petrovic</Prezime>
-    <Pol>Musko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@sladja</Email>
-    <Uloga>Vozac</Uloga>
-    <KorisnikVoznje />
-    <Lok>
-      <X>18.808594</X>
-      <Y>47.279229</Y>
-      <Adresa>
-        <FormatAdrese>Ráckeresztúr, Martonvásári járás, Fejér megye, Közép-Dunántúl, Dunántúl, 2465, Magyarország</FormatAdrese>
-      </Adresa>
-    </Lok>
-    <Auto>
-      <GodisteAutomobila>2010</GodisteAutomobila>
-      <BrojRegistarskeOznake>MA123</BrojRegistarskeOznake>
-      <BrojTaksiVozila>9</BrojTaksiVozila>
-      <TipAutomobila>Kombi</TipAutomobila>
-      <UsernameVozaca>sladja</UsernameVozaca>
-    </Auto>
-    <Zauzet>false</Zauzet>
-  </Vozac>
-  <Vozac>
-    <KorisnickoIme>nikola123</KorisnickoIme>
-    <Lozinka>nikola</Lozinka>
-    <Ime>Nikola</Ime>
-    <Prezime>Petrovic</Prezime>
-    <Pol>Musko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@gmail</Email>
-    <Uloga>Vozac</Uloga>
-    <KorisnikVoznje />
-    <Lok>
-      <X>21.621094</X>
-      <Y>42.032974</Y>
-      <Adresa>
-        <FormatAdrese>Ајватовци, Општина Илинден, Скопски Регион, Македонија</FormatAdrese>
-      </Adresa>
-    </Lok>
-    <Auto>
-      <GodisteAutomobila>2015</GodisteAutomobila>
-      <BrojRegistarskeOznake>PR456</BrojRegistarskeOznake>
-      <BrojTaksiVozila>10</BrojTaksiVozila>
-      <TipAutomobila>Kombi</TipAutomobila>
-      <UsernameVozaca>nikola123</UsernameVozaca>
-    </Auto>
-    <Zauzet>true</Zauzet>
+    <Blokiran>false</Blokiran>
   </Vozac>
 </ArrayOfVozac>

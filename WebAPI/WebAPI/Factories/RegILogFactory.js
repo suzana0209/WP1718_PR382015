@@ -1,5 +1,10 @@
 ﻿WebAPI.factory('RegILogFactory', function ($http) {
     var factory = {};
+
+    factory.GetUserStatusByUsername = function (username) {
+        return $http.get('/api/Prof/GetUserStatusByUsername?username=' + username);
+    }
+
      //smjestanje u objekat MusterijaPomocni.cs
     factory.RegisterUser = function (user) {       
         return $http.post('/api/RegILog/Register', {
