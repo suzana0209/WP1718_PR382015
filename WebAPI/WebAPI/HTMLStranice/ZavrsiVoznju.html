@@ -1,10 +1,10 @@
 ﻿<br />
 <br />
 <br />
-<div ng-show="!loggedin || user.role!=2 || !DozvolaZaZavrsenuVoznju"><h3>Nije vam dozvoljena ova akcija</h3></div>
-<div ng-show="loggedin && user.role==2 && DozvolaZaZavrsenuVoznju">
-    <button type="submit" ng-click="UspesnaVoznja()">Uspesna</button>
-    <button type="submit" ng-click="NeuspesnaVoznja()">Nesupesna</button>
+<div ng-show="!loggedin || user.role!=0 || !DozvolaZaZavrsenuVoznju"><h3>Nije vam dozvoljena ova akcija</h3></div>
+<div ng-show="loggedin && user.role==0 && DozvolaZaZavrsenuVoznju">
+    <button type="submit" ng-click="UspesnaVoznja()">Uspjesna</button>
+    <button type="submit" ng-click="NeuspesnaVoznja()">Nesupjesna</button>
 
     <div ng-show="Usp">
 

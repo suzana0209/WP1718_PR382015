@@ -15,14 +15,15 @@
         ProfCont.getUserByUsername(sessionStorage.getItem("username")).then(function (response) {
             console.log(response.data);
 
-            //if (response.data.Pol == 0) {
-            //    $scope.P = 'Musko';
-            //}
-            //else {
-            //    $scope.P = 'Zensko';
-            //}
-
             $scope.userProfile = response.data;
+            if ($scope.userProfile.Pol == "Musko") {
+                $scope.P = 'Musko';
+            }
+            else {
+                $scope.P = 'Zensko';
+            }
+            
+           // $scope.userProfile = response.data;
         });
     }
     init();
@@ -86,17 +87,7 @@
             alert('Polje Ulica mora biti popunjeno!');
             return;
         }
-        //else if (drive.Number == null || drive.Number == "") {
-        //    alert('Polje Broj mora biti popunjeno!');
-        //    return;
-        //} else if (drive.Town == null || drive.Town == "") {
-        //    alert('Polje Grad mora biti popunjeno!');
-        //    return;
-        //} else if (drive.PostalCode == null || drive.PostalCode == "") {
-        //    alert('Polje Postanski broj mora biti popunjeno!');
-        //    return;
-        //}
-
+        
         drive.XCoord = document.getElementById("lon").value;
         drive.YCoord = document.getElementById("lat").value;
         drive.Street = document.getElementById("address").innerHTML;
@@ -193,33 +184,33 @@
         });
     };
 
-    $scope.Izmeni = function (drivee) {
-        if (drivee == null) {
-            drivee = {};
-            drivee.tipAuta = $rootScope.VoznjaZaIzmenu.TipAuta;
+    $scope.Izmeni = function (drive) {
+        if (drive == null) {
+            drive = {};
+            drive.tipAuta = $rootScope.VoznjaZaIzmenu.TipAuta;
         }
 
         if (document.getElementById("lon").value == null || document.getElementById("lon").value == "") {
-            drivee.XCoord = $rootScope.VoznjaZaIzmenu.LokacijaZaDolazak.Xkoordinate;
+            drive.XCoord = $rootScope.VoznjaZaIzmenu.LokacijaDolaskaTaksija.X;
         }
         else {
-            drivee.XCoord = document.getElementById("lon").value;
+            drive.XCoord = document.getElementById("lon").value;
         }
         if (document.getElementById("lat").value == null || document.getElementById("lat").value == "") {
-            drivee.YCoord = $rootScope.VoznjaZaIzmenu.LokacijaZaDolazak.Ykoordinate;
+            drive.YCoord = $rootScope.VoznjaZaIzmenu.LokacijaDolaskaTaksija.Y;
         } else {
-            drivee.YCoord = document.getElementById("lat").value;
+            drive.YCoord = document.getElementById("lat").value;
         }
         if (document.getElementById("address").innerText == null || document.getElementById("address").innerText == "") {
-            drivee.Street = $rootScope.VoznjaZaIzmenu.LokacijaZaDolazak.Adr.FormatAdrese;
+            drive.Street = $rootScope.VoznjaZaIzmenu.LokacijaDolaskaTaksija.Adresa.FormatAdrese;
         } else {
-            drivee.Street = document.getElementById("address").innerText;
+            drive.Street = document.getElementById("address").innerText;
         }
-        if (drivee.tipAuta == null || drivee.tipAuta == "") {
-            drivee.tipAuta = $rootScope.VoznjaZaIzmenu.TipAuta;
+        if (drive.tipAuta == null || drive.tipAuta == "") {
+            drive.tipAuta = $rootScope.VoznjaZaIzmenu.ZeljeniAutomobil;
         }
-        drivee.Datum = $rootScope.VoznjaZaIzmenu.DatumIVremePorudzbine;
-        ProfCont.Izmeni(drivee).then(function (response) {
+        drive.Datum = $rootScope.VoznjaZaIzmenu.DatumPorudzbine;
+        ProfCont.Izmeni(drive).then(function (response) {
             if (response.data == true) {
                 console.log(response.data);
                 //$scope.newDrive = response.data;
@@ -232,7 +223,7 @@
         });
     }
     $scope.IzmeniV = function () {
-        drivee = {};
+        drive = {};
         if (document.getElementById("lon").value == null || document.getElementById("lon").value == "" ||
             document.getElementById("lat").value == null || document.getElementById("lat").value == "" ||
             document.getElementById("address").innerText == null ||
@@ -241,11 +232,11 @@
             return;
         }
         else {
-            drivee.XCoord = document.getElementById("lon").value;
-            drivee.YCoord = document.getElementById("lat").value;
-            drivee.Street = document.getElementById("address").innerText;
+            drive.XCoord = document.getElementById("lon").value;
+            drive.YCoord = document.getElementById("lat").value;
+            drive.Street = document.getElementById("address").innerText;
         }
-        ProfCont.IzmeniV(drivee).then(function (response) {
+        ProfCont.IzmeniV(drive).then(function (response) {
             window.location.href = "#!/MyHome";
         });
     }

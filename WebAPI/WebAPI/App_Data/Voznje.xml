@@ -1,15 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfVoznja xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Voznja>
-    <DatumPorudzbine>Tuesday, August 28, 2018 8:08:45 PM</DatumPorudzbine>
+    <DatumPorudzbine>Sunday, September 2, 2018 1:09:32 PM</DatumPorudzbine>
     <LokacijaDolaskaTaksija>
-      <X>20.566406</X>
-      <Y>43.580391</Y>
+      <X>22.851563</X>
+      <Y>-19.297869</Y>
       <Adresa>
-        <FormatAdrese>Бресник, Град Краљево, Рашки округ, Централна Србија, Србија</FormatAdrese>
+        <FormatAdrese>North-West District, Botswana</FormatAdrese>
+      </Adresa>
+    </LokacijaDolaskaTaksija>
+    <ZeljeniAutomobil>Kombi</ZeljeniAutomobil>
+    <Musterija>
+      <KorisnickoIme>gica</KorisnickoIme>
+      <Ime>Tamara</Ime>
+      <Prezime>Gengo</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>0001231234567</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@gmail</Email>
+      <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
+      <Blokiran>true</Blokiran>
+    </Musterija>
+    <Odrediste>
+      <X />
+      <Y />
+      <Adresa />
+    </Odrediste>
+    <DispecerFormirao>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
+    </DispecerFormirao>
+    <VozacPrihvatio>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
+      <Zauzet>false</Zauzet>
+      <Blokiran>false</Blokiran>
+    </VozacPrihvatio>
+    <Iznos>0</Iznos>
+    <Komentar>
+      <DatumObjave>0001-01-01T00:00:00</DatumObjave>
+      <OcjenaVoznje>0</OcjenaVoznje>
+    </Komentar>
+    <StatusVoznje>KreiranaNaCekanju</StatusVoznje>
+  </Voznja>
+  <Voznja>
+    <DatumPorudzbine>Sunday, September 2, 2018 2:39:58 PM</DatumPorudzbine>
+    <LokacijaDolaskaTaksija>
+      <X>-1.582031</X>
+      <Y>39.368279</Y>
+      <Adresa>
+        <FormatAdrese>Camino de San Antón, Villamalea, Albacete, Castilla-La Mancha, 02270, España</FormatAdrese>
       </Adresa>
     </LokacijaDolaskaTaksija>
     <ZeljeniAutomobil>PutnickiAutomobil</ZeljeniAutomobil>
+    <Musterija>
+      <KorisnickoIme>mara</KorisnickoIme>
+      <Lozinka>mara</Lozinka>
+      <Ime>Marija</Ime>
+      <Prezime>Maric</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>mara@gmail.com</Email>
+      <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
+      <Blokiran>false</Blokiran>
+    </Musterija>
+    <Odrediste>
+      <X />
+      <Y />
+      <Adresa />
+    </Odrediste>
+    <DispecerFormirao>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
+    </DispecerFormirao>
+    <VozacPrihvatio>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
+      <Zauzet>false</Zauzet>
+      <Blokiran>false</Blokiran>
+    </VozacPrihvatio>
+    <Iznos>0</Iznos>
+    <Komentar>
+      <DatumObjave>0001-01-01T00:00:00</DatumObjave>
+      <OcjenaVoznje>0</OcjenaVoznje>
+    </Komentar>
+    <StatusVoznje>KreiranaNaCekanju</StatusVoznje>
+  </Voznja>
+  <Voznja>
+    <DatumPorudzbine>Sunday, September 2, 2018 2:43:45 PM</DatumPorudzbine>
+    <LokacijaDolaskaTaksija>
+      <X>15.292969</X>
+      <Y>47.754098</Y>
+      <Adresa>
+        <FormatAdrese>Weißmauergraben, Mariazell, Bezirk Bruck-Mürzzuschlag, Steiermark, 8630, Österreich</FormatAdrese>
+      </Adresa>
+    </LokacijaDolaskaTaksija>
+    <ZeljeniAutomobil>Kombi</ZeljeniAutomobil>
     <Musterija>
       <Ime />
       <Prezime />
@@ -36,38 +137,39 @@
       <KorisnikVoznje />
     </DispecerFormirao>
     <VozacPrihvatio>
-      <KorisnickoIme>barbi</KorisnickoIme>
-      <Lozinka>barbi</Lozinka>
-      <Ime>Barbara</Ime>
-      <Prezime>Segrt</Prezime>
-      <Pol>Zensko</Pol>
+      <KorisnickoIme>laki</KorisnickoIme>
+      <Lozinka>laki</Lozinka>
+      <Ime>Lazar</Ime>
+      <Prezime>Petrovic</Prezime>
+      <Pol>Musko</Pol>
       <Jmbg>1234567891234</Jmbg>
-      <KontaktTelefon>123456789123434</KontaktTelefon>
-      <Email>@barbi</Email>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@gmail</Email>
       <Uloga>Vozac</Uloga>
       <KorisnikVoznje />
       <Lok>
-        <X>15.292969</X>
-        <Y>24.206890</Y>
+        <X>19.848948</X>
+        <Y>45.245165</Y>
         <Adresa>
-          <FormatAdrese>7, Vordere Gams I, Frohnleiten, Graz-Umgebung, Steiermark, 8130, Österreich</FormatAdrese>
+          <FormatAdrese>Studentski dom 'Slobodan Bajic', Sime Milosevica 10, 21000 Novi Sad</FormatAdrese>
         </Adresa>
       </Lok>
       <Auto>
-        <GodisteAutomobila>300</GodisteAutomobila>
-        <BrojRegistarskeOznake>SO123</BrojRegistarskeOznake>
-        <BrojTaksiVozila>3</BrojTaksiVozila>
-        <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-        <UsernameVozaca>barbi</UsernameVozaca>
+        <GodisteAutomobila>2000</GodisteAutomobila>
+        <BrojRegistarskeOznake>NS345</BrojRegistarskeOznake>
+        <BrojTaksiVozila>2</BrojTaksiVozila>
+        <TipAutomobila>Kombi</TipAutomobila>
+        <UsernameVozaca>laki</UsernameVozaca>
       </Auto>
-      <Zauzet>true</Zauzet>
+      <Zauzet>false</Zauzet>
       <Blokiran>false</Blokiran>
     </VozacPrihvatio>
     <Iznos>0</Iznos>
     <Komentar>
-      <DatumObjave>0001-01-01T00:00:00</DatumObjave>
+      <DatumObjave>2018-09-02T14:49:22</DatumObjave>
+      <KorisnikOstavioKom>laki</KorisnikOstavioKom>
       <OcjenaVoznje>0</OcjenaVoznje>
     </Komentar>
-    <StatusVoznje>Formirana</StatusVoznje>
+    <StatusVoznje>Neuspjesna</StatusVoznje>
   </Voznja>
 </ArrayOfVoznja>

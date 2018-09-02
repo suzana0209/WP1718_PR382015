@@ -248,7 +248,7 @@ namespace WebAPI.Controllers
 
                     drive.Musterija = new Musterija();
                     drive.LokacijaDolaskaTaksija = l;
-                    
+
                     if (k.voznja.tipAuta != "")
                     {
                         drive.ZeljeniAutomobil = (TipAutomobila)int.Parse(k.voznja.tipAuta);
@@ -264,7 +264,7 @@ namespace WebAPI.Controllers
 
             foreach (Vozac v in vozaci)
             {
-                if(v.KorisnickoIme == k.korisnickoImeVozac)
+                if (v.KorisnickoIme == k.korisnickoImeVozac)
                 {
                     v.Zauzet = true;
                     drive.VozacPrihvatio = v;
@@ -442,7 +442,13 @@ namespace WebAPI.Controllers
                     if (u.KorisnickoIme == k.OldUsername)
                     {
                         u.KorisnickoIme = k.Username;
-                        u.Lozinka = k.Password;
+
+                        if (k.Password != null)
+                        {
+                            u.Lozinka = k.Password;
+                        }
+
+                        //u.Lozinka = k.Password;
                         u.Ime = k.Ime;
                         u.Prezime = k.Prezime;
                         if (k.Pol == "Zensko" || (k.Pol == "1"))
@@ -468,7 +474,11 @@ namespace WebAPI.Controllers
                     if (u.KorisnickoIme == k.OldUsername)
                     {
                         u.KorisnickoIme = k.Username;
-                        u.Lozinka = k.Password;
+                        if (k.Password != null)
+                        {
+                            u.Lozinka = k.Password;
+                        }
+                        // u.Lozinka = k.Password;
                         u.Ime = k.Ime;
                         u.Prezime = k.Prezime;
                         if (k.Pol == "Zensko" || k.Pol == "1")
@@ -820,7 +830,7 @@ namespace WebAPI.Controllers
             {
                 foreach (Voznja v in lista)
                 {
-                    if ((v.Musterija.KorisnickoIme == k.Voznj.Musterija.KorisnickoIme || v.DispecerFormirao.KorisnickoIme == k.Voznj.DispecerFormirao.KorisnickoIme) && 
+                    if ((v.Musterija.KorisnickoIme == k.Voznj.Musterija.KorisnickoIme || v.DispecerFormirao.KorisnickoIme == k.Voznj.DispecerFormirao.KorisnickoIme) &&
                         DateTime.Parse(v.DatumPorudzbine) == DateTime.Parse(k.Voznj.DatumPorudzbine))
                     {
                         v.StatusVoznje = StatusVoznje.Obradjena;
@@ -831,7 +841,7 @@ namespace WebAPI.Controllers
                 }
                 foreach (Voznja vvv in retL)
                 {
-                    if ((vvv.Musterija.KorisnickoIme == k.Voznj.Musterija.KorisnickoIme || vvv.DispecerFormirao.KorisnickoIme == k.Voznj.DispecerFormirao.KorisnickoIme) && 
+                    if ((vvv.Musterija.KorisnickoIme == k.Voznj.Musterija.KorisnickoIme || vvv.DispecerFormirao.KorisnickoIme == k.Voznj.DispecerFormirao.KorisnickoIme) &&
                         DateTime.Parse(vvv.DatumPorudzbine) == DateTime.Parse(k.Voznj.DatumPorudzbine))
                     {
                         vvv.StatusVoznje = StatusVoznje.Obradjena;
@@ -872,7 +882,7 @@ namespace WebAPI.Controllers
             {
                 foreach (Voznja v in lista)
                 {
-                    if ((v.Musterija.KorisnickoIme == k.Voznj.Musterija.KorisnickoIme || v.DispecerFormirao.KorisnickoIme == k.Voznj.DispecerFormirao.KorisnickoIme) && 
+                    if ((v.Musterija.KorisnickoIme == k.Voznj.Musterija.KorisnickoIme || v.DispecerFormirao.KorisnickoIme == k.Voznj.DispecerFormirao.KorisnickoIme) &&
                         DateTime.Parse(v.DatumPorudzbine) == DateTime.Parse(k.Voznj.DatumPorudzbine))
                     {
                         v.StatusVoznje = StatusVoznje.Prihvacena;
@@ -882,7 +892,7 @@ namespace WebAPI.Controllers
                 }
                 foreach (Voznja vvv in retL)
                 {
-                    if ((vvv.Musterija.KorisnickoIme == k.Voznj.Musterija.KorisnickoIme || vvv.DispecerFormirao.KorisnickoIme == k.Voznj.DispecerFormirao.KorisnickoIme) && 
+                    if ((vvv.Musterija.KorisnickoIme == k.Voznj.Musterija.KorisnickoIme || vvv.DispecerFormirao.KorisnickoIme == k.Voznj.DispecerFormirao.KorisnickoIme) &&
                         DateTime.Parse(vvv.DatumPorudzbine) == DateTime.Parse(k.Voznj.DatumPorudzbine))
                     {
                         retL.Remove(vvv);
@@ -934,7 +944,7 @@ namespace WebAPI.Controllers
             bool ret = false;
             foreach (Voznja v in lista)
             {
-                if (v.VozacPrihvatio.KorisnickoIme == k.Voz.VozacPrihvatio.KorisnickoIme && 
+                if (v.VozacPrihvatio.KorisnickoIme == k.Voz.VozacPrihvatio.KorisnickoIme &&
                     DateTime.Parse(v.DatumPorudzbine) == DateTime.Parse(k.Voz.DatumPorudzbine))
                 {
                     v.Komentar.DatumObjave = DateTime.Parse(String.Format("{0:F}", DateTime.Now));
@@ -975,7 +985,7 @@ namespace WebAPI.Controllers
             bool ret = false;
             foreach (Voznja v in lista)
             {
-                if (v.VozacPrihvatio.KorisnickoIme == k.Voz.VozacPrihvatio.KorisnickoIme && 
+                if (v.VozacPrihvatio.KorisnickoIme == k.Voz.VozacPrihvatio.KorisnickoIme &&
                     DateTime.Parse(v.DatumPorudzbine) == DateTime.Parse(k.Voz.DatumPorudzbine))
                 {
                     v.Iznos = k.Cena;
@@ -1073,6 +1083,147 @@ namespace WebAPI.Controllers
             xml.WriteDrivers(vozaci, ss);
             return true;
         }
+
+        [HttpGet]
+        [ActionName("getBlockedUsers")]
+        public List<Korisnik> getBlockedUsers()
+        {
+            string ss = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Musterije.xml");
+            string ss1 = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Vozaci.xml");
+
+            List<Musterija> lm = xml.ReadUsers(ss);
+            List<Vozac> lv = xml.ReadDrivers(ss1);
+
+            List<Korisnik> ret = new List<Korisnik>();
+
+            foreach (Musterija m in lm)
+            {
+                if (m.Blokiran)
+                {
+                    ret.Add(m);
+                }
+            }
+            foreach (Vozac v in lv)
+            {
+                if (v.Blokiran)
+                {
+                    ret.Add(v);
+                }
+            }
+            return ret;
+        }
+
+
+
+        [HttpGet]
+        [ActionName("getUnblockedUsers")]
+        public List<Korisnik> getUnblockedUsers()
+        {
+            string ss = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Musterije.xml");
+            string ss1 = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Vozaci.xml");
+
+            List<Musterija> lm = xml.ReadUsers(ss);
+            List<Vozac> lv = xml.ReadDrivers(ss1);
+
+            List<Korisnik> ret = new List<Korisnik>();
+
+            foreach (Musterija m in lm)
+            {
+                if (!m.Blokiran)
+                {
+                    ret.Add(m);
+                }
+            }
+            foreach (Vozac v in lv)
+            {
+                if (!v.Blokiran)
+                {
+                    ret.Add(v);
+                }
+            }
+            return ret;
+        }
+
+
+        [HttpGet]
+        [ActionName("Blokiraj")]
+        public List<Korisnik> Blokiraj(string username)
+        {
+            string ss = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Musterije.xml");
+            string ss1 = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Vozaci.xml");
+
+            List<Musterija> lm = xml.ReadUsers(ss);
+            List<Vozac> lv = xml.ReadDrivers(ss1);
+
+            List<Korisnik> ret = new List<Korisnik>();
+
+            foreach (Musterija m in lm)
+            {
+                if (m.KorisnickoIme == username)
+                {
+                    m.Blokiran = true;
+                }
+                if (!m.Blokiran)
+                {
+                    ret.Add(m);
+                }
+            }
+            foreach (Vozac v in lv)
+            {
+                if (v.KorisnickoIme == username)
+                {
+                    v.Blokiran = true;
+                }
+                if (!v.Blokiran)
+                {
+                    ret.Add(v);
+                }
+            }
+
+            xml.WriteUsers(lm, ss);
+            xml.WriteDrivers(lv, ss1);
+            return ret;
+        }
+
+        [HttpGet]
+        [ActionName("Odblokiraj")]
+        public List<Korisnik> Odblokiraj(string username)
+        {
+            string ss = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Musterije.xml");
+            string ss1 = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/Vozaci.xml");
+
+            List<Musterija> lm = xml.ReadUsers(ss);
+            List<Vozac> lv = xml.ReadDrivers(ss1);
+
+            List<Korisnik> ret = new List<Korisnik>();
+
+            foreach (Musterija m in lm)
+            {
+                if (m.KorisnickoIme == username)
+                {
+                    m.Blokiran = false;
+                }
+                if (m.Blokiran)
+                {
+                    ret.Add(m);
+                }
+            }
+            foreach (Vozac v in lv)
+            {
+                if (v.KorisnickoIme == username)
+                {
+                    v.Blokiran = false;
+                }
+                if (v.Blokiran)
+                {
+                    ret.Add(v);
+                }
+            }
+            xml.WriteUsers(lm, ss);
+            xml.WriteDrivers(lv, ss1);
+
+            return ret;
+            
+        }
     }
 }
-

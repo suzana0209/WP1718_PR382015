@@ -2,30 +2,16 @@
 <ArrayOfAutomobil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Automobil>
     <GodisteAutomobila>2010</GodisteAutomobila>
-    <BrojRegistarskeOznake>PR123</BrojRegistarskeOznake>
+    <BrojRegistarskeOznake>NS123</BrojRegistarskeOznake>
     <BrojTaksiVozila>1</BrojTaksiVozila>
     <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>dejo</UsernameVozaca>
+    <UsernameVozaca>sladja</UsernameVozaca>
   </Automobil>
   <Automobil>
     <GodisteAutomobila>2000</GodisteAutomobila>
-    <BrojRegistarskeOznake>ST123</BrojRegistarskeOznake>
+    <BrojRegistarskeOznake>NS345</BrojRegistarskeOznake>
     <BrojTaksiVozila>2</BrojTaksiVozila>
     <TipAutomobila>Kombi</TipAutomobila>
-    <UsernameVozaca>maca</UsernameVozaca>
-  </Automobil>
-  <Automobil>
-    <GodisteAutomobila>300</GodisteAutomobila>
-    <BrojRegistarskeOznake>SO123</BrojRegistarskeOznake>
-    <BrojTaksiVozila>3</BrojTaksiVozila>
-    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>barbi</UsernameVozaca>
-  </Automobil>
-  <Automobil>
-    <GodisteAutomobila>2014</GodisteAutomobila>
-    <BrojRegistarskeOznake>BI123</BrojRegistarskeOznake>
-    <BrojTaksiVozila>4</BrojTaksiVozila>
-    <TipAutomobila>Kombi</TipAutomobila>
-    <UsernameVozaca>tami</UsernameVozaca>
+    <UsernameVozaca>laki</UsernameVozaca>
   </Automobil>
 </ArrayOfAutomobil>

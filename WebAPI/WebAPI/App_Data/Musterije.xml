@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfMusterija xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Musterija>
-    <KorisnickoIme>dejo123</KorisnickoIme>
-    <Lozinka>dejo</Lozinka>
-    <Ime>Dejan</Ime>
-    <Prezime>Jovic</Prezime>
-    <Pol>Musko</Pol>
+    <KorisnickoIme>maca</KorisnickoIme>
+    <Lozinka>maca</Lozinka>
+    <Ime>Marija</Ime>
+    <Prezime>Djurkovic</Prezime>
+    <Pol>Zensko</Pol>
     <Jmbg>1234567891234</Jmbg>
     <KontaktTelefon>1234567891234</KontaktTelefon>
     <Email>@gmail</Email>
@@ -14,14 +14,39 @@
     <Blokiran>false</Blokiran>
   </Musterija>
   <Musterija>
-    <KorisnickoIme>marko</KorisnickoIme>
-    <Lozinka>marko</Lozinka>
-    <Ime>Marko</Ime>
-    <Prezime>Markovic</Prezime>
-    <Pol>Musko</Pol>
+    <KorisnickoIme>barbi</KorisnickoIme>
+    <Lozinka>barbi</Lozinka>
+    <Ime>Barbara</Ime>
+    <Prezime>Segrt</Prezime>
+    <Pol>Zensko</Pol>
     <Jmbg>1234567891234</Jmbg>
     <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@marko</Email>
+    <Email>@barbi</Email>
+    <Uloga>Musterija</Uloga>
+    <KorisnikVoznje />
+    <Blokiran>true</Blokiran>
+  </Musterija>
+  <Musterija>
+    <KorisnickoIme>gica</KorisnickoIme>
+    <Ime>Tamara</Ime>
+    <Prezime>Gengo</Prezime>
+    <Pol>Zensko</Pol>
+    <Jmbg>0001231234567</Jmbg>
+    <KontaktTelefon>1234567891234</KontaktTelefon>
+    <Email>@gmail</Email>
+    <Uloga>Musterija</Uloga>
+    <KorisnikVoznje />
+    <Blokiran>true</Blokiran>
+  </Musterija>
+  <Musterija>
+    <KorisnickoIme>mara</KorisnickoIme>
+    <Lozinka>mara</Lozinka>
+    <Ime>Marija</Ime>
+    <Prezime>Maric</Prezime>
+    <Pol>Zensko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>1234567891234</KontaktTelefon>
+    <Email>mara@gmail.com</Email>
     <Uloga>Musterija</Uloga>
     <KorisnikVoznje />
     <Blokiran>false</Blokiran>
