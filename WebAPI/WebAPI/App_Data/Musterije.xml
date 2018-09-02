@@ -36,7 +36,7 @@
     <Email>@gmail</Email>
     <Uloga>Musterija</Uloga>
     <KorisnikVoznje />
-    <Blokiran>true</Blokiran>
+    <Blokiran>false</Blokiran>
   </Musterija>
   <Musterija>
     <KorisnickoIme>mara</KorisnickoIme>
@@ -49,6 +49,6 @@
     <Email>mara@gmail.com</Email>
     <Uloga>Musterija</Uloga>
     <KorisnikVoznje />
-    <Blokiran>false</Blokiran>
+    <Blokiran>true</Blokiran>
   </Musterija>
 </ArrayOfMusterija>

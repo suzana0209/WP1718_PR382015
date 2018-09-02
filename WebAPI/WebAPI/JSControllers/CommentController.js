@@ -166,24 +166,29 @@
                 return;
             }
             if (drive.Cena <= 0) {
-                alert('Morate uneti cenu');
+                alert('Morate unijeti cijenu');
                 return;
             }
-            if (document.getElementById("lon").value == null || document.getElementById("lon").value == "") {
-                alert('X coordinate cant be empty!');
+            if (document.getElementById("lon").innerHTML == null ||
+                document.getElementById("lon").innerHTML == "") {
+                alert('X kooridinata ne smije biti prazna!');
                 return;
             }
-            else if (document.getElementById("lat").value == null || document.getElementById("lat").value == "") {
-                alert('Y coordinate cant be empty!');
+            else if (document.getElementById("lat").innerHTML == null ||
+                document.getElementById("lat").innerHTML == "") {
+                alert('Y kooridinata ne smije biti prazna!');
                 return;
             }
-            else if (document.getElementById("address").innerHTML == null || document.getElementById("address").innerHTML == "") {
-                alert('Street cant be empty!');
+            else if (document.getElementById("address").innerHTML == null ||
+                document.getElementById("address").innerHTML == "") {
+                alert('Adresa ne smije biti prazna!');
                 return;
             }
-            drive.XCoord = document.getElementById("lon").value;
-            drive.YCoord = document.getElementById("lat").value;
+
+            drive.XCoord = document.getElementById("lon").innerHTML;
+            drive.YCoord = document.getElementById("lat").innerHTML;
             drive.Street = document.getElementById("address").innerHTML;
+
             ProfCont.DodajKraj(drive, $rootScope.VoznjaZaKomentarVozac).then(function (response) {
                 console.log(response.data);
                 $window.location.href = "#!/MyHome";

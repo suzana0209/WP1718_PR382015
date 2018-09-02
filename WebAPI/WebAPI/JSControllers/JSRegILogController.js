@@ -27,37 +27,37 @@
             return;
         }
         else if (user.jmbg.match(/[a-z]/i)) {
-            alert('Polje Jmbg ne smije da sadrzi slova! ');
+            alert('Jmbg ne smije da sadrzi slova! ');
             return;
         }
         else if (user.jmbg.length != 13) {
-            alert('Polje Jmbg mora da sadrzi 13 cifara');
+            alert('Jmbg mora da sadrzi 13 cifara');
             return;
         }
         else if (user.kontaktTelefon == null || user.kontaktTelefon == "") {
-            alert('Polje Broj telefona ne smije biti prazan!');
+            alert('Polje Broj telefona ne smije biti prazno!');
             return;
         }
         else if (user.kontaktTelefon.match(/[a-z]/i)) {
-            alert('Polje Broj telefona ne smije da sadrzi slova! ');
+            alert('Broj telefona ne smije da sadrzi slova! ');
             return;
         }
         else if (user.email == null || user.email == "") {
-            alert('Polje Email ne smije biti prazan!');
+            alert('Polje Email ne smije biti prazno!');
             return;
         }
         else if (!user.email.includes('@')) {
-            alert('Polje Email nije ispravno unesen!');
+            alert('Email nije ispravno unesen!');
             return;
         }
         else if (user.pwd == null || user.pwd == "") {
-            alert('Polje Lozinka ne smije biti prazna!');
+            alert('Polje Lozinka ne smije biti prazno!');
             return;
         }
         RegILogFactory.RegisterUser(user).then(function (response) {
             if (response.data == true) {
                 console.log(response.data);
-                $rootScope.RegisterSuccess = "Uspjesno ste se registrovali! Sada se mozete prijaviti!";
+                //$rootScope.RegisterSuccess = "Uspjesno ste se registrovali! Sada se mozete prijaviti!";
                 $window.location.href = "#!/Login";
             }
             else {
@@ -72,7 +72,7 @@
             return;
         }
         else if (user.pwd == null || user.pwd == "") {
-            alert('Polje Lozinka ne smije biti prazna!');
+            alert('Polje Lozinka ne smije biti prazno!');
             return;
         }
         RegILogFactory.LoginUser(user).then(function (response) {
@@ -85,7 +85,7 @@
 
                 RegILogFactory.GetUserStatusByUsername(user.username).then(function (response) {
                     if (response.data == true) {
-                        alert('Blokirani ste!');
+                        alert('Ne mozete se prijaviti, BLOKIRANI STE!');
                         return;
                     }
                 
@@ -142,11 +142,11 @@
             return;
         }
         else if (user.jmbg.match(/[a-z]/i)) {
-            alert('Polje Jmbg ne smije da sadrzi slova!');
+            alert('Jmbg ne smije da sadrzi slova!');
             return;
         }
         else if (user.jmbg.length != 13) {
-            alert('JPolje jmbg mora da sadrzi 14 cifara');
+            alert('Jmbg mora da sadrzi 13 cifara');
             return;
         }
         else if (user.kontaktTelefon == null || user.kontaktTelefon == "") {
@@ -154,7 +154,7 @@
             return;
         }
         else if (user.kontaktTelefon.match(/[a-z]/i)) {
-            alert('Polje broj telefona ne smije da sadrzi slova');
+            alert('Broj telefona ne smije da sadrzi slova');
             return;
         }
         else if (user.email == null || user.email == "") {
@@ -166,16 +166,16 @@
             return;
         }
         else if (user.pwd == null || user.pwd == "") {
-            alert('Polje Lozinka ne smije biti prazna!');
+            alert('Polje Lozinka ne smije biti prazno!');
             return;
         }
         else if (user.godina == null || user.godina == "") {
-            alert('Polje godina ne smije biti prazna!');
+            alert('Polje godina proizvodnje ne smije biti prazno!');
             return;
         }
 
         else if (user.registarskaOznaka == null || user.registarskaOznaka == "") {
-            alert('Polje Registarska oznaka ne smije biti prazna!');
+            alert('Polje Registarska oznaka ne smije biti prazno!');
             return;
         }
         else if (user.tipVozila == null || user.tipVozila == "") {
@@ -185,11 +185,11 @@
         RegILogFactory.RegisterDriver(user).then(function (response) {
             if (response.data == true) {
                 console.log(response.data);
-                $rootScope.RegisterSuccess = "Uspjesno ste se registrovali! Sada se mozete prijaviti.";
+                //$rootScope.RegisterSuccess = "Uspjesno ste se registrovali! Sada se mozete prijaviti.";
                 $window.location.href = "#!/MyHome";
             }
             else {
-                alert("Korisnicko ime vec postoji, pokusajte ponovo.");
+                alert("Korisnicko ime je zauzeto ili vec postoji registarska oznaka. Pokusajte ponovo.");
             }
         });
     };
