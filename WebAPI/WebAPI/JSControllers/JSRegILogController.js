@@ -1,5 +1,6 @@
 ﻿WebAPI.controller('JSRegILogController', function ($scope, RegILogFactory, $window, $rootScope) {
     $scope.user = {}; //inicijalizacija na prazno
+
     function init() {
         console.log('Login controller initialized'); //ispis na konzoli da se inicijalizovao
         $rootScope.Uloga = sessionStorage.getItem("role");

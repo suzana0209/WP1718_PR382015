@@ -1,11 +1,10 @@
-﻿WebAPI.controller('ProfileController', function ($scope, ProfCont, $window, $rootScope) {
+﻿WebAPI.controller('ProfileController', function ($scope, ProfCont, $window, $rootScope, RegILogFactory) {
 
     if (!$rootScope.loggedin) {
         $window.location.href = '#!/Login';
     }
 
     function init() {
-
         RegILogFactory.GetUserStatusByUsername(sessionStorage.getItem("username")).then(function (response) {
             if (response.data == true) {
                 alert('Blokirani ste!');
@@ -30,15 +29,13 @@
             ProfCont.getUserByUsername(sessionStorage.getItem("username")).then(function (response) {
                 console.log(response.data);
 
-            $scope.userProfile = response.data;
-            if ($scope.userProfile.Pol == "Musko") {
-                $scope.P = 'Musko';
-            }
-            else {
-                $scope.P = 'Zensko';
-            }
-            
-           // $scope.userProfile = response.data;
+                $scope.userProfile = response.data;
+                if ($scope.userProfile.Pol == "Musko" || $scope.userProfile.Pol == "0") {
+                    $scope.P = 'Musko';
+                }
+                else {
+                    $scope.P = 'Zensko';
+                }
             });
         });
     }

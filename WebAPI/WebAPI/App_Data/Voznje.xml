@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfVoznja xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Voznja>
-    <DatumPorudzbine>Sunday, September 2, 2018 1:09:32 PM</DatumPorudzbine>
+    <DatumPorudzbine>Monday, September 3, 2018 9:36:07 AM</DatumPorudzbine>
     <LokacijaDolaskaTaksija>
-      <X>22.851563</X>
-      <Y>-19.297869</Y>
+      <X>32.910157</X>
+      <Y>39.140475</Y>
       <Adresa>
-        <FormatAdrese>North-West District, Botswana</FormatAdrese>
+        <FormatAdrese>Boğazören, Kulu, Konya, İç Anadolu Bölgesi, Türkiye</FormatAdrese>
       </Adresa>
     </LokacijaDolaskaTaksija>
     <ZeljeniAutomobil>Kombi</ZeljeniAutomobil>
     <Musterija>
-      <KorisnickoIme>gica</KorisnickoIme>
-      <Ime>Tamara</Ime>
-      <Prezime>Gengo</Prezime>
+      <KorisnickoIme>barbi1234</KorisnickoIme>
+      <Lozinka>barbi</Lozinka>
+      <Ime>Barbi</Ime>
+      <Prezime>Segrt</Prezime>
       <Pol>Zensko</Pol>
-      <Jmbg>0001231234567</Jmbg>
+      <Jmbg>1234567891234</Jmbg>
       <KontaktTelefon>1234567891234</KontaktTelefon>
-      <Email>@gmail</Email>
+      <Email>@gamil</Email>
       <Uloga>Musterija</Uloga>
       <KorisnikVoznje />
-      <Blokiran>true</Blokiran>
+      <Blokiran>false</Blokiran>
     </Musterija>
     <Odrediste>
       <X />
@@ -51,24 +52,24 @@
     <StatusVoznje>KreiranaNaCekanju</StatusVoznje>
   </Voznja>
   <Voznja>
-    <DatumPorudzbine>Sunday, September 2, 2018 2:39:58 PM</DatumPorudzbine>
+    <DatumPorudzbine>Monday, September 3, 2018 9:38:20 AM</DatumPorudzbine>
     <LokacijaDolaskaTaksija>
-      <X>-1.582031</X>
-      <Y>39.368279</Y>
+      <X>12.091827</X>
+      <Y>63.818864</Y>
       <Adresa>
-        <FormatAdrese>Camino de San Antón, Villamalea, Albacete, Castilla-La Mancha, 02270, España</FormatAdrese>
+        <FormatAdrese>Helgådalen, Helgådalsvegen, Verdal, Trøndelag, Norge</FormatAdrese>
       </Adresa>
     </LokacijaDolaskaTaksija>
     <ZeljeniAutomobil>PutnickiAutomobil</ZeljeniAutomobil>
     <Musterija>
-      <KorisnickoIme>mara</KorisnickoIme>
-      <Lozinka>mara</Lozinka>
-      <Ime>Marija</Ime>
-      <Prezime>Maric</Prezime>
+      <KorisnickoIme>joka</KorisnickoIme>
+      <Lozinka>joka</Lozinka>
+      <Ime>Joka</Ime>
+      <Prezime>Kanlic</Prezime>
       <Pol>Zensko</Pol>
       <Jmbg>1234567891234</Jmbg>
       <KontaktTelefon>1234567891234</KontaktTelefon>
-      <Email>mara@gmail.com</Email>
+      <Email>@gma</Email>
       <Uloga>Musterija</Uloga>
       <KorisnikVoznje />
       <Blokiran>false</Blokiran>
@@ -96,18 +97,20 @@
     </VozacPrihvatio>
     <Iznos>0</Iznos>
     <Komentar>
-      <DatumObjave>0001-01-01T00:00:00</DatumObjave>
+      <Opis>Taksi nije dosao na vrijeme !</Opis>
+      <DatumObjave>2018-09-03T10:24:28</DatumObjave>
+      <KorisnikOstavioKom>joka</KorisnikOstavioKom>
       <OcjenaVoznje>0</OcjenaVoznje>
     </Komentar>
-    <StatusVoznje>KreiranaNaCekanju</StatusVoznje>
+    <StatusVoznje>Otkazana</StatusVoznje>
   </Voznja>
   <Voznja>
-    <DatumPorudzbine>Sunday, September 2, 2018 2:43:45 PM</DatumPorudzbine>
+    <DatumPorudzbine>Monday, September 3, 2018 9:43:35 AM</DatumPorudzbine>
     <LokacijaDolaskaTaksija>
-      <X>15.292969</X>
-      <Y>47.754098</Y>
+      <X>20.637909</X>
+      <Y>44.484815</Y>
       <Adresa>
-        <FormatAdrese>Weißmauergraben, Mariazell, Bezirk Bruck-Mürzzuschlag, Steiermark, 8630, Österreich</FormatAdrese>
+        <FormatAdrese>Кошутичка, Рајковац, Општина Младеновац, Београд, Централна Србија, 11401, Србија</FormatAdrese>
       </Adresa>
     </LokacijaDolaskaTaksija>
     <ZeljeniAutomobil>Kombi</ZeljeniAutomobil>
@@ -137,11 +140,457 @@
       <KorisnikVoznje />
     </DispecerFormirao>
     <VozacPrihvatio>
+      <KorisnickoIme>maca1234</KorisnickoIme>
+      <Lozinka>maca</Lozinka>
+      <Ime>Marija</Ime>
+      <Prezime>Djurkovic</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@gmail</Email>
+      <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
+      <Lok>
+        <X>61.347656</X>
+        <Y>62.593341</Y>
+        <Adresa>
+          <FormatAdrese>Берёзовский район, Ханты-Мансийский автономный округ - Югра, Уральский федеральный округ, РФ</FormatAdrese>
+        </Adresa>
+      </Lok>
+      <Auto>
+        <GodisteAutomobila>2010</GodisteAutomobila>
+        <BrojRegistarskeOznake>ST123</BrojRegistarskeOznake>
+        <BrojTaksiVozila>1</BrojTaksiVozila>
+        <TipAutomobila>Kombi</TipAutomobila>
+        <UsernameVozaca>maca1234</UsernameVozaca>
+      </Auto>
+      <Zauzet>true</Zauzet>
+      <Blokiran>false</Blokiran>
+    </VozacPrihvatio>
+    <Iznos>0</Iznos>
+    <Komentar>
+      <DatumObjave>0001-01-01T00:00:00</DatumObjave>
+      <OcjenaVoznje>0</OcjenaVoznje>
+    </Komentar>
+    <StatusVoznje>Formirana</StatusVoznje>
+  </Voznja>
+  <Voznja>
+    <DatumPorudzbine>Monday, September 3, 2018 10:16:36 AM</DatumPorudzbine>
+    <LokacijaDolaskaTaksija>
+      <X>3.742218</X>
+      <Y>26.740705</Y>
+      <Adresa>
+        <FormatAdrese>Foggaret Ezzaouia, Daïra d'In Salah, circonscription administrative d'In Salah, Tamanrasset تمنراست, ⵍⵣⵣⴰⵢⴻⵔ الجزائر</FormatAdrese>
+      </Adresa>
+    </LokacijaDolaskaTaksija>
+    <ZeljeniAutomobil>Kombi</ZeljeniAutomobil>
+    <Musterija>
+      <KorisnickoIme>joka</KorisnickoIme>
+      <Lozinka>joka</Lozinka>
+      <Ime>Joka</Ime>
+      <Prezime>Kanlic</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@gma</Email>
+      <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
+      <Blokiran>false</Blokiran>
+    </Musterija>
+    <Odrediste>
+      <X />
+      <Y />
+      <Adresa />
+    </Odrediste>
+    <DispecerFormirao>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
+    </DispecerFormirao>
+    <VozacPrihvatio>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
+      <Zauzet>false</Zauzet>
+      <Blokiran>false</Blokiran>
+    </VozacPrihvatio>
+    <Iznos>0</Iznos>
+    <Komentar>
+      <DatumObjave>0001-01-01T00:00:00</DatumObjave>
+      <OcjenaVoznje>0</OcjenaVoznje>
+    </Komentar>
+    <StatusVoznje>KreiranaNaCekanju</StatusVoznje>
+  </Voznja>
+  <Voznja>
+    <DatumPorudzbine>Monday, September 3, 2018 10:16:49 AM</DatumPorudzbine>
+    <LokacijaDolaskaTaksija>
+      <X>38.898468</X>
+      <Y>51.778037</Y>
+      <Adresa>
+        <FormatAdrese>20К-1-28, Семилукское сельское поселение, Семилукский район, Воронежская область, ЦФО, 396921, РФ</FormatAdrese>
+      </Adresa>
+    </LokacijaDolaskaTaksija>
+    <ZeljeniAutomobil>PutnickiAutomobil</ZeljeniAutomobil>
+    <Musterija>
+      <KorisnickoIme>joka</KorisnickoIme>
+      <Lozinka>joka</Lozinka>
+      <Ime>Joka</Ime>
+      <Prezime>Kanlic</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@gma</Email>
+      <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
+      <Blokiran>false</Blokiran>
+    </Musterija>
+    <Odrediste>
+      <X />
+      <Y />
+      <Adresa />
+    </Odrediste>
+    <DispecerFormirao>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
+    </DispecerFormirao>
+    <VozacPrihvatio>
+      <KorisnickoIme>marko</KorisnickoIme>
+      <Lozinka>marko</Lozinka>
+      <Ime>Marko</Ime>
+      <Prezime>Markovic</Prezime>
+      <Pol>Musko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@marko</Email>
+      <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
+      <Lok>
+        <X>20.566406</X>
+        <Y>49.610710</Y>
+        <Adresa>
+          <FormatAdrese>42, Gostwica, gmina Podegrodzie, powiat nowosądecki, małopolskie, 33-386, RP</FormatAdrese>
+        </Adresa>
+      </Lok>
+      <Auto>
+        <GodisteAutomobila>2000</GodisteAutomobila>
+        <BrojRegistarskeOznake>HG565</BrojRegistarskeOznake>
+        <BrojTaksiVozila>10</BrojTaksiVozila>
+        <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+        <UsernameVozaca>marko</UsernameVozaca>
+      </Auto>
+      <Zauzet>false</Zauzet>
+      <Blokiran>false</Blokiran>
+    </VozacPrihvatio>
+    <Iznos>0</Iznos>
+    <Komentar>
+      <Opis>:(</Opis>
+      <DatumObjave>2018-09-03T11:57:07</DatumObjave>
+      <KorisnikOstavioKom>marko</KorisnikOstavioKom>
+      <OcjenaVoznje>0</OcjenaVoznje>
+    </Komentar>
+    <StatusVoznje>Neuspjesna</StatusVoznje>
+  </Voznja>
+  <Voznja>
+    <DatumPorudzbine>Monday, September 3, 2018 10:17:07 AM</DatumPorudzbine>
+    <LokacijaDolaskaTaksija>
+      <X>-93.376923</X>
+      <Y>40.241799</Y>
+      <Adresa>
+        <FormatAdrese>Grundy County, Missouri, USA</FormatAdrese>
+      </Adresa>
+    </LokacijaDolaskaTaksija>
+    <ZeljeniAutomobil>PutnickiAutomobil</ZeljeniAutomobil>
+    <Musterija>
+      <KorisnickoIme>joka</KorisnickoIme>
+      <Lozinka>joka</Lozinka>
+      <Ime>Joka</Ime>
+      <Prezime>Kanlic</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@gma</Email>
+      <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
+      <Blokiran>false</Blokiran>
+    </Musterija>
+    <Odrediste>
+      <X>-74.355469</X>
+      <Y>60.239811</Y>
+      <Adresa>
+        <FormatAdrese>ᑲᑎᕕᒃ Kativik, Nunavik, Québec, 609081, Canada</FormatAdrese>
+      </Adresa>
+    </Odrediste>
+    <DispecerFormirao>
+      <KorisnickoIme>admin</KorisnickoIme>
+      <Lozinka>admin</Lozinka>
+      <Ime>Suzana</Ime>
+      <Prezime>Jovic</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1308996123456</Jmbg>
+      <KontaktTelefon>04823875</KontaktTelefon>
+      <Email>suza@gmail.com</Email>
+      <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
+    </DispecerFormirao>
+    <VozacPrihvatio>
+      <KorisnickoIme>luka</KorisnickoIme>
+      <Lozinka>luka</Lozinka>
+      <Ime>Luka</Ime>
+      <Prezime>Crnomarkovic</Prezime>
+      <Pol>Musko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@luka</Email>
+      <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
+      <Lok>
+        <X>-74.355469</X>
+        <Y>60.239811</Y>
+        <Adresa>
+          <FormatAdrese>ᑲᑎᕕᒃ Kativik, Nunavik, Québec, 609081, Canada</FormatAdrese>
+        </Adresa>
+      </Lok>
+      <Auto>
+        <GodisteAutomobila>2010</GodisteAutomobila>
+        <BrojRegistarskeOznake>ST567</BrojRegistarskeOznake>
+        <BrojTaksiVozila>4</BrojTaksiVozila>
+        <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+        <UsernameVozaca>luka</UsernameVozaca>
+      </Auto>
+      <Zauzet>false</Zauzet>
+      <Blokiran>false</Blokiran>
+    </VozacPrihvatio>
+    <Iznos>5600</Iznos>
+    <Komentar>
+      <Opis>Odlicnoooo!</Opis>
+      <DatumObjave>2018-09-03T10:21:55</DatumObjave>
+      <KorisnikOstavioKom>joka</KorisnikOstavioKom>
+      <OcjenaVoznje>3</OcjenaVoznje>
+    </Komentar>
+    <StatusVoznje>Uspjesna</StatusVoznje>
+  </Voznja>
+  <Voznja>
+    <DatumPorudzbine>Monday, September 3, 2018 10:29:31 AM</DatumPorudzbine>
+    <LokacijaDolaskaTaksija>
+      <X>24.396515</X>
+      <Y>10.568822</Y>
+      <Adresa>
+        <FormatAdrese>Municipio Roboré, Provincia Chiquitos, SCZ, Bolivia</FormatAdrese>
+      </Adresa>
+    </LokacijaDolaskaTaksija>
+    <ZeljeniAutomobil>PutnickiAutomobil</ZeljeniAutomobil>
+    <Musterija>
       <KorisnickoIme>laki</KorisnickoIme>
       <Lozinka>laki</Lozinka>
       <Ime>Lazar</Ime>
       <Prezime>Petrovic</Prezime>
       <Pol>Musko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@laki</Email>
+      <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
+      <Blokiran>false</Blokiran>
+    </Musterija>
+    <Odrediste>
+      <X />
+      <Y />
+      <Adresa />
+    </Odrediste>
+    <DispecerFormirao>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
+    </DispecerFormirao>
+    <VozacPrihvatio>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
+      <Zauzet>false</Zauzet>
+      <Blokiran>false</Blokiran>
+    </VozacPrihvatio>
+    <Iznos>0</Iznos>
+    <Komentar>
+      <DatumObjave>0001-01-01T00:00:00</DatumObjave>
+      <OcjenaVoznje>0</OcjenaVoznje>
+    </Komentar>
+    <StatusVoznje>Otkazana</StatusVoznje>
+  </Voznja>
+  <Voznja>
+    <DatumPorudzbine>Monday, September 3, 2018 10:29:46 AM</DatumPorudzbine>
+    <LokacijaDolaskaTaksija>
+      <X>-57.341766</X>
+      <Y>-17.230005</Y>
+      <Adresa>
+        <FormatAdrese>Estirão do Cervo, Cáceres, Microrregião do Alto Pantanal, Mesorregião Centro-Sul Mato-Grossense, MT, Região Centro-Oeste, Brasil</FormatAdrese>
+      </Adresa>
+    </LokacijaDolaskaTaksija>
+    <ZeljeniAutomobil>Kombi</ZeljeniAutomobil>
+    <Musterija>
+      <KorisnickoIme>laki</KorisnickoIme>
+      <Lozinka>laki</Lozinka>
+      <Ime>Lazar</Ime>
+      <Prezime>Petrovic</Prezime>
+      <Pol>Musko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@laki</Email>
+      <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
+      <Blokiran>false</Blokiran>
+    </Musterija>
+    <Odrediste>
+      <X />
+      <Y />
+      <Adresa />
+    </Odrediste>
+    <DispecerFormirao>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
+    </DispecerFormirao>
+    <VozacPrihvatio>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
+      <Zauzet>false</Zauzet>
+      <Blokiran>false</Blokiran>
+    </VozacPrihvatio>
+    <Iznos>0</Iznos>
+    <Komentar>
+      <Opis>Shitttt!!!!!!</Opis>
+      <DatumObjave>2018-09-03T11:49:21</DatumObjave>
+      <KorisnikOstavioKom>laki</KorisnikOstavioKom>
+      <OcjenaVoznje>0</OcjenaVoznje>
+    </Komentar>
+    <StatusVoznje>Otkazana</StatusVoznje>
+  </Voznja>
+  <Voznja>
+    <DatumPorudzbine>Monday, September 3, 2018 10:29:56 AM</DatumPorudzbine>
+    <LokacijaDolaskaTaksija>
+      <X>-95.134735</X>
+      <Y>42.549034</Y>
+      <Adresa>
+        <FormatAdrese>170th Street, Sac County, Iowa, 50567, USA</FormatAdrese>
+      </Adresa>
+    </LokacijaDolaskaTaksija>
+    <ZeljeniAutomobil>PutnickiAutomobil</ZeljeniAutomobil>
+    <Musterija>
+      <KorisnickoIme>laki</KorisnickoIme>
+      <Lozinka>laki</Lozinka>
+      <Ime>Lazar</Ime>
+      <Prezime>Petrovic</Prezime>
+      <Pol>Musko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@laki</Email>
+      <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
+      <Blokiran>false</Blokiran>
+    </Musterija>
+    <Odrediste>
+      <X />
+      <Y />
+      <Adresa />
+    </Odrediste>
+    <DispecerFormirao>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
+    </DispecerFormirao>
+    <VozacPrihvatio>
+      <KorisnickoIme>marko</KorisnickoIme>
+      <Lozinka>marko</Lozinka>
+      <Ime>Marko</Ime>
+      <Prezime>Markovic</Prezime>
+      <Pol>Musko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@marko</Email>
+      <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
+      <Lok>
+        <X>20.566406</X>
+        <Y>49.610710</Y>
+        <Adresa>
+          <FormatAdrese>42, Gostwica, gmina Podegrodzie, powiat nowosądecki, małopolskie, 33-386, RP</FormatAdrese>
+        </Adresa>
+      </Lok>
+      <Auto>
+        <GodisteAutomobila>2000</GodisteAutomobila>
+        <BrojRegistarskeOznake>HG565</BrojRegistarskeOznake>
+        <BrojTaksiVozila>10</BrojTaksiVozila>
+        <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+        <UsernameVozaca>marko</UsernameVozaca>
+      </Auto>
+      <Zauzet>true</Zauzet>
+      <Blokiran>false</Blokiran>
+    </VozacPrihvatio>
+    <Iznos>0</Iznos>
+    <Komentar>
+      <DatumObjave>0001-01-01T00:00:00</DatumObjave>
+      <OcjenaVoznje>0</OcjenaVoznje>
+    </Komentar>
+    <StatusVoznje>Prihvacena</StatusVoznje>
+  </Voznja>
+  <Voznja>
+    <DatumPorudzbine>Monday, September 3, 2018 10:58:58 AM</DatumPorudzbine>
+    <LokacijaDolaskaTaksija>
+      <X>-52.558594</X>
+      <Y>-20.632784</Y>
+      <Adresa>
+        <FormatAdrese>Água Clara, Microrregião de Três Lagoas, Mesorregião Leste de Mato Grosso do Sul, MS, Região Centro-Oeste, Brasil</FormatAdrese>
+      </Adresa>
+    </LokacijaDolaskaTaksija>
+    <ZeljeniAutomobil>Kombi</ZeljeniAutomobil>
+    <Musterija>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
+      <Blokiran>false</Blokiran>
+    </Musterija>
+    <Odrediste>
+      <X />
+      <Y />
+      <Adresa />
+    </Odrediste>
+    <DispecerFormirao>
+      <KorisnickoIme>admin</KorisnickoIme>
+      <Lozinka>admin</Lozinka>
+      <Ime>Suzana</Ime>
+      <Prezime>Jovic</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1308996123456</Jmbg>
+      <KontaktTelefon>04823875</KontaktTelefon>
+      <Email>suza@gmail.com</Email>
+      <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
+    </DispecerFormirao>
+    <VozacPrihvatio>
+      <KorisnickoIme>tea</KorisnickoIme>
+      <Lozinka>tea</Lozinka>
+      <Ime>Teodora</Ime>
+      <Prezime>Maric</Prezime>
+      <Pol>Zensko</Pol>
       <Jmbg>1234567891234</Jmbg>
       <KontaktTelefon>1234567891234</KontaktTelefon>
       <Email>@gmail</Email>
@@ -155,21 +604,381 @@
         </Adresa>
       </Lok>
       <Auto>
-        <GodisteAutomobila>2000</GodisteAutomobila>
-        <BrojRegistarskeOznake>NS345</BrojRegistarskeOznake>
-        <BrojTaksiVozila>2</BrojTaksiVozila>
+        <GodisteAutomobila>2006</GodisteAutomobila>
+        <BrojRegistarskeOznake>SK900</BrojRegistarskeOznake>
+        <BrojTaksiVozila>6</BrojTaksiVozila>
         <TipAutomobila>Kombi</TipAutomobila>
-        <UsernameVozaca>laki</UsernameVozaca>
+        <UsernameVozaca>tea</UsernameVozaca>
       </Auto>
       <Zauzet>false</Zauzet>
       <Blokiran>false</Blokiran>
     </VozacPrihvatio>
     <Iznos>0</Iznos>
     <Komentar>
-      <DatumObjave>2018-09-02T14:49:22</DatumObjave>
-      <KorisnikOstavioKom>laki</KorisnikOstavioKom>
+      <Opis>musterija nije dosla na vrijeme</Opis>
+      <DatumObjave>2018-09-03T11:07:47</DatumObjave>
+      <KorisnikOstavioKom>tea</KorisnikOstavioKom>
       <OcjenaVoznje>0</OcjenaVoznje>
     </Komentar>
     <StatusVoznje>Neuspjesna</StatusVoznje>
+  </Voznja>
+  <Voznja>
+    <DatumPorudzbine>Monday, September 3, 2018 11:00:40 AM</DatumPorudzbine>
+    <LokacijaDolaskaTaksija>
+      <X>53.613281</X>
+      <Y>-68.656555</Y>
+      <Adresa>
+        <FormatAdrese>AAT, Antarctica</FormatAdrese>
+      </Adresa>
+    </LokacijaDolaskaTaksija>
+    <ZeljeniAutomobil>PutnickiAutomobil</ZeljeniAutomobil>
+    <Musterija>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
+      <Blokiran>false</Blokiran>
+    </Musterija>
+    <Odrediste>
+      <X />
+      <Y />
+      <Adresa />
+    </Odrediste>
+    <DispecerFormirao>
+      <KorisnickoIme>admin</KorisnickoIme>
+      <Lozinka>admin</Lozinka>
+      <Ime>Suzana</Ime>
+      <Prezime>Jovic</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1308996123456</Jmbg>
+      <KontaktTelefon>04823875</KontaktTelefon>
+      <Email>suza@gmail.com</Email>
+      <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
+    </DispecerFormirao>
+    <VozacPrihvatio>
+      <KorisnickoIme>joca</KorisnickoIme>
+      <Lozinka>joca</Lozinka>
+      <Ime>Jovan</Ime>
+      <Prezime>Gajin</Prezime>
+      <Pol>Musko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@joca</Email>
+      <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
+      <Lok>
+        <X>-82.441406</X>
+        <Y>40.713956</Y>
+        <Adresa>
+          <FormatAdrese>1798, Lucas Road, Lucas, Monroe Township, Richland County, Ohio, 44843, USA</FormatAdrese>
+        </Adresa>
+      </Lok>
+      <Auto>
+        <GodisteAutomobila>2000</GodisteAutomobila>
+        <BrojRegistarskeOznake>BG123</BrojRegistarskeOznake>
+        <BrojTaksiVozila>3</BrojTaksiVozila>
+        <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+        <UsernameVozaca>joca</UsernameVozaca>
+      </Auto>
+      <Zauzet>true</Zauzet>
+      <Blokiran>false</Blokiran>
+    </VozacPrihvatio>
+    <Iznos>0</Iznos>
+    <Komentar>
+      <DatumObjave>0001-01-01T00:00:00</DatumObjave>
+      <OcjenaVoznje>0</OcjenaVoznje>
+    </Komentar>
+    <StatusVoznje>Formirana</StatusVoznje>
+  </Voznja>
+  <Voznja>
+    <DatumPorudzbine>Monday, September 3, 2018 11:01:16 AM</DatumPorudzbine>
+    <LokacijaDolaskaTaksija>
+      <X>66.269531</X>
+      <Y>34.597042</Y>
+      <Adresa>
+        <FormatAdrese>R-C, لعل و سر جنگل, غور, افغانستان</FormatAdrese>
+      </Adresa>
+    </LokacijaDolaskaTaksija>
+    <ZeljeniAutomobil>Kombi</ZeljeniAutomobil>
+    <Musterija>
+      <KorisnickoIme>duda</KorisnickoIme>
+      <Lozinka>duda</Lozinka>
+      <Ime>Dubravka</Ime>
+      <Prezime>Karadarevic</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@mgail</Email>
+      <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
+      <Blokiran>false</Blokiran>
+    </Musterija>
+    <Odrediste>
+      <X>18.683624</X>
+      <Y>46.615488</Y>
+      <Adresa>
+        <FormatAdrese>Petőfi utca, Nagydorog, Paksi járás, Tolna megye, Dél-Dunántúl, Dunántúl, 7044, Magyarország</FormatAdrese>
+      </Adresa>
+    </Odrediste>
+    <DispecerFormirao>
+      <KorisnickoIme>admin</KorisnickoIme>
+      <Lozinka>admin</Lozinka>
+      <Ime>Suzana</Ime>
+      <Prezime>Jovic</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1308996123456</Jmbg>
+      <KontaktTelefon>04823875</KontaktTelefon>
+      <Email>suza@gmail.com</Email>
+      <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
+    </DispecerFormirao>
+    <VozacPrihvatio>
+      <KorisnickoIme>mirko</KorisnickoIme>
+      <Lozinka>mirko</Lozinka>
+      <Ime>Mirko</Ime>
+      <Prezime>Mirkovic</Prezime>
+      <Pol>Musko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@gmail</Email>
+      <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
+      <Lok>
+        <X>18.683624</X>
+        <Y>46.615488</Y>
+        <Adresa>
+          <FormatAdrese>Petőfi utca, Nagydorog, Paksi járás, Tolna megye, Dél-Dunántúl, Dunántúl, 7044, Magyarország</FormatAdrese>
+        </Adresa>
+      </Lok>
+      <Auto>
+        <GodisteAutomobila>2009</GodisteAutomobila>
+        <BrojRegistarskeOznake>MA999</BrojRegistarskeOznake>
+        <BrojTaksiVozila>7</BrojTaksiVozila>
+        <TipAutomobila>Kombi</TipAutomobila>
+        <UsernameVozaca>mirko</UsernameVozaca>
+      </Auto>
+      <Zauzet>false</Zauzet>
+      <Blokiran>false</Blokiran>
+    </VozacPrihvatio>
+    <Iznos>4300</Iznos>
+    <Komentar>
+      <DatumObjave>0001-01-01T00:00:00</DatumObjave>
+      <OcjenaVoznje>0</OcjenaVoznje>
+    </Komentar>
+    <StatusVoznje>Uspjesna</StatusVoznje>
+  </Voznja>
+  <Voznja>
+    <DatumPorudzbine>Monday, September 3, 2018 11:03:29 AM</DatumPorudzbine>
+    <LokacijaDolaskaTaksija>
+      <X>30.058594</X>
+      <Y>48.690960</Y>
+      <Adresa>
+        <FormatAdrese>Кузьмина Гребля, Христинівський район, Черкаська область, 20051, Україна</FormatAdrese>
+      </Adresa>
+    </LokacijaDolaskaTaksija>
+    <ZeljeniAutomobil>PutnickiAutomobil</ZeljeniAutomobil>
+    <Musterija>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
+      <Blokiran>false</Blokiran>
+    </Musterija>
+    <Odrediste>
+      <X />
+      <Y />
+      <Adresa />
+    </Odrediste>
+    <DispecerFormirao>
+      <KorisnickoIme>admin</KorisnickoIme>
+      <Lozinka>admin</Lozinka>
+      <Ime>Suzana</Ime>
+      <Prezime>Jovic</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1308996123456</Jmbg>
+      <KontaktTelefon>04823875</KontaktTelefon>
+      <Email>suza@gmail.com</Email>
+      <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
+    </DispecerFormirao>
+    <VozacPrihvatio>
+      <KorisnickoIme>luka</KorisnickoIme>
+      <Lozinka>luka</Lozinka>
+      <Ime>Luka</Ime>
+      <Prezime>Crnomarkovic</Prezime>
+      <Pol>Musko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@luka</Email>
+      <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
+      <Lok>
+        <X>-74.355469</X>
+        <Y>60.239811</Y>
+        <Adresa>
+          <FormatAdrese>ᑲᑎᕕᒃ Kativik, Nunavik, Québec, 609081, Canada</FormatAdrese>
+        </Adresa>
+      </Lok>
+      <Auto>
+        <GodisteAutomobila>2010</GodisteAutomobila>
+        <BrojRegistarskeOznake>ST567</BrojRegistarskeOznake>
+        <BrojTaksiVozila>4</BrojTaksiVozila>
+        <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+        <UsernameVozaca>luka</UsernameVozaca>
+      </Auto>
+      <Zauzet>true</Zauzet>
+      <Blokiran>false</Blokiran>
+    </VozacPrihvatio>
+    <Iznos>0</Iznos>
+    <Komentar>
+      <DatumObjave>0001-01-01T00:00:00</DatumObjave>
+      <OcjenaVoznje>0</OcjenaVoznje>
+    </Komentar>
+    <StatusVoznje>Formirana</StatusVoznje>
+  </Voznja>
+  <Voznja>
+    <DatumPorudzbine>Monday, September 3, 2018 11:41:03 AM</DatumPorudzbine>
+    <LokacijaDolaskaTaksija>
+      <X>19.840839</X>
+      <Y>45.247035</Y>
+      <Adresa>
+        <FormatAdrese>Национална служба за запошљавање, Алберта Томе, Стари Град, Нови Сад, Град Нови Сад, Јужнобачки округ, Војводина, 21000, Србија</FormatAdrese>
+      </Adresa>
+    </LokacijaDolaskaTaksija>
+    <ZeljeniAutomobil>PutnickiAutomobil</ZeljeniAutomobil>
+    <Musterija>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
+      <Blokiran>false</Blokiran>
+    </Musterija>
+    <Odrediste>
+      <X />
+      <Y />
+      <Adresa />
+    </Odrediste>
+    <DispecerFormirao>
+      <KorisnickoIme>admin</KorisnickoIme>
+      <Lozinka>admin</Lozinka>
+      <Ime>Suzana</Ime>
+      <Prezime>Jovic</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1308996123456</Jmbg>
+      <KontaktTelefon>04823875</KontaktTelefon>
+      <Email>suza@gmail.com</Email>
+      <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
+    </DispecerFormirao>
+    <VozacPrihvatio>
+      <KorisnickoIme>sanja</KorisnickoIme>
+      <Lozinka>sanja</Lozinka>
+      <Ime>Sanja</Ime>
+      <Prezime>Topic</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>sanja@</Email>
+      <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
+      <Lok>
+        <X>19.848948</X>
+        <Y>45.245165</Y>
+        <Adresa>
+          <FormatAdrese>Studentski dom 'Slobodan Bajic', Sime Milosevica 10, 21000 Novi Sad</FormatAdrese>
+        </Adresa>
+      </Lok>
+      <Auto>
+        <GodisteAutomobila>2010</GodisteAutomobila>
+        <BrojRegistarskeOznake>MA678</BrojRegistarskeOznake>
+        <BrojTaksiVozila>8</BrojTaksiVozila>
+        <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+        <UsernameVozaca>sanja</UsernameVozaca>
+      </Auto>
+      <Zauzet>true</Zauzet>
+      <Blokiran>false</Blokiran>
+    </VozacPrihvatio>
+    <Iznos>0</Iznos>
+    <Komentar>
+      <DatumObjave>0001-01-01T00:00:00</DatumObjave>
+      <OcjenaVoznje>0</OcjenaVoznje>
+    </Komentar>
+    <StatusVoznje>Formirana</StatusVoznje>
+  </Voznja>
+  <Voznja>
+    <DatumPorudzbine>Monday, September 3, 2018 11:43:19 AM</DatumPorudzbine>
+    <LokacijaDolaskaTaksija>
+      <X>19.842177</X>
+      <Y>45.245867</Y>
+      <Adresa>
+        <FormatAdrese>Стадион „Карађорђе“, Димитрија Туцовића, Стари Град, Нови Сад, Град Нови Сад, Јужнобачки округ, Војводина, 21101, Србија</FormatAdrese>
+      </Adresa>
+    </LokacijaDolaskaTaksija>
+    <ZeljeniAutomobil>PutnickiAutomobil</ZeljeniAutomobil>
+    <Musterija>
+      <Ime />
+      <Prezime />
+      <Pol>Musko</Pol>
+      <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
+      <Blokiran>false</Blokiran>
+    </Musterija>
+    <Odrediste>
+      <X>22.675781</X>
+      <Y>49.382373</Y>
+      <Adresa>
+        <FormatAdrese>Dom Pomocy Społecznej w Moczarach, 41, Moczary, gmina Ustrzyki Dolne, powiat bieszczadzki, podkarpackie, 38-700, RP</FormatAdrese>
+      </Adresa>
+    </Odrediste>
+    <DispecerFormirao>
+      <KorisnickoIme>admin</KorisnickoIme>
+      <Lozinka>admin</Lozinka>
+      <Ime>Suzana</Ime>
+      <Prezime>Jovic</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1308996123456</Jmbg>
+      <KontaktTelefon>04823875</KontaktTelefon>
+      <Email>suza@gmail.com</Email>
+      <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
+    </DispecerFormirao>
+    <VozacPrihvatio>
+      <KorisnickoIme>marko</KorisnickoIme>
+      <Lozinka>marko</Lozinka>
+      <Ime>Marko</Ime>
+      <Prezime>Markovic</Prezime>
+      <Pol>Musko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@marko</Email>
+      <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
+      <Lok>
+        <X>20.566406</X>
+        <Y>49.610710</Y>
+        <Adresa>
+          <FormatAdrese>42, Gostwica, gmina Podegrodzie, powiat nowosądecki, małopolskie, 33-386, RP</FormatAdrese>
+        </Adresa>
+      </Lok>
+      <Auto>
+        <GodisteAutomobila>2000</GodisteAutomobila>
+        <BrojRegistarskeOznake>HG565</BrojRegistarskeOznake>
+        <BrojTaksiVozila>10</BrojTaksiVozila>
+        <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+        <UsernameVozaca>marko</UsernameVozaca>
+      </Auto>
+      <Zauzet>false</Zauzet>
+      <Blokiran>false</Blokiran>
+    </VozacPrihvatio>
+    <Iznos>299</Iznos>
+    <Komentar>
+      <DatumObjave>0001-01-01T00:00:00</DatumObjave>
+      <OcjenaVoznje>0</OcjenaVoznje>
+    </Komentar>
+    <StatusVoznje>Uspjesna</StatusVoznje>
   </Voznja>
 </ArrayOfVoznja>

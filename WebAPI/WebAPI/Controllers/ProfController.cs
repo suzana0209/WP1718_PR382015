@@ -509,7 +509,7 @@ namespace WebAPI.Controllers
                         }
                         u.Ime = k.Ime;
                         u.Prezime = k.Prezime;
-                        if (k.Pol == "1")
+                        if (k.Pol == "1" || k.Pol == "Zensko")
                         {
                             u.Pol = Pol.Zensko;
                         }
@@ -1141,7 +1141,14 @@ namespace WebAPI.Controllers
                     //Lokacija l = new Lokacija(k.XCoord, k.YCoord, a);
                     u.LokacijaDolaskaTaksija.X = k.XCoord;
                     u.LokacijaDolaskaTaksija.Y = k.YCoord;
+
                     u.LokacijaDolaskaTaksija.Adresa.FormatAdrese = k.Street;
+
+                    if(k.tipAuta == null)
+                    {
+                        break;
+                    }
+                    
                     if (k.tipAuta != "")
                     {
                         u.ZeljeniAutomobil = (TipAutomobila)int.Parse(k.tipAuta);
