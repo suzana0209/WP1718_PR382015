@@ -3,13 +3,19 @@
 <br />
 <div ng-show="!loggedin || user.role!=1"><h3>Zabranjena akcija!</h3></div>
 <div ng-show="loggedin && user.role==1">
-
+    
     <table class="sirinaTabele">
         <tr>
             <td width="50%">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button class="button-successBlok" type="submit" id="btnBlock" ng-click="PrikaziBlokirane()">Blokirani korisnici</button>
             </td>
             <td width="50%">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button class="button-successBlok" type="submit" id="btnUnblock" ng-click="PrikaziNeblokirane()">Neblokirani korisnici</button>
             </td>
         </tr>
@@ -20,10 +26,17 @@
                         <table>
                             <tr ng-repeat="kor in BlokiraniKorisnici">
                                 <td ng-show="kor.Uloga==2">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     Musterija:&nbsp;{{kor.Ime}} &nbsp; {{kor.Prezime}} &nbsp;|&nbsp;{{kor.KorisnickoIme}} &nbsp; &nbsp;
                                     <button class="dugme" type="submit" ng-click="Odblokiraj(kor.KorisnickoIme)">Odblokiraj</button>
                                 </td>
+                                
                                 <td ng-show="kor.Uloga==0">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     Vozac:&nbsp;{{kor.Ime}} &nbsp; {{kor.Prezime}} &nbsp;|&nbsp;{{kor.KorisnickoIme}} &nbsp; &nbsp;
                                     <button class="dugme" type="submit" ng-click="Odblokiraj(kor.KorisnickoIme)">Odblokiraj</button>
                                 </td>
@@ -38,10 +51,16 @@
                         <table>
                             <tr ng-repeat="kor in NeblokiraniKorisnici">
                                 <td ng-show="kor.Uloga==2">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     Musterija:&nbsp;{{kor.Ime}} &nbsp; {{kor.Prezime}} &nbsp;|&nbsp;{{kor.KorisnickoIme}} &nbsp; &nbsp;
                                     <button class="dugme" type="submit" ng-click="Blokiraj(kor.KorisnickoIme)">Blokiraj</button>
                                 </td>
                                 <td ng-show="kor.Uloga==0">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     Vozac:&nbsp;{{kor.Ime}} &nbsp; {{kor.Prezime}} &nbsp;|&nbsp;{{kor.KorisnickoIme}} &nbsp; &nbsp;
                                     <button class="dugme" type="submit" ng-click="Blokiraj(kor.KorisnickoIme)">Blokiraj</button>
                                 </td>

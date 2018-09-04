@@ -5,14 +5,16 @@
 <br />
 <div class="poruka" ng-show="loggedin"><h3>Vec ste ulogovani!</h3></div>
 <div ng-show="!loggedin">
-    <div class="porukaORegistraciji">
+    <div class="porukaORegistraciji ">
         <h4 class="success">{{RegisterSuccess}}</h4>
     </div>
+    <br>
     <div class="loginWindow">
-        <div class="header container">
+        <div>
             <h2>Logovanje korisnika</h2>
         </div>
         <div class="body">
+            
             <div class="form-group">
                 <input type="text" class="t" id="username" ng-model="user.username" placeholder="Korisnicko ime">
             </div>

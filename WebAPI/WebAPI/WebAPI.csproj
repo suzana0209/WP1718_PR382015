@@ -209,10 +209,6 @@
     <Content Include="css\app.css" />
     <Content Include="css\css_stil.css" />
     <Content Include="css\demo.css" />
-    <Content Include="css\fonts\BebasNeue-webfont.svg" />
-    <Content Include="css\fonts\Dharma Type Font License.txt" />
-    <Content Include="css\fonts\fontomas-webfont.svg" />
-    <Content Include="css\fonts\franchise-bold-webfont.svg" />
     <Content Include="css\style.css" />
     <Content Include="Factories\MyDirective.js" />
     <Content Include="Factories\PageHelp.js" />
@@ -265,15 +261,6 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <Content Include="css\fonts\BebasNeue-webfont.eot" />
-    <Content Include="css\fonts\BebasNeue-webfont.ttf" />
-    <Content Include="css\fonts\BebasNeue-webfont.woff" />
-    <Content Include="css\fonts\fontomas-webfont.eot" />
-    <Content Include="css\fonts\fontomas-webfont.ttf" />
-    <Content Include="css\fonts\fontomas-webfont.woff" />
-    <Content Include="css\fonts\franchise-bold-webfont.eot" />
-    <Content Include="css\fonts\franchise-bold-webfont.ttf" />
-    <Content Include="css\fonts\franchise-bold-webfont.woff" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\angular-route.min.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />

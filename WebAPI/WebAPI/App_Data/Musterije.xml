@@ -24,7 +24,7 @@
     <Email>@gamil</Email>
     <Uloga>Musterija</Uloga>
     <KorisnikVoznje />
-    <Blokiran>false</Blokiran>
+    <Blokiran>true</Blokiran>
   </Musterija>
   <Musterija>
     <KorisnickoIme>barbi123</KorisnickoIme>
@@ -37,7 +37,7 @@
     <Email>@g</Email>
     <Uloga>Musterija</Uloga>
     <KorisnikVoznje />
-    <Blokiran>false</Blokiran>
+    <Blokiran>true</Blokiran>
   </Musterija>
   <Musterija>
     <KorisnickoIme>joka</KorisnickoIme>
@@ -76,7 +76,7 @@
     <Email>@laki</Email>
     <Uloga>Musterija</Uloga>
     <KorisnikVoznje />
-    <Blokiran>false</Blokiran>
+    <Blokiran>true</Blokiran>
   </Musterija>
   <Musterija>
     <KorisnickoIme>duda</KorisnickoIme>
@@ -102,6 +102,6 @@
     <Email>@gmail</Email>
     <Uloga>Musterija</Uloga>
     <KorisnikVoznje />
-    <Blokiran>false</Blokiran>
+    <Blokiran>true</Blokiran>
   </Musterija>
 </ArrayOfMusterija>

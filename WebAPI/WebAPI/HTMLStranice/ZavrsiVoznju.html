@@ -3,9 +3,6 @@
 <br />
 <div ng-show="!loggedin || user.role!=0 || !DozvolaZaZavrsenuVoznju"><h3>Nije vam dozvoljena ova akcija</h3></div>
 <div ng-show="loggedin && user.role==0 && DozvolaZaZavrsenuVoznju">
-    <!--<button type="submit" ng-click="UspesnaVoznja()">Uspjesna</button>
-    <button type="submit" ng-click="NeuspesnaVoznja()">Neuspjesna</button>-->
-
 
     <table align="center" class="sirinaTabele">
         <tr>
@@ -115,21 +112,3 @@
 </div> 
 
 
-<!--<h1>Ostavite komentar</h1>
-<div class="form-group">
-    <table>
-        <tr>
-            <td>Opis:</td>
-            <td>
-                <textarea required class="form-control" placeholder="Ostavite komentar..." ng-model="ko.Opis"></textarea>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <button type="submit" ng-click="DodajKomentarVozac(ko)">Dodajte komentar</button>
-            </td>
-        </tr>
-    </table>
-</div>
-</div>
-</div>-->

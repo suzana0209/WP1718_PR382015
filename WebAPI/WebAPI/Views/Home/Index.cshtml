@@ -1,27 +1,4 @@
-﻿@*<div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-    </div>
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach
-            a broad range of clients, including browsers and mobile devices. ASP.NET Web API
-            is an ideal platform for building RESTful applications on the .NET Framework.</p>
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301870">Learn more &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301871">Learn more &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
-        </div>
-    </div>*@
+﻿
 
 @{
     Layout = null;
@@ -35,32 +12,18 @@
     <link rel="stylesheet" href="../../css/css_stil.css" type="text/css" />
     <link rel="stylesheet" href="../../css/style.css" type="text/css" />
     <link rel="stylesheet" href="../../css/app.css" type="text/css" />
-    <link rel="stylesheet" href="../../css/app.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/demo.css" type="text/css" />
+    @*<link rel="stylesheet" href="../../css/app.css" type="text/css" />*@
 
 
     <link rel="shortcut icon" href="../favicon.ico">
 
-    @*<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="stylesheet" type="text/css" href="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1526040296" />
-        <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-core.js"></script>
-        <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-service.js"></script>
-        <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.js"></script>
-        <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>*@
-
-
-    @*<link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
-        <style>
-                .map {
-                    height: 400px;
-                    width: 100%;
-                }
-            </style>*@
+    
     <meta charset=utf-8>
     <meta name=description content="">
     <meta name=viewport content="width=device-width, initial-scale=1">
     <title>Reverse geocoding</title>
     <link rel="stylesheet" href="https://openlayers.org/en/v4.4.2/css/ol.css" type="text/css">
-    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL,fetch"></script>
     <script src="https://openlayers.org/en/v4.4.2/build/ol.js"></script>
     
@@ -70,12 +33,9 @@
         }
     </style>
 
-    @*<link rel="stylesheet" href="../../css/demo.css" type="text/css" />
-        <link rel="stylesheet" href="../../css/style.css" type="text/css" />
-        <link rel="stylesheet" href="../../css/animate-custom.css" type="text/css" />*@
+  
     <link rel="stylesheet" href="../../Content/bootstrap.min.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
-    @*ng-controller="MainController"*@
 </head>
 <body>
     <div class="container">
@@ -112,11 +72,6 @@
     <script src="../../Scripts/angular.min.js"></script>
     <script src="../../Scripts/angular-route.min.js"></script>
 
-    @*<script type="text/javascript">
-            $(function () {
-                $('#datetimepicker1').datetimepicker();
-            });
-        </script>*@
 
     <script src="../../Factories/PageHelp.js"></script>
     <script src="../../JSControllers/MainController.js"></script>

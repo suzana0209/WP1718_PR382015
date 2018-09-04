@@ -40,10 +40,10 @@
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
     <Lok>
-      <X>13.646312</X>
-      <Y>47.219568</Y>
+      <X>5.800781</X>
+      <Y>18.646245</Y>
       <Adresa>
-        <FormatAdrese>Lahngries, Weißpriach, Tamsweg - Lungau, Salzburg, 5573, Österreich</FormatAdrese>
+        <FormatAdrese>Tchirozérine, Agadez, Niger</FormatAdrese>
       </Adresa>
     </Lok>
     <Auto>
@@ -236,10 +236,10 @@
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
     <Lok>
-      <X>19.848948</X>
-      <Y>45.245165</Y>
+      <X>21.972656</X>
+      <Y>47.040182</Y>
       <Adresa>
-        <FormatAdrese>Studentski dom 'Slobodan Bajic', Sime Milosevica 10, 21000 Novi Sad</FormatAdrese>
+        <FormatAdrese>Strada Molière, Velența, Oradea, Bihor, 410546, România</FormatAdrese>
       </Adresa>
     </Lok>
     <Auto>
@@ -249,7 +249,7 @@
       <TipAutomobila>PutnickiAutomobil</TipAutomobila>
       <UsernameVozaca>marija</UsernameVozaca>
     </Auto>
-    <Zauzet>false</Zauzet>
+    <Zauzet>true</Zauzet>
     <Blokiran>false</Blokiran>
   </Vozac>
   <Vozac>
@@ -333,7 +333,7 @@
       <TipAutomobila>PutnickiAutomobil</TipAutomobila>
       <UsernameVozaca>dejana</UsernameVozaca>
     </Auto>
-    <Zauzet>false</Zauzet>
+    <Zauzet>true</Zauzet>
     <Blokiran>false</Blokiran>
   </Vozac>
   <Vozac>

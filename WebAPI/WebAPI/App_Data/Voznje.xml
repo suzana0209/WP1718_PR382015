@@ -177,13 +177,13 @@
   <Voznja>
     <DatumPorudzbine>Monday, September 3, 2018 10:16:36 AM</DatumPorudzbine>
     <LokacijaDolaskaTaksija>
-      <X>3.742218</X>
-      <Y>26.740705</Y>
+      <X>11.521448</X>
+      <Y>48.059105</Y>
       <Adresa>
-        <FormatAdrese>Foggaret Ezzaouia, Daïra d'In Salah, circonscription administrative d'In Salah, Tamanrasset تمنراست, ⵍⵣⵣⴰⵢⴻⵔ الجزائر</FormatAdrese>
+        <FormatAdrese>27, Gistlstraße, Großhesselohe, Pullach, Landkreis München, Obb, Bayern, 82049, Deutschland</FormatAdrese>
       </Adresa>
     </LokacijaDolaskaTaksija>
-    <ZeljeniAutomobil>Kombi</ZeljeniAutomobil>
+    <ZeljeniAutomobil>PutnickiAutomobil</ZeljeniAutomobil>
     <Musterija>
       <KorisnickoIme>joka</KorisnickoIme>
       <Lozinka>joka</Lozinka>
@@ -203,19 +203,43 @@
       <Adresa />
     </Odrediste>
     <DispecerFormirao>
-      <Ime />
-      <Prezime />
-      <Pol>Musko</Pol>
+      <KorisnickoIme>admin</KorisnickoIme>
+      <Lozinka>admin</Lozinka>
+      <Ime>Suzana</Ime>
+      <Prezime>Jovic</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1308996123456</Jmbg>
+      <KontaktTelefon>04823875</KontaktTelefon>
+      <Email>suza@gmail.com</Email>
       <Uloga>Dispecer</Uloga>
       <KorisnikVoznje />
     </DispecerFormirao>
     <VozacPrihvatio>
-      <Ime />
-      <Prezime />
-      <Pol>Musko</Pol>
+      <KorisnickoIme>dejana</KorisnickoIme>
+      <Lozinka>dejana</Lozinka>
+      <Ime>Dejana</Ime>
+      <Prezime>Grujic</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@gmail</Email>
       <Uloga>Vozac</Uloga>
       <KorisnikVoznje />
-      <Zauzet>false</Zauzet>
+      <Lok>
+        <X>19.848948</X>
+        <Y>45.245165</Y>
+        <Adresa>
+          <FormatAdrese>Studentski dom 'Slobodan Bajic', Sime Milosevica 10, 21000 Novi Sad</FormatAdrese>
+        </Adresa>
+      </Lok>
+      <Auto>
+        <GodisteAutomobila>2010</GodisteAutomobila>
+        <BrojRegistarskeOznake>PR343</BrojRegistarskeOznake>
+        <BrojTaksiVozila>12</BrojTaksiVozila>
+        <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+        <UsernameVozaca>dejana</UsernameVozaca>
+      </Auto>
+      <Zauzet>true</Zauzet>
       <Blokiran>false</Blokiran>
     </VozacPrihvatio>
     <Iznos>0</Iznos>
@@ -223,7 +247,7 @@
       <DatumObjave>0001-01-01T00:00:00</DatumObjave>
       <OcjenaVoznje>0</OcjenaVoznje>
     </Komentar>
-    <StatusVoznje>KreiranaNaCekanju</StatusVoznje>
+    <StatusVoznje>Obradjena</StatusVoznje>
   </Voznja>
   <Voznja>
     <DatumPorudzbine>Monday, September 3, 2018 10:16:49 AM</DatumPorudzbine>
@@ -980,5 +1004,80 @@
       <OcjenaVoznje>0</OcjenaVoznje>
     </Komentar>
     <StatusVoznje>Uspjesna</StatusVoznje>
+  </Voznja>
+  <Voznja>
+    <DatumPorudzbine>Monday, September 3, 2018 3:42:10 PM</DatumPorudzbine>
+    <LokacijaDolaskaTaksija>
+      <X>23.027344</X>
+      <Y>45.828799</Y>
+      <Adresa>
+        <FormatAdrese>DN66, Simeria Veche, Hunedoara, 335904, România</FormatAdrese>
+      </Adresa>
+    </LokacijaDolaskaTaksija>
+    <ZeljeniAutomobil>PutnickiAutomobil</ZeljeniAutomobil>
+    <Musterija>
+      <KorisnickoIme>joka</KorisnickoIme>
+      <Lozinka>joka</Lozinka>
+      <Ime>Joka</Ime>
+      <Prezime>Kanlic</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@gma</Email>
+      <Uloga>Musterija</Uloga>
+      <KorisnikVoznje />
+      <Blokiran>false</Blokiran>
+    </Musterija>
+    <Odrediste>
+      <X />
+      <Y />
+      <Adresa />
+    </Odrediste>
+    <DispecerFormirao>
+      <KorisnickoIme>admin</KorisnickoIme>
+      <Lozinka>admin</Lozinka>
+      <Ime>Suzana</Ime>
+      <Prezime>Jovic</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1308996123456</Jmbg>
+      <KontaktTelefon>04823875</KontaktTelefon>
+      <Email>suza@gmail.com</Email>
+      <Uloga>Dispecer</Uloga>
+      <KorisnikVoznje />
+    </DispecerFormirao>
+    <VozacPrihvatio>
+      <KorisnickoIme>marija</KorisnickoIme>
+      <Lozinka>marija</Lozinka>
+      <Ime>Marija</Ime>
+      <Prezime>Maric</Prezime>
+      <Pol>Zensko</Pol>
+      <Jmbg>1234567891234</Jmbg>
+      <KontaktTelefon>1234567891234</KontaktTelefon>
+      <Email>@macaaa</Email>
+      <Uloga>Vozac</Uloga>
+      <KorisnikVoznje />
+      <Lok>
+        <X>21.972656</X>
+        <Y>47.040182</Y>
+        <Adresa>
+          <FormatAdrese>Strada Molière, Velența, Oradea, Bihor, 410546, România</FormatAdrese>
+        </Adresa>
+      </Lok>
+      <Auto>
+        <GodisteAutomobila>2009</GodisteAutomobila>
+        <BrojRegistarskeOznake>MI234</BrojRegistarskeOznake>
+        <BrojTaksiVozila>9</BrojTaksiVozila>
+        <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+        <UsernameVozaca>marija</UsernameVozaca>
+      </Auto>
+      <Zauzet>true</Zauzet>
+      <Blokiran>false</Blokiran>
+    </VozacPrihvatio>
+    <Iznos>0</Iznos>
+    <Komentar>
+      <DatumObjave>0001-01-01T00:00:00</DatumObjave>
+      <OcjenaVoznje>0</OcjenaVoznje>
+    </Komentar>
+    <StatusVoznje>Obradjena</StatusVoznje>
   </Voznja>
 </ArrayOfVoznja>
