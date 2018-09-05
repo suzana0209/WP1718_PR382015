@@ -1,126 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfVozac xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Vozac>
-    <KorisnickoIme>maca1234</KorisnickoIme>
-    <Lozinka>maca</Lozinka>
-    <Ime>Maca</Ime>
-    <Prezime>Djurkovic</Prezime>
-    <Pol>Zensko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@gmail</Email>
-    <Uloga>Vozac</Uloga>
-    <KorisnikVoznje />
-    <Lok>
-      <X>18.105469</X>
-      <Y>46.558860</Y>
-      <Adresa>
-        <FormatAdrese>Hunyadi utca, Szakcs, Dombóvári járás, Tolna megye, Dél-Dunántúl, Dunántúl, 7213, Magyarország</FormatAdrese>
-      </Adresa>
-    </Lok>
-    <Auto>
-      <GodisteAutomobila>2010</GodisteAutomobila>
-      <BrojRegistarskeOznake>ST123</BrojRegistarskeOznake>
-      <BrojTaksiVozila>1</BrojTaksiVozila>
-      <TipAutomobila>Kombi</TipAutomobila>
-      <UsernameVozaca>maca1234</UsernameVozaca>
-    </Auto>
-    <Zauzet>false</Zauzet>
-    <Blokiran>false</Blokiran>
-  </Vozac>
-  <Vozac>
-    <KorisnickoIme>rina</KorisnickoIme>
-    <Lozinka>rina</Lozinka>
-    <Ime>Rina</Ime>
-    <Prezime>Jovanovic</Prezime>
-    <Pol>Musko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>ff@</Email>
-    <Uloga>Vozac</Uloga>
-    <KorisnikVoznje />
-    <Lok>
-      <X>24.257813</X>
-      <Y>-9.795678</Y>
-      <Adresa>
-        <FormatAdrese>Haut-Lomami, RD Congo</FormatAdrese>
-      </Adresa>
-    </Lok>
-    <Auto>
-      <GodisteAutomobila>2010</GodisteAutomobila>
-      <BrojRegistarskeOznake>NS34</BrojRegistarskeOznake>
-      <BrojTaksiVozila>2</BrojTaksiVozila>
-      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>rina</UsernameVozaca>
-    </Auto>
-    <Zauzet>false</Zauzet>
-    <Blokiran>false</Blokiran>
-  </Vozac>
-  <Vozac>
-    <KorisnickoIme>joca</KorisnickoIme>
-    <Lozinka>joca</Lozinka>
-    <Ime>Jovan</Ime>
-    <Prezime>Gajin</Prezime>
-    <Pol>Musko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@joca</Email>
-    <Uloga>Vozac</Uloga>
-    <KorisnikVoznje />
-    <Lok>
-      <X>-82.441406</X>
-      <Y>40.713956</Y>
-      <Adresa>
-        <FormatAdrese>1798, Lucas Road, Lucas, Monroe Township, Richland County, Ohio, 44843, USA</FormatAdrese>
-      </Adresa>
-    </Lok>
-    <Auto>
-      <GodisteAutomobila>2000</GodisteAutomobila>
-      <BrojRegistarskeOznake>BG123</BrojRegistarskeOznake>
-      <BrojTaksiVozila>3</BrojTaksiVozila>
-      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>joca</UsernameVozaca>
-    </Auto>
-    <Zauzet>true</Zauzet>
-    <Blokiran>false</Blokiran>
-  </Vozac>
-  <Vozac>
-    <KorisnickoIme>luka</KorisnickoIme>
-    <Lozinka>luka</Lozinka>
-    <Ime>Luka</Ime>
-    <Prezime>Crnomarkovic</Prezime>
-    <Pol>Musko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@luka</Email>
-    <Uloga>Vozac</Uloga>
-    <KorisnikVoznje />
-    <Lok>
-      <X>-74.355469</X>
-      <Y>60.239811</Y>
-      <Adresa>
-        <FormatAdrese>ᑲᑎᕕᒃ Kativik, Nunavik, Québec, 609081, Canada</FormatAdrese>
-      </Adresa>
-    </Lok>
-    <Auto>
-      <GodisteAutomobila>2010</GodisteAutomobila>
-      <BrojRegistarskeOznake>ST567</BrojRegistarskeOznake>
-      <BrojTaksiVozila>4</BrojTaksiVozila>
-      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>luka</UsernameVozaca>
-    </Auto>
-    <Zauzet>true</Zauzet>
-    <Blokiran>true</Blokiran>
-  </Vozac>
-  <Vozac>
     <KorisnickoIme>sandra</KorisnickoIme>
     <Lozinka>sandra</Lozinka>
     <Ime>Sandra</Ime>
     <Prezime>Sandic</Prezime>
     <Pol>Zensko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@gmail</Email>
+    <Jmbg>0112993123456</Jmbg>
+    <KontaktTelefon>021485221</KontaktTelefon>
+    <Email>sandra@mail.com</Email>
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
     <Lok>
@@ -131,237 +19,69 @@
       </Adresa>
     </Lok>
     <Auto>
-      <GodisteAutomobila>2001</GodisteAutomobila>
-      <BrojRegistarskeOznake>BR678</BrojRegistarskeOznake>
-      <BrojTaksiVozila>5</BrojTaksiVozila>
-      <TipAutomobila>Kombi</TipAutomobila>
+      <GodisteAutomobila>2009</GodisteAutomobila>
+      <BrojRegistarskeOznake>BR123</BrojRegistarskeOznake>
+      <BrojTaksiVozila>1</BrojTaksiVozila>
+      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
       <UsernameVozaca>sandra</UsernameVozaca>
     </Auto>
     <Zauzet>true</Zauzet>
     <Blokiran>false</Blokiran>
   </Vozac>
   <Vozac>
-    <KorisnickoIme>tea</KorisnickoIme>
-    <Lozinka>tea</Lozinka>
-    <Ime>Teodora</Ime>
-    <Prezime>Maric</Prezime>
+    <KorisnickoIme>tamara</KorisnickoIme>
+    <Lozinka>tamara</Lozinka>
+    <Ime>Tamara</Ime>
+    <Prezime>Radic</Prezime>
     <Pol>Zensko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@gmail</Email>
+    <Jmbg>0501997123456</Jmbg>
+    <KontaktTelefon>065231980</KontaktTelefon>
+    <Email>tamara@mail.com</Email>
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
     <Lok>
-      <X>26.015625</X>
-      <Y>-14.363169</Y>
+      <X>-91.230469</X>
+      <Y>39.368279</Y>
       <Adresa>
-        <FormatAdrese>North-Western Province, Zambia</FormatAdrese>
+        <FormatAdrese>Northeast Correctional Center, 13698, Airport Road, Bowling Green, Pike County, Missouri, 63334, USA</FormatAdrese>
       </Adresa>
     </Lok>
     <Auto>
-      <GodisteAutomobila>2006</GodisteAutomobila>
-      <BrojRegistarskeOznake>SK900</BrojRegistarskeOznake>
-      <BrojTaksiVozila>6</BrojTaksiVozila>
+      <GodisteAutomobila>2001</GodisteAutomobila>
+      <BrojRegistarskeOznake>BI123</BrojRegistarskeOznake>
+      <BrojTaksiVozila>2</BrojTaksiVozila>
       <TipAutomobila>Kombi</TipAutomobila>
-      <UsernameVozaca>tea</UsernameVozaca>
-    </Auto>
-    <Zauzet>true</Zauzet>
-    <Blokiran>false</Blokiran>
-  </Vozac>
-  <Vozac>
-    <KorisnickoIme>mirko</KorisnickoIme>
-    <Lozinka>mirko</Lozinka>
-    <Ime>Mirko</Ime>
-    <Prezime>Mirkovic</Prezime>
-    <Pol>Musko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@gmail</Email>
-    <Uloga>Vozac</Uloga>
-    <KorisnikVoznje />
-    <Lok>
-      <X>43.769531</X>
-      <Y>51.399206</Y>
-      <Adresa>
-        <FormatAdrese>Песчанское сельское поселение, Самойловский район, Саратовская область, Приволжский федеральный округ, РФ</FormatAdrese>
-      </Adresa>
-    </Lok>
-    <Auto>
-      <GodisteAutomobila>2009</GodisteAutomobila>
-      <BrojRegistarskeOznake>MA999</BrojRegistarskeOznake>
-      <BrojTaksiVozila>7</BrojTaksiVozila>
-      <TipAutomobila>Kombi</TipAutomobila>
-      <UsernameVozaca>mirko</UsernameVozaca>
+      <UsernameVozaca>tamara</UsernameVozaca>
     </Auto>
     <Zauzet>false</Zauzet>
     <Blokiran>false</Blokiran>
   </Vozac>
   <Vozac>
-    <KorisnickoIme>sanja</KorisnickoIme>
-    <Lozinka>sanja</Lozinka>
-    <Ime>Sanja</Ime>
-    <Prezime>Topic</Prezime>
+    <KorisnickoIme>barbara</KorisnickoIme>
+    <Lozinka>barbara</Lozinka>
+    <Ime>Barbara</Ime>
+    <Prezime>Jankovic</Prezime>
     <Pol>Zensko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>sanja@</Email>
+    <Jmbg>0504992123456</Jmbg>
+    <KontaktTelefon>0602314567</KontaktTelefon>
+    <Email>barbara@mail.com</Email>
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
     <Lok>
-      <X>19.848948</X>
-      <Y>45.245165</Y>
+      <X>20.214844</X>
+      <Y>45.089036</Y>
       <Adresa>
-        <FormatAdrese>Studentski dom 'Slobodan Bajic', Sime Milosevica 10, 21000 Novi Sad</FormatAdrese>
+        <FormatAdrese>Нови Карловци, Сремски округ, Војводина, Србија</FormatAdrese>
       </Adresa>
     </Lok>
     <Auto>
-      <GodisteAutomobila>2010</GodisteAutomobila>
-      <BrojRegistarskeOznake>MA678</BrojRegistarskeOznake>
-      <BrojTaksiVozila>8</BrojTaksiVozila>
+      <GodisteAutomobila>2017</GodisteAutomobila>
+      <BrojRegistarskeOznake>SO123</BrojRegistarskeOznake>
+      <BrojTaksiVozila>3</BrojTaksiVozila>
       <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>sanja</UsernameVozaca>
+      <UsernameVozaca>barbara</UsernameVozaca>
     </Auto>
-    <Zauzet>true</Zauzet>
-    <Blokiran>false</Blokiran>
-  </Vozac>
-  <Vozac>
-    <KorisnickoIme>marija</KorisnickoIme>
-    <Lozinka>marija</Lozinka>
-    <Ime>Marija</Ime>
-    <Prezime>Maric</Prezime>
-    <Pol>Zensko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@macaaa</Email>
-    <Uloga>Vozac</Uloga>
-    <KorisnikVoznje />
-    <Lok>
-      <X>21.972656</X>
-      <Y>47.040182</Y>
-      <Adresa>
-        <FormatAdrese>Strada Molière, Velența, Oradea, Bihor, 410546, România</FormatAdrese>
-      </Adresa>
-    </Lok>
-    <Auto>
-      <GodisteAutomobila>2009</GodisteAutomobila>
-      <BrojRegistarskeOznake>MI234</BrojRegistarskeOznake>
-      <BrojTaksiVozila>9</BrojTaksiVozila>
-      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>marija</UsernameVozaca>
-    </Auto>
-    <Zauzet>true</Zauzet>
-    <Blokiran>false</Blokiran>
-  </Vozac>
-  <Vozac>
-    <KorisnickoIme>marko</KorisnickoIme>
-    <Lozinka>marko</Lozinka>
-    <Ime>Marko</Ime>
-    <Prezime>Markovic</Prezime>
-    <Pol>Musko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@marko</Email>
-    <Uloga>Vozac</Uloga>
-    <KorisnikVoznje />
-    <Lok>
-      <X>20.566406</X>
-      <Y>49.610710</Y>
-      <Adresa>
-        <FormatAdrese>42, Gostwica, gmina Podegrodzie, powiat nowosądecki, małopolskie, 33-386, RP</FormatAdrese>
-      </Adresa>
-    </Lok>
-    <Auto>
-      <GodisteAutomobila>2000</GodisteAutomobila>
-      <BrojRegistarskeOznake>HG565</BrojRegistarskeOznake>
-      <BrojTaksiVozila>10</BrojTaksiVozila>
-      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>marko</UsernameVozaca>
-    </Auto>
-    <Zauzet>true</Zauzet>
-    <Blokiran>false</Blokiran>
-  </Vozac>
-  <Vozac>
-    <KorisnickoIme>filip</KorisnickoIme>
-    <Lozinka>filip</Lozinka>
-    <Ime>FIlip</Ime>
-    <Prezime>Filipovic</Prezime>
-    <Pol>Zensko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@filip</Email>
-    <Uloga>Vozac</Uloga>
-    <KorisnikVoznje />
-    <Lok>
-      <X>19.848948</X>
-      <Y>45.245165</Y>
-      <Adresa>
-        <FormatAdrese>Studentski dom 'Slobodan Bajic', Sime Milosevica 10, 21000 Novi Sad</FormatAdrese>
-      </Adresa>
-    </Lok>
-    <Auto>
-      <GodisteAutomobila>2000</GodisteAutomobila>
-      <BrojRegistarskeOznake>ND</BrojRegistarskeOznake>
-      <BrojTaksiVozila>11</BrojTaksiVozila>
-      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>filip</UsernameVozaca>
-    </Auto>
-    <Zauzet>true</Zauzet>
-    <Blokiran>false</Blokiran>
-  </Vozac>
-  <Vozac>
-    <KorisnickoIme>dejana</KorisnickoIme>
-    <Lozinka>dejana</Lozinka>
-    <Ime>Dejana</Ime>
-    <Prezime>Grujic</Prezime>
-    <Pol>Zensko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@gmail</Email>
-    <Uloga>Vozac</Uloga>
-    <KorisnikVoznje />
-    <Lok>
-      <X>19.848948</X>
-      <Y>45.245165</Y>
-      <Adresa>
-        <FormatAdrese>Studentski dom 'Slobodan Bajic', Sime Milosevica 10, 21000 Novi Sad</FormatAdrese>
-      </Adresa>
-    </Lok>
-    <Auto>
-      <GodisteAutomobila>2010</GodisteAutomobila>
-      <BrojRegistarskeOznake>PR343</BrojRegistarskeOznake>
-      <BrojTaksiVozila>12</BrojTaksiVozila>
-      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>dejana</UsernameVozaca>
-    </Auto>
-    <Zauzet>true</Zauzet>
-    <Blokiran>false</Blokiran>
-  </Vozac>
-  <Vozac>
-    <KorisnickoIme>sara</KorisnickoIme>
-    <Lozinka>sara</Lozinka>
-    <Ime>Sara</Ime>
-    <Prezime>Saric</Prezime>
-    <Pol>Zensko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@sara</Email>
-    <Uloga>Vozac</Uloga>
-    <KorisnikVoznje />
-    <Lok>
-      <X>19.848948</X>
-      <Y>45.245165</Y>
-      <Adresa>
-        <FormatAdrese>Studentski dom 'Slobodan Bajic', Sime Milosevica 10, 21000 Novi Sad</FormatAdrese>
-      </Adresa>
-    </Lok>
-    <Auto>
-      <GodisteAutomobila>300</GodisteAutomobila>
-      <BrojRegistarskeOznake>DE43</BrojRegistarskeOznake>
-      <BrojTaksiVozila>13</BrojTaksiVozila>
-      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>sara</UsernameVozaca>
-    </Auto>
-    <Zauzet>true</Zauzet>
+    <Zauzet>false</Zauzet>
     <Blokiran>false</Blokiran>
   </Vozac>
   <Vozac>
@@ -370,9 +90,9 @@
     <Ime>Marina</Ime>
     <Prezime>Maric</Prezime>
     <Pol>Zensko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>1234567891234</KontaktTelefon>
-    <Email>@marina</Email>
+    <Jmbg>1610994123456</Jmbg>
+    <KontaktTelefon>069782134</KontaktTelefon>
+    <Email>marina@gmail.com</Email>
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
     <Lok>
@@ -383,80 +103,52 @@
       </Adresa>
     </Lok>
     <Auto>
-      <GodisteAutomobila>2010</GodisteAutomobila>
-      <BrojRegistarskeOznake>NS656</BrojRegistarskeOznake>
-      <BrojTaksiVozila>14</BrojTaksiVozila>
-      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+      <GodisteAutomobila>2006</GodisteAutomobila>
+      <BrojRegistarskeOznake>BG123</BrojRegistarskeOznake>
+      <BrojTaksiVozila>4</BrojTaksiVozila>
+      <TipAutomobila>Kombi</TipAutomobila>
       <UsernameVozaca>marina</UsernameVozaca>
     </Auto>
     <Zauzet>true</Zauzet>
     <Blokiran>false</Blokiran>
   </Vozac>
   <Vozac>
-    <KorisnickoIme>marko123</KorisnickoIme>
-    <Lozinka>marko</Lozinka>
-    <Ime>Marko</Ime>
-    <Prezime>Markovic</Prezime>
+    <KorisnickoIme>dejan</KorisnickoIme>
+    <Lozinka>dejan</Lozinka>
+    <Ime>Dejan</Ime>
+    <Prezime>Dejanovic</Prezime>
     <Pol>Musko</Pol>
-    <Jmbg>1234556666655</Jmbg>
-    <KontaktTelefon>0000</KontaktTelefon>
-    <Email>@marko</Email>
+    <Jmbg>0209989123456</Jmbg>
+    <KontaktTelefon>066234987</KontaktTelefon>
+    <Email>dejan@gmail.com</Email>
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
     <Lok>
-      <X>19.848948</X>
-      <Y>45.245165</Y>
+      <X>18.808594</X>
+      <Y>-7.362467</Y>
       <Adresa>
-        <FormatAdrese>Studentski dom 'Slobodan Bajic', Sime Milosevica 10, 21000 Novi Sad</FormatAdrese>
+        <FormatAdrese>Kwango, RD Congo</FormatAdrese>
       </Adresa>
     </Lok>
     <Auto>
-      <GodisteAutomobila>2010</GodisteAutomobila>
-      <BrojRegistarskeOznake>NS99999</BrojRegistarskeOznake>
-      <BrojTaksiVozila>15</BrojTaksiVozila>
+      <GodisteAutomobila>2012</GodisteAutomobila>
+      <BrojRegistarskeOznake>PR123</BrojRegistarskeOznake>
+      <BrojTaksiVozila>5</BrojTaksiVozila>
       <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>marko123</UsernameVozaca>
-    </Auto>
-    <Zauzet>true</Zauzet>
-    <Blokiran>false</Blokiran>
-  </Vozac>
-  <Vozac>
-    <KorisnickoIme>miki123</KorisnickoIme>
-    <Lozinka>miki</Lozinka>
-    <Ime>Milan</Ime>
-    <Prezime>MIlanovic</Prezime>
-    <Pol>Musko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>999</KontaktTelefon>
-    <Email>@gma</Email>
-    <Uloga>Vozac</Uloga>
-    <KorisnikVoznje />
-    <Lok>
-      <X>13.886719</X>
-      <Y>47.754098</Y>
-      <Adresa>
-        <FormatAdrese>Lahnganggraben, Grünau im Almtal, Gmunden, Oberösterreich, 4645, Österreich</FormatAdrese>
-      </Adresa>
-    </Lok>
-    <Auto>
-      <GodisteAutomobila>2010</GodisteAutomobila>
-      <BrojRegistarskeOznake>ND354</BrojRegistarskeOznake>
-      <BrojTaksiVozila>16</BrojTaksiVozila>
-      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>miki123</UsernameVozaca>
+      <UsernameVozaca>dejan</UsernameVozaca>
     </Auto>
     <Zauzet>false</Zauzet>
     <Blokiran>false</Blokiran>
   </Vozac>
   <Vozac>
-    <KorisnickoIme>dejo123</KorisnickoIme>
-    <Lozinka>dejo</Lozinka>
-    <Ime>Dejan</Ime>
-    <Prezime>Dejo</Prezime>
+    <KorisnickoIme>milos</KorisnickoIme>
+    <Lozinka>milos</Lozinka>
+    <Ime>Milos</Ime>
+    <Prezime>Milosevic</Prezime>
     <Pol>Musko</Pol>
-    <Jmbg>1234567891234</Jmbg>
-    <KontaktTelefon>9999</KontaktTelefon>
-    <Email>@gmiai</Email>
+    <Jmbg>1211992123456</Jmbg>
+    <KontaktTelefon>021345897</KontaktTelefon>
+    <Email>milos@gmail.com</Email>
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
     <Lok>
@@ -467,11 +159,39 @@
       </Adresa>
     </Lok>
     <Auto>
-      <GodisteAutomobila>2010</GodisteAutomobila>
-      <BrojRegistarskeOznake>NDsss</BrojRegistarskeOznake>
-      <BrojTaksiVozila>17</BrojTaksiVozila>
+      <GodisteAutomobila>2000</GodisteAutomobila>
+      <BrojRegistarskeOznake>MA123</BrojRegistarskeOznake>
+      <BrojTaksiVozila>6</BrojTaksiVozila>
       <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-      <UsernameVozaca>dejo123</UsernameVozaca>
+      <UsernameVozaca>milos</UsernameVozaca>
+    </Auto>
+    <Zauzet>false</Zauzet>
+    <Blokiran>true</Blokiran>
+  </Vozac>
+  <Vozac>
+    <KorisnickoIme>angelina</KorisnickoIme>
+    <Lozinka>angelina</Lozinka>
+    <Ime>Angelina</Ime>
+    <Prezime>MItric</Prezime>
+    <Pol>Zensko</Pol>
+    <Jmbg>1201991123456</Jmbg>
+    <KontaktTelefon>032123456</KontaktTelefon>
+    <Email>angelina@gmail.com</Email>
+    <Uloga>Vozac</Uloga>
+    <KorisnikVoznje />
+    <Lok>
+      <X>19.848948</X>
+      <Y>45.245165</Y>
+      <Adresa>
+        <FormatAdrese>Studentski dom 'Slobodan Bajic', Sime Milosevica 10, 21000 Novi Sad</FormatAdrese>
+      </Adresa>
+    </Lok>
+    <Auto>
+      <GodisteAutomobila>1997</GodisteAutomobila>
+      <BrojRegistarskeOznake>SA123</BrojRegistarskeOznake>
+      <BrojTaksiVozila>7</BrojTaksiVozila>
+      <TipAutomobila>Kombi</TipAutomobila>
+      <UsernameVozaca>angelina</UsernameVozaca>
     </Auto>
     <Zauzet>false</Zauzet>
     <Blokiran>false</Blokiran>

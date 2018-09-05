@@ -1,122 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfAutomobil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Automobil>
-    <GodisteAutomobila>2010</GodisteAutomobila>
-    <BrojRegistarskeOznake>ST123</BrojRegistarskeOznake>
+    <GodisteAutomobila>2009</GodisteAutomobila>
+    <BrojRegistarskeOznake>BR123</BrojRegistarskeOznake>
     <BrojTaksiVozila>1</BrojTaksiVozila>
-    <TipAutomobila>Kombi</TipAutomobila>
-    <UsernameVozaca>maca1234</UsernameVozaca>
-  </Automobil>
-  <Automobil>
-    <GodisteAutomobila>2010</GodisteAutomobila>
-    <BrojRegistarskeOznake>NS34</BrojRegistarskeOznake>
-    <BrojTaksiVozila>2</BrojTaksiVozila>
     <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>rina</UsernameVozaca>
-  </Automobil>
-  <Automobil>
-    <GodisteAutomobila>2000</GodisteAutomobila>
-    <BrojRegistarskeOznake>BG123</BrojRegistarskeOznake>
-    <BrojTaksiVozila>3</BrojTaksiVozila>
-    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>joca</UsernameVozaca>
-  </Automobil>
-  <Automobil>
-    <GodisteAutomobila>2010</GodisteAutomobila>
-    <BrojRegistarskeOznake>ST567</BrojRegistarskeOznake>
-    <BrojTaksiVozila>4</BrojTaksiVozila>
-    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>luka</UsernameVozaca>
-  </Automobil>
-  <Automobil>
-    <GodisteAutomobila>2001</GodisteAutomobila>
-    <BrojRegistarskeOznake>BR678</BrojRegistarskeOznake>
-    <BrojTaksiVozila>5</BrojTaksiVozila>
-    <TipAutomobila>Kombi</TipAutomobila>
     <UsernameVozaca>sandra</UsernameVozaca>
   </Automobil>
   <Automobil>
+    <GodisteAutomobila>2001</GodisteAutomobila>
+    <BrojRegistarskeOznake>BI123</BrojRegistarskeOznake>
+    <BrojTaksiVozila>2</BrojTaksiVozila>
+    <TipAutomobila>Kombi</TipAutomobila>
+    <UsernameVozaca>tamara</UsernameVozaca>
+  </Automobil>
+  <Automobil>
+    <GodisteAutomobila>2017</GodisteAutomobila>
+    <BrojRegistarskeOznake>SO123</BrojRegistarskeOznake>
+    <BrojTaksiVozila>3</BrojTaksiVozila>
+    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+    <UsernameVozaca>barbara</UsernameVozaca>
+  </Automobil>
+  <Automobil>
     <GodisteAutomobila>2006</GodisteAutomobila>
-    <BrojRegistarskeOznake>SK900</BrojRegistarskeOznake>
-    <BrojTaksiVozila>6</BrojTaksiVozila>
+    <BrojRegistarskeOznake>BG123</BrojRegistarskeOznake>
+    <BrojTaksiVozila>4</BrojTaksiVozila>
     <TipAutomobila>Kombi</TipAutomobila>
-    <UsernameVozaca>tea</UsernameVozaca>
-  </Automobil>
-  <Automobil>
-    <GodisteAutomobila>2009</GodisteAutomobila>
-    <BrojRegistarskeOznake>MA999</BrojRegistarskeOznake>
-    <BrojTaksiVozila>7</BrojTaksiVozila>
-    <TipAutomobila>Kombi</TipAutomobila>
-    <UsernameVozaca>mirko</UsernameVozaca>
-  </Automobil>
-  <Automobil>
-    <GodisteAutomobila>2010</GodisteAutomobila>
-    <BrojRegistarskeOznake>MA678</BrojRegistarskeOznake>
-    <BrojTaksiVozila>8</BrojTaksiVozila>
-    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>sanja</UsernameVozaca>
-  </Automobil>
-  <Automobil>
-    <GodisteAutomobila>2009</GodisteAutomobila>
-    <BrojRegistarskeOznake>MI234</BrojRegistarskeOznake>
-    <BrojTaksiVozila>9</BrojTaksiVozila>
-    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>marija</UsernameVozaca>
-  </Automobil>
-  <Automobil>
-    <GodisteAutomobila>2000</GodisteAutomobila>
-    <BrojRegistarskeOznake>HG565</BrojRegistarskeOznake>
-    <BrojTaksiVozila>10</BrojTaksiVozila>
-    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>marko</UsernameVozaca>
-  </Automobil>
-  <Automobil>
-    <GodisteAutomobila>2000</GodisteAutomobila>
-    <BrojRegistarskeOznake>ND</BrojRegistarskeOznake>
-    <BrojTaksiVozila>11</BrojTaksiVozila>
-    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>filip</UsernameVozaca>
-  </Automobil>
-  <Automobil>
-    <GodisteAutomobila>2010</GodisteAutomobila>
-    <BrojRegistarskeOznake>PR343</BrojRegistarskeOznake>
-    <BrojTaksiVozila>12</BrojTaksiVozila>
-    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>dejana</UsernameVozaca>
-  </Automobil>
-  <Automobil>
-    <GodisteAutomobila>300</GodisteAutomobila>
-    <BrojRegistarskeOznake>DE43</BrojRegistarskeOznake>
-    <BrojTaksiVozila>13</BrojTaksiVozila>
-    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>sara</UsernameVozaca>
-  </Automobil>
-  <Automobil>
-    <GodisteAutomobila>2010</GodisteAutomobila>
-    <BrojRegistarskeOznake>NS656</BrojRegistarskeOznake>
-    <BrojTaksiVozila>14</BrojTaksiVozila>
-    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
     <UsernameVozaca>marina</UsernameVozaca>
   </Automobil>
   <Automobil>
-    <GodisteAutomobila>2010</GodisteAutomobila>
-    <BrojRegistarskeOznake>NS99999</BrojRegistarskeOznake>
-    <BrojTaksiVozila>15</BrojTaksiVozila>
+    <GodisteAutomobila>2012</GodisteAutomobila>
+    <BrojRegistarskeOznake>PR123</BrojRegistarskeOznake>
+    <BrojTaksiVozila>5</BrojTaksiVozila>
     <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>marko123</UsernameVozaca>
+    <UsernameVozaca>dejan</UsernameVozaca>
   </Automobil>
   <Automobil>
-    <GodisteAutomobila>2010</GodisteAutomobila>
-    <BrojRegistarskeOznake>ND354</BrojRegistarskeOznake>
-    <BrojTaksiVozila>16</BrojTaksiVozila>
+    <GodisteAutomobila>2000</GodisteAutomobila>
+    <BrojRegistarskeOznake>MA123</BrojRegistarskeOznake>
+    <BrojTaksiVozila>6</BrojTaksiVozila>
     <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>miki123</UsernameVozaca>
+    <UsernameVozaca>milos</UsernameVozaca>
   </Automobil>
   <Automobil>
-    <GodisteAutomobila>2010</GodisteAutomobila>
-    <BrojRegistarskeOznake>NDsss</BrojRegistarskeOznake>
-    <BrojTaksiVozila>17</BrojTaksiVozila>
-    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
-    <UsernameVozaca>dejo123</UsernameVozaca>
+    <GodisteAutomobila>1997</GodisteAutomobila>
+    <BrojRegistarskeOznake>SA123</BrojRegistarskeOznake>
+    <BrojTaksiVozila>7</BrojTaksiVozila>
+    <TipAutomobila>Kombi</TipAutomobila>
+    <UsernameVozaca>angelina</UsernameVozaca>
   </Automobil>
 </ArrayOfAutomobil>
