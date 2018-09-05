@@ -2,7 +2,7 @@
 WebAPI.config(function ($routeProvider) {
     $routeProvider.when('/',
         {
-            redirectTo: '/MyHome' //za sada
+            redirectTo: '/MyHome'
             }).when('/MyHome',
             {
                 controller: 'MyHomeController',

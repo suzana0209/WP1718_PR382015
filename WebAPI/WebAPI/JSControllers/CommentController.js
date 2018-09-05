@@ -5,8 +5,6 @@
     }
 
     function init() {
-        //$scope.Usp = false;
-        //$scope.Neusp = false;
         RegILogFactory.GetUserStatusByUsername(sessionStorage.getItem("username")).then(function (response) {
             if (response.data == true) {
                 alert('Blokirani ste!');
@@ -80,10 +78,6 @@
     }
 
     $scope.UspesnaVoznja = function () {
-        //$scope.Usp = true;
-        //$scope.Neusp = false;
-        //$scope.apply;
-
         RegILogFactory.GetUserStatusByUsername(sessionStorage.getItem("username")).then(function (response) {
             if (response.data == true) {
                 alert('Blokirani ste!');
@@ -102,9 +96,6 @@
 
     }
     $scope.NeuspesnaVoznja = function () {
-        //$scope.Neusp = true;
-        //$scope.Usp = false;
-        //$scope.apply;
 
         RegILogFactory.GetUserStatusByUsername(sessionStorage.getItem("username")).then(function (response) {
             if (response.data == true) {

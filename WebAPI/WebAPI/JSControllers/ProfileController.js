@@ -42,7 +42,6 @@
 
     init();
 
-
     $scope.AddDriveCustomer = function (drive) {
 
         RegILogFactory.GetUserStatusByUsername(sessionStorage.getItem("username")).then(function (response) {
@@ -53,7 +52,7 @@
                  $rootScope.loggedin = false;
                  $rootScope.user = {};
                  document.location.href = "#!/Login";
-            }
+             }
 
             if (drive == null) {
                 alert('Morate unijeti podatke voznje!');
@@ -99,7 +98,6 @@
 
 
     $scope.AddDriveDispecer = function (drive) {
-        //$scope.RegisterSuccess = "";
         if (drive == null) {
             alert('Morate unijeti podatke!');
             return;
@@ -139,19 +137,6 @@
             $scope.najbliziVozaci = true;
             $scope.apply;
         });
-
-        //ProfCont.AddDriveDispecer(drive).then(function (response) {
-        //    //$scope.RegisterSuccess = "";
-        //    if (response.data == true) {
-        //        console.log(response.data);
-        //        $scope.newDrive = response.data;
-        //        //$rootScope.RegisterSuccess = "Registration was successful. You can login now.";
-        //        $window.location.href = "#!/MyHome";
-        //    }
-        //    else {
-        //        alert("Voznja ne postoji.");
-        //    }
-        //});
     };
 
     $scope.DodajVoznjuDisp = function (noviModel) {
@@ -219,7 +204,7 @@
                     sessionStorage.setItem("username", user.username);
                     sessionStorage.setItem("role", response.data);
                     sessionStorage.setItem("nameSurname", user.ime + " " + user.prezime);
-                    //$rootScope.loggedin = true;
+              
                     $rootScope.user.username = sessionStorage.getItem("username");
                     $rootScope.user.nameSurname = sessionStorage.getItem("nameSurname");
                 
@@ -271,16 +256,12 @@
                 drive.Street = document.getElementById("address").innerText;
             }
 
-            //if (drive.tipAuta == null || drive.tipAuta == "") {
-            //    drive.tipAuta = $rootScope.VoznjaZaIzmenu.ZeljeniAutomobil;
-            //}
+            
 
             drive.Datum = $rootScope.VoznjaZaIzmenu.DatumPorudzbine;
             ProfCont.Izmeni(drive).then(function (response) {
                 if (response.data == true) {
                     console.log(response.data);
-                    //$scope.newDrive = response.data;
-                    //$rootScope.RegisterSuccess = "Registration was successful. You can login now.";
                     $window.location.href = "#!/MyHome";
                 }
                 else {

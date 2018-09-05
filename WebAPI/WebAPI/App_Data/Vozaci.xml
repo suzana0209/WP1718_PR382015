@@ -3,7 +3,7 @@
   <Vozac>
     <KorisnickoIme>maca1234</KorisnickoIme>
     <Lozinka>maca</Lozinka>
-    <Ime>Marija</Ime>
+    <Ime>Maca</Ime>
     <Prezime>Djurkovic</Prezime>
     <Pol>Zensko</Pol>
     <Jmbg>1234567891234</Jmbg>
@@ -12,10 +12,10 @@
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
     <Lok>
-      <X>61.347656</X>
-      <Y>62.593341</Y>
+      <X>18.105469</X>
+      <Y>46.558860</Y>
       <Adresa>
-        <FormatAdrese>Берёзовский район, Ханты-Мансийский автономный округ - Югра, Уральский федеральный округ, РФ</FormatAdrese>
+        <FormatAdrese>Hunyadi utca, Szakcs, Dombóvári járás, Tolna megye, Dél-Dunántúl, Dunántúl, 7213, Magyarország</FormatAdrese>
       </Adresa>
     </Lok>
     <Auto>
@@ -25,7 +25,7 @@
       <TipAutomobila>Kombi</TipAutomobila>
       <UsernameVozaca>maca1234</UsernameVozaca>
     </Auto>
-    <Zauzet>true</Zauzet>
+    <Zauzet>false</Zauzet>
     <Blokiran>false</Blokiran>
   </Vozac>
   <Vozac>
@@ -33,17 +33,17 @@
     <Lozinka>rina</Lozinka>
     <Ime>Rina</Ime>
     <Prezime>Jovanovic</Prezime>
-    <Pol>Zensko</Pol>
+    <Pol>Musko</Pol>
     <Jmbg>1234567891234</Jmbg>
     <KontaktTelefon>1234567891234</KontaktTelefon>
     <Email>ff@</Email>
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
     <Lok>
-      <X>5.800781</X>
-      <Y>18.646245</Y>
+      <X>24.257813</X>
+      <Y>-9.795678</Y>
       <Adresa>
-        <FormatAdrese>Tchirozérine, Agadez, Niger</FormatAdrese>
+        <FormatAdrese>Haut-Lomami, RD Congo</FormatAdrese>
       </Adresa>
     </Lok>
     <Auto>
@@ -137,7 +137,7 @@
       <TipAutomobila>Kombi</TipAutomobila>
       <UsernameVozaca>sandra</UsernameVozaca>
     </Auto>
-    <Zauzet>false</Zauzet>
+    <Zauzet>true</Zauzet>
     <Blokiran>false</Blokiran>
   </Vozac>
   <Vozac>
@@ -152,10 +152,10 @@
     <Uloga>Vozac</Uloga>
     <KorisnikVoznje />
     <Lok>
-      <X>19.848948</X>
-      <Y>45.245165</Y>
+      <X>26.015625</X>
+      <Y>-14.363169</Y>
       <Adresa>
-        <FormatAdrese>Studentski dom 'Slobodan Bajic', Sime Milosevica 10, 21000 Novi Sad</FormatAdrese>
+        <FormatAdrese>North-Western Province, Zambia</FormatAdrese>
       </Adresa>
     </Lok>
     <Auto>
@@ -165,7 +165,7 @@
       <TipAutomobila>Kombi</TipAutomobila>
       <UsernameVozaca>tea</UsernameVozaca>
     </Auto>
-    <Zauzet>false</Zauzet>
+    <Zauzet>true</Zauzet>
     <Blokiran>false</Blokiran>
   </Vozac>
   <Vozac>
@@ -305,7 +305,7 @@
       <TipAutomobila>PutnickiAutomobil</TipAutomobila>
       <UsernameVozaca>filip</UsernameVozaca>
     </Auto>
-    <Zauzet>false</Zauzet>
+    <Zauzet>true</Zauzet>
     <Blokiran>false</Blokiran>
   </Vozac>
   <Vozac>
@@ -361,7 +361,7 @@
       <TipAutomobila>PutnickiAutomobil</TipAutomobila>
       <UsernameVozaca>sara</UsernameVozaca>
     </Auto>
-    <Zauzet>false</Zauzet>
+    <Zauzet>true</Zauzet>
     <Blokiran>false</Blokiran>
   </Vozac>
   <Vozac>
@@ -388,6 +388,90 @@
       <BrojTaksiVozila>14</BrojTaksiVozila>
       <TipAutomobila>PutnickiAutomobil</TipAutomobila>
       <UsernameVozaca>marina</UsernameVozaca>
+    </Auto>
+    <Zauzet>true</Zauzet>
+    <Blokiran>false</Blokiran>
+  </Vozac>
+  <Vozac>
+    <KorisnickoIme>marko123</KorisnickoIme>
+    <Lozinka>marko</Lozinka>
+    <Ime>Marko</Ime>
+    <Prezime>Markovic</Prezime>
+    <Pol>Musko</Pol>
+    <Jmbg>1234556666655</Jmbg>
+    <KontaktTelefon>0000</KontaktTelefon>
+    <Email>@marko</Email>
+    <Uloga>Vozac</Uloga>
+    <KorisnikVoznje />
+    <Lok>
+      <X>19.848948</X>
+      <Y>45.245165</Y>
+      <Adresa>
+        <FormatAdrese>Studentski dom 'Slobodan Bajic', Sime Milosevica 10, 21000 Novi Sad</FormatAdrese>
+      </Adresa>
+    </Lok>
+    <Auto>
+      <GodisteAutomobila>2010</GodisteAutomobila>
+      <BrojRegistarskeOznake>NS99999</BrojRegistarskeOznake>
+      <BrojTaksiVozila>15</BrojTaksiVozila>
+      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+      <UsernameVozaca>marko123</UsernameVozaca>
+    </Auto>
+    <Zauzet>true</Zauzet>
+    <Blokiran>false</Blokiran>
+  </Vozac>
+  <Vozac>
+    <KorisnickoIme>miki123</KorisnickoIme>
+    <Lozinka>miki</Lozinka>
+    <Ime>Milan</Ime>
+    <Prezime>MIlanovic</Prezime>
+    <Pol>Musko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>999</KontaktTelefon>
+    <Email>@gma</Email>
+    <Uloga>Vozac</Uloga>
+    <KorisnikVoznje />
+    <Lok>
+      <X>13.886719</X>
+      <Y>47.754098</Y>
+      <Adresa>
+        <FormatAdrese>Lahnganggraben, Grünau im Almtal, Gmunden, Oberösterreich, 4645, Österreich</FormatAdrese>
+      </Adresa>
+    </Lok>
+    <Auto>
+      <GodisteAutomobila>2010</GodisteAutomobila>
+      <BrojRegistarskeOznake>ND354</BrojRegistarskeOznake>
+      <BrojTaksiVozila>16</BrojTaksiVozila>
+      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+      <UsernameVozaca>miki123</UsernameVozaca>
+    </Auto>
+    <Zauzet>false</Zauzet>
+    <Blokiran>false</Blokiran>
+  </Vozac>
+  <Vozac>
+    <KorisnickoIme>dejo123</KorisnickoIme>
+    <Lozinka>dejo</Lozinka>
+    <Ime>Dejan</Ime>
+    <Prezime>Dejo</Prezime>
+    <Pol>Musko</Pol>
+    <Jmbg>1234567891234</Jmbg>
+    <KontaktTelefon>9999</KontaktTelefon>
+    <Email>@gmiai</Email>
+    <Uloga>Vozac</Uloga>
+    <KorisnikVoznje />
+    <Lok>
+      <X>19.848948</X>
+      <Y>45.245165</Y>
+      <Adresa>
+        <FormatAdrese>Studentski dom 'Slobodan Bajic', Sime Milosevica 10, 21000 Novi Sad</FormatAdrese>
+      </Adresa>
+    </Lok>
+    <Auto>
+      <GodisteAutomobila>2010</GodisteAutomobila>
+      <BrojRegistarskeOznake>NDsss</BrojRegistarskeOznake>
+      <BrojTaksiVozila>17</BrojTaksiVozila>
+      <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+      <UsernameVozaca>dejo123</UsernameVozaca>
     </Auto>
     <Zauzet>false</Zauzet>
     <Blokiran>false</Blokiran>

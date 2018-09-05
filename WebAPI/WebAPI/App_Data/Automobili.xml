@@ -98,4 +98,25 @@
     <TipAutomobila>PutnickiAutomobil</TipAutomobila>
     <UsernameVozaca>marina</UsernameVozaca>
   </Automobil>
+  <Automobil>
+    <GodisteAutomobila>2010</GodisteAutomobila>
+    <BrojRegistarskeOznake>NS99999</BrojRegistarskeOznake>
+    <BrojTaksiVozila>15</BrojTaksiVozila>
+    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+    <UsernameVozaca>marko123</UsernameVozaca>
+  </Automobil>
+  <Automobil>
+    <GodisteAutomobila>2010</GodisteAutomobila>
+    <BrojRegistarskeOznake>ND354</BrojRegistarskeOznake>
+    <BrojTaksiVozila>16</BrojTaksiVozila>
+    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+    <UsernameVozaca>miki123</UsernameVozaca>
+  </Automobil>
+  <Automobil>
+    <GodisteAutomobila>2010</GodisteAutomobila>
+    <BrojRegistarskeOznake>NDsss</BrojRegistarskeOznake>
+    <BrojTaksiVozila>17</BrojTaksiVozila>
+    <TipAutomobila>PutnickiAutomobil</TipAutomobila>
+    <UsernameVozaca>dejo123</UsernameVozaca>
+  </Automobil>
 </ArrayOfAutomobil>

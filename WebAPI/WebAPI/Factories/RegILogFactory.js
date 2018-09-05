@@ -5,7 +5,7 @@
         return $http.get('/api/Prof/GetUserStatusByUsername?username=' + username);
     }
 
-     //smjestanje u objekat MusterijaPomocni.cs
+
     factory.RegisterUser = function (user) {       
         return $http.post('/api/RegILog/Register', {
             Username: user.username,
@@ -18,7 +18,7 @@
             Email: user.email
         });
     }
-    //smjestanje u objekat LogovaniKorisnik
+    
     factory.LoginUser = function (user) {
         return $http.post('/api/RegILog/Login', {
             Username: user.username,
@@ -26,7 +26,6 @@
         });
     }
 
-        //smjestanje u objekat VozacPomocna
     factory.RegisterDriver = function (user) { 
         return $http.post('/api/RegILog/RegisterDriver', {
             Username: user.username,

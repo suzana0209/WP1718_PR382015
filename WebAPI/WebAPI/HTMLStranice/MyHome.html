@@ -7,7 +7,7 @@
         <div>
             <h1 align="center" class="slovaEdit">Taksi sluzba</h1>
             <br />
-            <h1>Dobrodosli <span ng-show="loggedin">{{user.username}}</span> <!--<span ng-show="korisnik.uloga.includes('Administrator')">(Admin)</span>--></h1>
+            <h1>Dobrodosli <span ng-show="loggedin">{{user.username}}</span></h1>
             <h4 ng-show="!loggedin">Molim Vas ulogujte se ako zelite koristiti usluge naseg servisa!</h4>
         </div>
     </div>
@@ -38,7 +38,7 @@
                 <div ng-show="user.role==1">
                     <button class="button-success" type="submit" ng-click="getAllDrives()">Prikazite sve voznje</button>
                 </div>
-                <div ng-show="user.role==2">
+                <div ng-show="user.role==0">
                     <button class="button-success" type="submit" ng-click="getWaitingDrives()">Prikazite voznje na cekanju</button>
                 </div>
             </td>
@@ -125,10 +125,10 @@
                 <tr>
                     <td>Datum porudzbine:</td>
                     <td>
-                        <input type="date" class="t" id="DatumOd" ng-model="su.DatumOd" /> <!--<!--ng-model="su.DatumOd"-->
+                        <input type="date" class="t" id="DatumOd" ng-model="su.DatumOd" />
                     </td>
                     <td>
-                        <input type="date" class="t" id="DatumDo" ng-model="su.DatumDo" />  <!--ng-model="su.DatumDo"-->
+                        <input type="date" class="t" id="DatumDo" ng-model="su.DatumDo" /> 
                     </td>
                 </tr>
                 <tr>
@@ -189,7 +189,7 @@
     </div>
 
     <div class="voznje" ng-show="listaFlag==1">
-        <h3 align="center" class="slovaEdit">Moje voznje</h3>
+        <h3 align="center" class="slovaEditMojeVoznje">Moje voznje</h3>
         <div ng-show="listaFlag==1" class="rezultati voznje-repeat" ng-repeat="drive in MyDrives">
             <div class="voz rezultat">
                 <p><b>Datum porudzine: </b>&nbsp;{{drive.DatumPorudzbine}} </p>
@@ -222,12 +222,10 @@
     </div>
 
 
-
-
-
-    <div class="container-fluid" ng-show="listaFlag==3">
-        <div ng-show="listaFlag==3" class="rezultati" ng-repeat="drive in WaitingDrives">
-            <div class="tema">
+    <div class="container-fluid voznje slovaEdit1" ng-show="listaFlag==3">
+        <h3 align="center" class="slovaEdit1">Voznja sa statusom kreirana na cekanju</h3>
+        <div ng-show="listaFlag==3" class="rezultati voznje-repeat" ng-repeat="drive in WaitingDrives">
+            <div class="voz">
                 <p> <b>Datum porudzbine: </b>&nbsp;{{drive.DatumPorudzbine}} </p>
                 <p> <b>Adresa za dolazak: </b>&nbsp;{{drive.LokacijaDolaskaTaksija.Adresa.FormatAdrese}} </p>
 
@@ -253,10 +251,10 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid" ng-show="listaFlag==2">
-        <button type="submit" ng-click="Filter(AllDrives,fu.Status)">Filtriraj</button>
-        <div ng-show="listaFlag==2" class="rezultati" ng-repeat="drive in AllDrives">
-            <div class="tema">
+    <div class="container-fluid voznje slovaEdit1" ng-show="listaFlag==2">
+        <h3 align="center" class="slovaEdit1">Sve voznje</h3>
+        <div ng-show="listaFlag==2" class="rezultati voznje-repeat" ng-repeat="drive in AllDrives">
+            <div class="voz">
                 <p> <b>Datum porudzbine</b>&nbsp;{{drive.DatumPorudzbine}} </p>
                 <p> <b>Adresa za dolazak:</b>&nbsp;{{drive.LokacijaDolaskaTaksija.Adresa.FormatAdrese}} </p>
 
@@ -276,15 +274,15 @@
                 <p ng-show="drive.Komentar.OcjenaVoznje!=0"><b>Ocjena:</b>&nbsp;{{drive.Komentar.OcjenaVoznje}}</p>
                 <p ng-show="drive.Komentar.OcjenaVoznje!=0 || drive.Komentar.Opis"><b>Korisnik:</b>&nbsp;{{drive.Komentar.KorisnikOstavioKom}}</p>
                 <p ng-show="drive.Komentar.Opis || drive.Komentar.OcjenaVoznje!=0"><b>Datum objavljivanja komentara:</b>&nbsp;{{drive.Komentar.DatumObjave}}</p>
+                
                 <button class="dugme" ng-show="drive.StatusVoznje==0 && user.role==1" type="submit" ng-click="ObradiVoznju(drive)">Obradite voznju</button>
             </div>
         </div>
     </div>
-    <div class="container-fluid" ng-show="listaFlag==4">
-        <button ng-show="posebanFlag==1" type="submit" ng-click="Filter(AllDrives,fu.Status)">Filtrirajte</button>
-        <button ng-show="posebanFlag==2" type="submit" ng-click="Filter(MyDrives,fu.Status)">Filtrirajte</button>
-        <div ng-show="listaFlag==4" class="rezultati" ng-repeat="drive in SortedDrives">
-            <div class="tema">
+    <div class="container-fluid voznje slovaEdit1" ng-show="listaFlag==4">
+        <h3 align="center" class="slovaEdit1">Sortirane voznje</h3>
+        <div ng-show="listaFlag==4" class="rezultati voznje-repeat" ng-repeat="drive in SortedDrives">
+            <div class="voz">
                 <p> <b>Datum porudzbine:</b>&nbsp;{{drive.DatumPorudzbine}} </p>
                 <p><b>Adresa za dolazak:</b>&nbsp;{{drive.LokacijaDolaskaTaksija.Adresa.FormatAdrese}} </p>
 
@@ -314,11 +312,10 @@
             </div>
         </div>
     </div>
-    <div ng-show="listaFlag==5">
-        <button ng-show="posebanFlag==1" type="submit" ng-click="Filter(AllDrives,fu.Status)">Filtrirajte</button>
-        <button ng-show="posebanFlag==2" type="submit" ng-click="Filter(MyDrives,fu.Status)">Filtrirajte</button>
-        <div ng-show="listaFlag==5" class="rezultati" ng-repeat="drive in FilteredDrives">
-            <div class="tema">
+    <div class="container-fluid voznje slovaEdit1"  ng-show="listaFlag==5">
+        <h3 align="center" class="slovaEdit1">Filtrirane voznje</h3>
+        <div ng-show="listaFlag==5" class="rezultati voznje-repeat" ng-repeat="drive in FilteredDrives">
+            <div class="voz">
                 <p><b>Datum porudzbine:</b>&nbsp;{{drive.DatumPorudzbine}} </p>
                 <p><b>Adresa za dolazak: </b>&nbsp; {{drive.LokacijaDolaskaTaksija.Adresa.FormatAdrese}} </p>
 
@@ -347,11 +344,10 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid" ng-show="listaFlag==6">
-        <button ng-show="listaFlag==6" type="submit" ng-click="Filter(SearchedDrives,fu.Status)">Filtriraj</button>
-        <!--<button ng-show="posebanFlag==2" type="submit" ng-click="Filter(MyDrives,fu.Status)">Filtriraj</button>-->
+    <div class="container-fluid voznje slovaEdit1" ng-show="listaFlag==6">
+        <h3 align="center" class="slovaEdit1">Pretrazene voznje</h3>
         <div ng-show="listaFlag==6" class="rezultati" ng-repeat="drive in SearchedDrives">
-            <div class="tema">
+            <div class="voz rezultat">
                 <p><b>Datum porudzbine:</b>&nbsp;{{drive.DatumPorudzbine}} </p>
                 <p> <b>Adresa za dolazak: </b>&nbsp;{{drive.LokacijaDolaskaTaksija.Adresa.FormatAdrese}} </p>
 
@@ -375,27 +371,10 @@
                 <button class="dugme" ng-show="drive.StatusVoznje==0 && user.role==2" type="submit" ng-click="OtkaziVoznju(drive)">Otkazite voznju</button>
                 <button class="dugme" ng-show="drive.StatusVoznje==0 && user.role==1" type="submit" ng-click="ObradiVoznju(drive)">Obradite voznju</button>
                 <button class="dugme" ng-show="user.role==0 && posebanFlag==3 &&  !DriverData.Zauzet && DriverData.TipA == drive.ZeljeniAutomobil" type="submit" ng-click="PreuzmiVoznju(drive,SortedDrives)">Preuzmite voznju</button>
-                <button class="dugme" ng-show="(drive.StatusVoznje==1 || drive.StatusVoznje==2 || drive.StatusVoznje==3) && user.role==0" type="submit" ng-click="ZavrsiVoznju(drive)">Zavrsi voznju</button>
+                <button class="dugme" ng-show="(drive.StatusVoznje==1 || drive.StatusVoznje==2 || drive.StatusVoznje==3) && user.role==0" type="submit" ng-click="ZavrsiVoznju(drive)">Zavrsite voznju</button>
                 <button class="dugme" ng-show="drive.StatusVoznje==6 && user.role==2 && !drive.Komentar.Opis && drive.Komentar.OcjenaVoznje==0" type="submit" ng-click="DodajKomentar(drive)">Dodajte komentar</button>
                 <button class="dugme" ng-show="drive.StatusVoznje==0 && user.role==2" type="submit" ng-click="IzmeniVoznju(drive)">Izmijenite voznju</button>
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
    

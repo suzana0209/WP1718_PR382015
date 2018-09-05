@@ -1005,9 +1005,6 @@ namespace WebAPI.Controllers
             {
                 if (DateTime.Parse(u.DatumPorudzbine) == DateTime.Parse(k.Datum) && u.Musterija.KorisnickoIme == k.korisnicko)
                 {
-
-                    //Adresa a = new Adresa(k.Street);
-                    //Lokacija l = new Lokacija(k.XCoord, k.YCoord, a);
                     u.LokacijaDolaskaTaksija.X = k.XCoord;
                     u.LokacijaDolaskaTaksija.Y = k.YCoord;
 
@@ -1088,8 +1085,6 @@ namespace WebAPI.Controllers
             }
             return ret;
         }
-
-
 
         [HttpGet]
         [ActionName("getUnblockedUsers")]

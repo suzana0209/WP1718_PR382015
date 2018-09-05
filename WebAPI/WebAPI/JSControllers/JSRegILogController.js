@@ -2,7 +2,7 @@
     $scope.user = {}; //inicijalizacija na prazno
 
     function init() {
-        console.log('Login controller initialized'); //ispis na konzoli da se inicijalizovao
+        console.log('Login controller initialized');
         $rootScope.Uloga = sessionStorage.getItem("role");
     };
     init();
@@ -58,7 +58,6 @@
         RegILogFactory.RegisterUser(user).then(function (response) {
             if (response.data == true) {
                 console.log(response.data);
-                //$rootScope.RegisterSuccess = "Uspjesno ste se registrovali! Sada se mozete prijaviti!";
                 $window.location.href = "#!/Login";
             }
             else {
@@ -90,12 +89,9 @@
                         return;
                     }
                 
-                //$rootScope.RegisterSuccess = "";
                 console.log(response);
                 document.cookie = "user=" + JSON.stringify({
-                    //username: response.data.KorisnickoIme,
-                    //role: response.data.Uloga,
-                    //nameSurname: response.data.Ime + " " + response.data.Prezime
+                    
                     username: $rootScope.ZapamtiKorisnika.KorisnickoIme, /*response.data.KorisnickoIme,*/
                     role: $rootScope.ZapamtiKorisnika.Uloga, /*response.data.Uloga*/
                     nameSurname: $rootScope.ZapamtiKorisnika.Ime + " " + $rootScope.ZapamtiKorisnika.Prezime/*response.data.Ime + " " + response.data.Prezime*/
@@ -121,9 +117,8 @@
     }
 
     $scope.RegisterDriver = function (user) {
-        //$rootScope.RegisterSuccess = "";
         if (user.username == null || user.username == "") {
-            alert('Polje korisnicko ime mora biti ne smije biti prazno!');
+            alert('Polje korisnicko ime ne smije biti prazno!');
             return;
         }
         else if (user.ime == null || user.ime == "") {
@@ -186,7 +181,6 @@
         RegILogFactory.RegisterDriver(user).then(function (response) {
             if (response.data == true) {
                 console.log(response.data);
-                //$rootScope.RegisterSuccess = "Uspjesno ste se registrovali! Sada se mozete prijaviti.";
                 $window.location.href = "#!/MyHome";
             }
             else {

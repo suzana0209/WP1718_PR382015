@@ -5,12 +5,12 @@
     <h3>Dodavanje voznje nije moguce</h3>
 </div>
 <div ng-show="loggedin && user.role!=0">
-    <div class="container-fluid" ng-show="loggedin">
+    <div class="container-fluid slovaEdit1" ng-show="loggedin">
         <div class="DodavanjeVoznji">
             <div class="header">
                 <h2>Voznja</h2>
             </div>
-            <div class="body" ng-show="!najbliziVozaci">
+            <div class="body slovaEdit1" ng-show="!najbliziVozaci">
                 <label>Dodajte Vasu lokaciju: </label>
 
                 <div>
@@ -54,46 +54,45 @@
                         });
                     </script>
                 </div>
-                <div class="form-group">
-                    <b>X koordinate:</b> &nbsp; <span id="lon"></span>
-                    <!--<input id="lon" type="number" step="0.000001">-->
-                </div>
-                <div class="form-group">
-                    <b>Y koordinate: </b> &nbsp; <span id="lat"></span>
-                    <!--<input id="lat" type="number" step="0.000001">-->
-                </div>
-                <div class="form-group">
-                    <b> Adresa: </b>&nbsp;<span id="address"></span>
-                </div>
-                <div class="form-group">
-                    <select class="t" id="tipAuta" ng-model="drive.tipAuta" placeholder="Tip automobila">
-                        <option value="" disabled>Izaberite tip auta: </option>
-                        <option value="0">Putnicki automobil</option>
-                        <option value="1">Kombi</option>
-                    </select>
-                    <br/> 
-                    <br/>
-                    <button ng-show="user.role==2 && !najbliziVozaci" type="submit" class="btn button-success" ng-click="AddDriveCustomer(drive)">Dodajte voznju</button>
-                    <button ng-show="user.role==1 && !najbliziVozaci" type="submit" class="btn button-success" ng-click="AddDriveDispecer(drive)">Dodajte voznju</button>
+                <div class="slovaEdit1">
+                    <div class="form-group">
+                        <b>X koordinate:</b> &nbsp; <span id="lon"></span>
+                    </div>
+                    <div class="form-group">
+                        <b>Y koordinate: </b> &nbsp; <span id="lat"></span>
+                    </div>
+                    <div class="form-group">
+                        <b> Adresa: </b>&nbsp;<span id="address"></span>
+                    </div>
+                    <div class="form-group">
+                        <select class="t" id="tipAuta" ng-model="drive.tipAuta" placeholder="Tip automobila">
+                            <option value="" disabled>Izaberite tip auta: </option>
+                            <option value="0">Putnicki automobil</option>
+                            <option value="1">Kombi</option>
+                        </select>
+
+                        <br/> 
+                        <br/>
+                        <button ng-show="user.role==2 && !najbliziVozaci" type="submit" class="btn button-success" ng-click="AddDriveCustomer(drive)">Dodajte voznju</button>
+                        <button ng-show="user.role==1 && !najbliziVozaci" type="submit" class="btn button-success" ng-click="AddDriveDispecer(drive)">Dodajte voznju</button>
+                    </div>
                 </div>
                 <br> 
             </div>
         
 
-        <div class="form-group">
+        <div class="form-group slovaEdit1 pozadinaZaKomentar">
             <div ng-show="!Prazna">
                 <div ng-show="user.role==1 && najbliziVozaci">
                     <h4>Najblizi vozaci: </h4>
                     <select id="slobodni" ng-model="noviModel.SelektovaniVozac">
                         <option class="inputZaVozaca" ng-repeat="kor in ListaNajblizih" value="{{kor}}">{{kor}}</option>
-                        <!--<option ng-repeat="kor in ListaNajblizih" value="{{kor}}">{{kor}}</option>-->
                     </select>
-                    <button class="dugme" type="submit" ng-click="DodajVoznjuDisp(noviModel)">Dodaj ga</button>
-                    <!--<button type="submit" ng-click="DodajVoznjuDisp(noviModel)">Dodaj ga</button>-->
+                    <button class="dugme" type="submit" ng-click="DodajVoznjuDisp(noviModel)">Dodaj vozaca</button>
                 </div>
             </div>
             <div ng-show="Prazna">
-                <p>Nema slobodnih vozaca. Voznja ce biti dodata bez vozaca sa statusom 'Kreirana Na cekanju'.</p>
+                <p>Nema slobodnih vozaca. Voznja ce biti dodata bez vozaca sa statusom 'Kreirana na cekanju'.</p>
             </div>
         </div>
     </div>

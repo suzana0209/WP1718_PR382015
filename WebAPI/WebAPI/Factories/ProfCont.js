@@ -69,18 +69,6 @@
             });
     }
 
-    //factory.Filter2 = function (Drives,fu) {
-    //    return $http.post('/api/Prof/GetFilterUserAll',
-    //        {
-    //            Username: sessionStorage.getItem("username"),
-    //            Uloga: sessionStorage.getItem("role"),
-    //            Status: fu,
-    //            Drivess: Drives
-    //        });
-    //}
-
-
-
     factory.Sorting = function (Drives,fu) {
         return $http.post('/api/Prof/SortingUser',
             {
@@ -112,7 +100,7 @@
         });
     }
 
-    factory.DodajKomentar = function (ko, voz) { //Objekat PomocniKomentar
+    factory.DodajKomentar = function (ko, voz) {
         return $http.post('/api/Prof/Komentarisanje',
             {
                 KomOpis: ko.Opis,

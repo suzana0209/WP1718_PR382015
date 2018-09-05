@@ -4,29 +4,29 @@
 <div ng-show="!loggedin || user.role!=0 || !DozvolaZaZavrsenuVoznju"><h3>Nije vam dozvoljena ova akcija</h3></div>
 <div ng-show="loggedin && user.role==0 && DozvolaZaZavrsenuVoznju">
 
-    <table align="center" class="sirinaTabele">
+    <table align="center" class="sirinaTabele slovaEdit1">
         <tr>
             <td width="50%">
-                <button class="button-success" type="submit" ng-click="UspesnaVoznja()">Uspjesna</button>
+                <button  class="button-success" type="submit" ng-click="UspesnaVoznja()">Uspjesna</button>
             </td>
             <td width="50%">
                 <button class="button-success" type="submit" ng-click="NeuspesnaVoznja()">Neuspjesna</button>
             </td>
         </tr>
     </table>
-    <div ng-show="Usp || Neusp" class="DodavanjeVoznji">
-        <div class="header"> <h3 ng-show="Usp">Uspjesno zavrsena voznja</h3> <h3 ng-show="Neusp">Neuspesno zavrsena voznja</h3></div>
+    <div ng-show="Usp || Neusp" class="DodavanjeVoznji slovaEdit1">
+        <div class="header"> <h3 ng-show="Usp">Uspjesno zavrsena voznja</h3> <h3 ng-show="Neusp">Neuspjesno zavrsena voznja</h3></div>
         <div class="body">
             <div ng-show="Usp">
                 <div class="form-group">
 
 
-                    <div class="form-group">
+                    <div class="form-group slovaEdit1">
                         <label>Unesite cijenu voznje: </label>
                         <input type="number" id="cena" ng-model="drive.Cena" />
                     </div>
 
-                    <label>Unesite krajnju lokaciju: </label>
+                    <label class="slovaEdit1">Unesite krajnju lokaciju: </label>
                     <div>
                     <div id="map" class="map"></div>
 
@@ -68,17 +68,15 @@
                             </script>
                         </div>
 
-                    <div class="form-group">
+                    <div class="form-group slovaEdit1">
                         <b>X koordinate:</b> &nbsp; <span id="lon"></span>
-                        <!--<input id="lon" type="number" step="0.000001">-->
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group slovaEdit1">
                         <b>Y koordinate: </b> &nbsp; <span id="lat"></span>
-                        <!--<input id="lat" type="number" step="0.000001">-->
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group slovaEdit1">
                         <b> Adresa: </b>&nbsp; <span id="address"></span>
                     </div>
                         <button class="button-success" type="submit" ng-click="DodajKraj(drive)">Zavrsite voznju</button>
@@ -88,19 +86,20 @@
             <div ng-show="Neusp">
 
 
-                <div class="form-group">
-                    <table align="center" class="sirinaTabele">
+                <div class="form-group slovaEdit1">
+                    <table align="center" class="sirinaTabele slovaEdit1">
                         <tr>
-                            <td colspan="2" align="center"> <h1>Ostavite komentar</h1></td>
+                            <td colspan="2" align="center"> <h3 class="slovaEdit1">Ostavite komentar</h3></td>
                         </tr>
                         <tr>
-                            <td align="right" valign="middle" width="30%"><h3>Opis:</h3></td>
-                            <td width="70%">
+                            <td align="center" valign="middle" width="5%"></td>
+                            <td width="100%" align="center">
                                 <textarea required class="form-control" placeholder="Ostavite komentar.." ng-model="ko.Opis"></textarea>
                             </td>
                         </tr>
+                        <tr><td colspan="2">&nbsp;</td></tr>
                         <tr>
-                            <td colspan="2">
+                            <td colspan="2" align="center">
                                 <button class="button-successBlok" type="submit" ng-click="DodajKomentarVozac(ko)">Dodajte komentar</button>
                             </td>
                         </tr>

@@ -19,6 +19,25 @@
     font-weight: bold;
 }
 
+.slovaEdit1 {
+    color: #FFE83C;
+    font-weight: bold;
+}
+
+.slovaEditMojeVoznje{
+    color: #fff;
+    font-weight:500;
+}
+
+
+.pozadinaZaKomentar{
+    background: black !important;
+}
+
+.pozadinaZaPoljeZ{
+    background-color: #FFFFCC !important;
+}
+
 .sirinaTabele {
   
     width: 100%;
@@ -67,9 +86,6 @@
         background-color: #FFE83C;
         text-align: center;
     }
-  .loginWindow .body input placeholder {
-            color: black;
-        }
 
 .podaciZaEdit {
     width: 500px;
@@ -84,7 +100,7 @@ podaciZaEdit input{
 .registerWindow {
   background: black !important;
   width: 600px;
-  min-height: 400px;
+  min-height: 500px;
   max-height: auto;
   border: 4px solid #ffe83c;
   margin: auto;
@@ -112,7 +128,7 @@ podaciZaEdit input{
 
     .registerWindow .body select {
         background: #FFE83C;
-        margin-left: 120px !important;
+        /*margin-left: 120px !important;*/
     }
 	
 	.DodavanjeVoznji {
@@ -150,7 +166,7 @@ podaciZaEdit input{
 
 .button-success {
     background: linear-gradient(180deg,#FFE83C, #FFE83C) !important;
-    box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 4px -2px #000;
     border-radius: 3px;
     color: #000;
     font-weight: bold;
@@ -180,7 +196,7 @@ podaciZaEdit input{
   
 .button-success:hover {
   opacity: 0.85;
-  color: #fff; }
+  color: #000; }
 
 .btn:active, .btn:focus, .btn:active, .btn:focus {
   color: #ffe83c !important; }
@@ -208,10 +224,6 @@ podaciZaEdit input{
 }
 
 
-
-
-
-
 .voznje {
     background: #000;
     border: 2px solid #FFE83C;
@@ -230,17 +242,18 @@ podaciZaEdit input{
         text-decoration: none;
     }
   .voznje .voznje-repeat .voz {
+    color: #FFE83C !important;
     width: 95%;
     height: auto;
     background: #000;
-    box-shadow: 1px 2px 60px -18px rgba(0, 0, 0, 0.6);
+    box-shadow: 1px 2px 60px -18px #FFFFCC;
     padding: 25px;
     border-radius: 8px;
     border: 1px solid #FFE83C;
     transition: 0.2s ease;
     margin-top: 20px; }
   .voznje .voznje-repeat .voz:hover {
-    color: #fff;
+    color: #FFE83C;
     background: #000; }
 
 .userProfileDetails {
@@ -257,7 +270,7 @@ userProfileDetails h1{
 
 
 .nohover:hover {
-    background: #fff !important;
+    background: #000 !important;
     color: #FFE83C !important;
 }
   .nohover:hover p {
@@ -282,11 +295,11 @@ userProfileDetails h1{
       border-radius: 8px;
       padding: 20px;
       padding-top: 10px;
-      color: #bf7ae8;
+      color: #FFE83C;
       transition: 0.2s ease; }
     .rezultati a .rezultat:hover {
-      background: #bf7ae8;
-      color: #fff; }
+      background: #FFE83C;
+      color: #000; }
 
 
 * {
@@ -296,7 +309,7 @@ userProfileDetails h1{
 body {
     padding: 0;
     margin: 0;
-    background: #fff;
+    background-color: #FFFFCC !important;
     /*background: radial-gradient(black, yellow, black, yellow) !important;*/
 }
 
@@ -347,9 +360,6 @@ select {
     /*margin-left: 110px !important;*/
 }
 
-select value{
-    text-align: center;
-}
 
 :-ms-input-placeholder {
     text-align: center;

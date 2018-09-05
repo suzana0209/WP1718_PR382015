@@ -1,9 +1,6 @@
 ﻿WebAPI.controller('MainController', function ($scope, $location, $rootScope) {
-    // Kontroler koji je zaduzen za Index.cshtml, svaki put kada se bilo koja stranica ucita, proverava se cookie
     if (document.cookie !== "") {
-        //console.log(document.cookie);
         var cookieInfo = document.cookie.substring(5, document.cookie.length);
-        //var parsed = JSON.parse(cookieInfo);
         var parsed = jQuery.parseJSON(cookieInfo);
         sessionStorage.setItem("username", parsed.username);
         sessionStorage.setItem("role", parsed.role);
